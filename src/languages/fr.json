@@ -1,0 +1,27 @@
+{
+    "language": "fr",
+    "languageName": "Français",
+    "title": "Blue Planet Sat",
+    "navbar": [{
+            "name": "Accueil",
+            "path": "/fr/"
+        },
+        {
+            "name": "Notre produit",
+            "path": "/fr/product/"
+        },
+        {
+            "name": "À propos de nous",
+            "path": "/fr/aboutus/"
+        },
+        {
+            "name": "Contact",
+            "path": "/fr/contact/"
+        }
+    ],
+    "hero": {
+        "title": "Bienvenue sur notre site web",
+        "subtitle": "Découvrez notre produit et apprenez-en plus sur nous",
+        "buttonText": "Commencer"
+    }
+}

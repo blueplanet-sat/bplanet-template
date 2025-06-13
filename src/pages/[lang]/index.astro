@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getTranslations } from '../../lib/i18n';
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'es' } },
+    { params: { lang: 'fr' } }
+  ];
+}
+
+const { lang } = Astro.params;
+const t = getTranslations(lang);
+---
+
+<BaseLayout lang={lang} title={t.title}>
+  <section class="text-center py-12">
+    <h1 class="text-4xl font-bold text-blue-700 mb-4">{t.hero.title}</h1>
+    <!-- <p>{t.hero.subtitle}</p> -->
+  </section>
+</BaseLayout>

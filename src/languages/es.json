@@ -1,0 +1,23 @@
+{
+    "language": "es",
+    "languageName": "Español",
+    "title": "Blue Planet Sat",
+    "navbar": [{
+        "name": "Inicio",
+        "path": "/es/"
+    }, {
+        "name": "Nuestro producto",
+        "path": "/es/product/"
+    }, {
+        "name": "Sobre nosotros",
+        "path": "/es/aboutus/"
+    }, {
+        "name": "Contacto",
+        "path": "/es/contact/"
+    }],
+    "hero": {
+        "title": "Bienvenido a nuestro sitio web",
+        "subtitle": "Descubre nuestro producto y aprende más sobre nosotros",
+        "buttonText": "Comenzar"
+    }
+}
