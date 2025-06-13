@@ -1,8 +1,9 @@
-<!-- <section class="text-center py-20 bg-sky-950 text-white">
-  <h2 class="text-4xl font-bold mb-4">Observá la Tierra como nunca antes</h2>
-  <p class="text-xl mb-6">Imágenes satelitales de alta resolución en tiempo real</p>
-  <a href="#producto" class="bg-white text-azul-oscuro px-6 py-2 rounded font-semibold hover:bg-gray-200">Ver más</a>
-</section> -->
+---
+import { getTranslations } from '../lib/i18n';
+import { getStaticPaths } from '../pages/[lang]/index.astro';   
+const { lang } = Astro.params;
+const t = getTranslations(lang || 'en');
+---
 <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
   <img src="images/hero-image.webp" alt="" class="absolute inset-0 -z-10 size-full object-cover object-right md:object-center" />
   <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
@@ -13,7 +14,7 @@
   </div>
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0">
-      <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Work with us</h2>
+      <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">{t.hero.title}</h2>
       <p class="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat.</p>
     </div>
     <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
