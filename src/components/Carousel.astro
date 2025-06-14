@@ -1,0 +1,38 @@
+---
+import { initCarousel } from '../lib/initCarousel';
+
+const images = [
+  '/images/hero-image.webp',
+  'https://randomuser.me/api/portraits/men/5.jpg',
+];
+---
+<div class="bg-blue-950 w-full flex items-center justify-center py-10">
+  <div class="relative w-full max-w-4xl h-96 overflow-hidden">
+    <div id="carousel" class="relative w-full h-full flex transition-transform duration-700 ease-in-out">
+      {images.map((src, index) => (
+        <div class="w-full flex-shrink-0 relative transition-all duration-500">
+          <img
+            src={src}
+            alt={`Slide ${index + 1}`}
+            class="w-full h-full object-cover rounded-2xl border border-blue-900"
+          />
+        </div>
+      ))}
+    </div>
+
+    <button id="prev" class="absolute top-1/2 left-4 -translate-y-1/2 bg-blue-800 hover:bg-blue-700 text-white p-2 rounded-full shadow z-20">
+      &#10094;
+    </button>
+    <button id="next" class="absolute top-1/2 right-4 -translate-y-1/2 bg-blue-800 hover:bg-blue-700 text-white p-2 rounded-full shadow z-20">
+      &#10095;
+    </button>
+  </div>
+</div>
+
+<script is:inline type="module">
+  import { initCarousel } from '../lib/initCarousel';
+  window.addEventListener('DOMContentLoaded', () => {
+    initCarousel();
+  });
+</script>
+

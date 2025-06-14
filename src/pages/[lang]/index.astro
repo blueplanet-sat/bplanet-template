@@ -1,5 +1,6 @@
 ---
 import AboutUs from '../../components/AboutUs.astro';
+import Carousel from '../../components/Carousel.astro';
 import Footer from '../../components/Footer.astro';
 import Hero from '../../components/Hero.astro';
 import Navbar from '../../components/Navbar.astro';
@@ -19,10 +20,11 @@ const { lang } = Astro.params;
 const t = getTranslations(lang);
 ---
 
-<BaseLayout lang={lang} title={t.title}>
-  <Navbar />
-	<Hero />
-	<Team />
-  <AboutUs />
-	<Footer/>
+<BaseLayout lang={lang || 'en'}  title={t.title}>
+ <Navbar t={t}/>
+	<Hero t={t}/>
+  <Carousel />
+  <Team />
+	<AboutUs t={t}/>
+	<Footer t={t}/>
 </BaseLayout>
