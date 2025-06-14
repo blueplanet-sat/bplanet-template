@@ -3,18 +3,26 @@
     "languageName": "English",
     "title": "Blue Planet Sat",
     "navbar": [{
-        "name": "Home",
-        "path": "/en/"
-    }, {
-        "name": "Product",
-        "path": "/en/product/"
-    }, {
-        "name": "About us",
-        "path": "/en/aboutus/"
-    }, {
-        "name": "Contact",
-        "path": "/en/contact/"
-    }],
+            "name": "Home",
+            "path": "/en#home"
+        },
+        {
+            "name": "Product",
+            "path": "/en#product"
+        },
+        {
+            "name": "About Us",
+            "path": "/en#about"
+        },
+        {
+            "name": "Team",
+            "path": "/en#team"
+        },
+        {
+            "name": "Contact",
+            "path": "/en#contact"
+        }
+    ],
     "hero": {
         "title": "Welcome to our website",
         "subtitle": "Discover our product and learn more about us",
