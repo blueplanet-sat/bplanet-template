@@ -24,7 +24,7 @@
         "subtitle": "Découvrez notre produit et apprenez-en plus sur nous",
         "buttonText": "Commencer"
     },
-    "aboutUs": [{
+    "team": [{
             "name": "Jean-Pierre Antikidis",
             "position": "Président",
             "description": "Ancien chef des systèmes d'information spatiale au CNES.",

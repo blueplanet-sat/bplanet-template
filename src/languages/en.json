@@ -20,7 +20,7 @@
         "subtitle": "Discover our product and learn more about us",
         "buttonText": "Start"
     },
-    "aboutUs": [{
+    "team": [{
             "name": "Jean-Pierre Antikidis",
             "position": "President",
             "description": "Former Head of Space Information Systems at CNES.",
