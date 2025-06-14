@@ -1,12 +1,6 @@
 ---
 import { getTranslations } from '../lib/i18n';
 import '../styles/style.css';
-// import Analytics from '@vercel/analytics/astro'
-// interface Props {
-//   lang?: string;
-//   title: string;
-// }
-
 const { lang = 'en', title } = Astro.props;
 const t = getTranslations("es");
 ---
@@ -18,9 +12,12 @@ const t = getTranslations("es");
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+
 		<title>{title}</title>
 	</head>
+	
 	<body>
-		<slot />
+		<slot />		
 	</body>
+	
 </html>
