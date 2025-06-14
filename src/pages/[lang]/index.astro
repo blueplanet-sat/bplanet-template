@@ -1,9 +1,8 @@
 ---
-import AboutUs from '../../components/AboutUs.astro';
 import Footer from '../../components/Footer.astro';
 import Hero from '../../components/Hero.astro';
 import Navbar from '../../components/Navbar.astro';
-import Testimonials from '../../components/Testimonials.astro';
+import Team from '../../components/Team.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getTranslations } from '../../lib/i18n';
 
@@ -22,7 +21,6 @@ const t = getTranslations(lang);
 <BaseLayout lang={lang} title={t.title}>
   <Navbar />
 	<Hero />
-  <Testimonials />
-	<AboutUs />
+	<Team />
 	<Footer/>
 </BaseLayout>

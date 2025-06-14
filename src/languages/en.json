@@ -19,5 +19,30 @@
         "title": "Welcome to our website",
         "subtitle": "Discover our product and learn more about us",
         "buttonText": "Start"
-    }
+    },
+    "aboutUs": [{
+            "name": "Jean-Pierre Antikidis",
+            "position": "President",
+            "description": "Former Head of Space Information Systems at CNES.",
+            "image": "antikidis.jpg"
+        },
+        {
+            "name": "Bernard Plano",
+            "position": "Former President",
+            "description": "Former president of Matra-System Information.",
+            "image": "plano.jpg"
+        },
+        {
+            "name": "Jean-Jacques Favier",
+            "position": "Astronaut & Head of Prospective",
+            "description": "Astronaut STS-78 and former head of prospective at CNES.",
+            "image": "favier.webp"
+        },
+        {
+            "name": "Michel Courtois",
+            "position": "Director",
+            "description": "Previous Director of Estec Center and creator of SPOT.",
+            "image": "courtois.jpg"
+        }
+    ]
 }

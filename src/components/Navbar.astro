@@ -1,55 +1,60 @@
 <section class="relative mx-auto">
     <!-- navbar -->
-    <nav class="flex justify-between bg-gray-900 text-white w-screen">
-        <div class="px-5 xl:px-12 py-6 flex w-full items-center">
+    <nav class="flex justify-between mx-auto bg-gray-900 text-white w-screen">
+        <div class="px-5 xl:px-12 py-5 flex w-full items-center">
           <a class="text-3xl font-bold font-heading" href="#">
             <!-- <img class="h-9" src="logo.png" alt="logo"> -->
             BluePlanet.
           </a>
-          <!-- Nav Links -->
-          <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
-            <li><a class="hover:text-accent" href="#">Home</a></li>
-            <li><a class="hover:text-accent" href="#">Catagory</a></li>
-            <li><a class="hover:text-accent" href="#">Collections</a></li>
-            <li><a class="hover:text-accent" href="#">Contact Us</a></li>
-          </ul>
-          <!-- Language Dropdown -->
-          <div class="relative hidden xl:flex items-center space-x-5">
-            <button id="langDropdownBtn" class="flex items-center hover:text-gray-200 focus:outline-none">
-              <img src="svg/en.svg" alt="English Flag" class="w-6 h-6">
-              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-          </button>
 
-          <!-- Dropdown menu -->
-          <div id="langDropdown" class="absolute right-0 mt-40 w-32 bg-white rounded-md shadow-lg z-50 hidden">
-
-            <ul class="py-1 text-gray-700">
-              <li>
-                <a href="#" data-lang="en" class="flex items-center px-4 py-2 hover:bg-gray-100 hover:text-accent">
-                  <img src="svg/en.svg" alt="English" class="w-5 h-5 mr-2"> English
-                </a>
-              </li>
-              <li>
-                <a href="#" data-lang="es" class="flex items-center px-4 py-2 hover:bg-gray-100 hover:text-accent">
-                  <img src="svg/es.svg" alt="Español" class="w-5 h-5 mr-2"> Español
-                </a>
-              </li>
-              <li>
-                <a href="#" data-lang="fr" class="flex items-center px-4 py-2 hover:bg-gray-100 hover:text-accent">
-                  <img src="svg/fr.svg" alt="Français" class="w-5 h-5 mr-2"> Français
-                </a>
-              </li>
+          <div class="hidden md:flex items-center space-x-8 ml-auto">
+            <!-- Nav Links -->
+            <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
+              <li><a class="hover:text-accent" href="#">Home</a></li>
+              <li><a class="hover:text-accent" href="#">Catagory</a></li>
+              <li><a class="hover:text-accent" href="#">Team</a></li>
+              <li><a class="hover:text-accent" href="#">Collections</a></li>
+              <li><a class="hover:text-accent" href="#">Contact Us</a></li>
             </ul>
+            <!-- Language Dropdown -->
+            <div class="relative hidden xl:flex items-center space-x-5">
+                <button id="langDropdownBtn" class="flex items-center hover:text-gray-200 focus:outline-none">
+                  <img src="svg/en.svg" alt="English Flag" class="w-6 h-6">
+                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+              </button>
+
+              <!-- Dropdown menu -->
+              <div id="langDropdown" class="absolute right-0 mt-40 w-32 bg-white rounded-md shadow-lg z-50 hidden">
+
+                <ul class="py-1 text-gray-700">
+                  <li>
+                    <a href="#" data-lang="en" class="flex items-center px-4 py-2 hover:bg-gray-100 hover:text-accent">
+                      <img src="svg/en.svg" alt="English" class="w-5 h-5 mr-2"> English
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" data-lang="es" class="flex items-center px-4 py-2 hover:bg-gray-100 hover:text-accent">
+                      <img src="svg/es.svg" alt="Español" class="w-5 h-5 mr-2"> Español
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" data-lang="fr" class="flex items-center px-4 py-2 hover:bg-gray-100 hover:text-accent">
+                      <img src="svg/fr.svg" alt="Français" class="w-5 h-5 mr-2"> Français
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
+          
         </div>
-      </div>
         <!-- Mobile Language Dropdown -->
       <div class="relative flex xl:hidden mr-6 items-center">
         <button id="langDropdownBtnMobile" class="flex items-center hover:text-gray-200 focus:outline-none">
           <img src="svg/en.svg" alt="English Flag" class="w-6 h-6">
-          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-9 h-9 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
@@ -75,12 +80,23 @@
         </div>
       </div>
         
-      <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-      </a>
+      <!-- Hamburger button -->
+      <button id="hamburger-btn" class="navbar-burger self-center mr-12 xl:hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
     </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="bg-primary hidden md:hidden px-4 pb-4 space-y-2 font-semibold text-white">
+      <a href="#" class="block py-2 hover:text-accent">Home</a>
+      <a href="#" class="block py-2 hover:text-accent">Category</a>
+      <a href="#" class="block py-2 hover:text-accent">Team</a>
+      <a href="#" class="block py-2 hover:text-accent">Collections</a>
+      <a href="#" class="block py-2 hover:text-accent">Contact</a>
+    </div>
 
 </section>
 
@@ -132,4 +148,19 @@
   setupLangDropdown("langDropdownBtn", "langDropdown");
   setupLangDropdown("langDropdownBtnMobile", "langDropdownMobile");
 });
+
+const btn = document.getElementById("hamburger-btn") as HTMLButtonElement;
+  const menu = document.getElementById("mobile-menu") as HTMLDivElement;
+  const icon = document.getElementById("hamburger-icon") as unknown as SVGPathElement;
+
+  btn?.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    const isOpen = !menu.classList.contains("hidden");
+
+    // Animate icon if you want, this is optional
+    icon.setAttribute(
+      "d",
+      isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
+    );
+  });
 </script>
