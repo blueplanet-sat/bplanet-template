@@ -1,15 +1,16 @@
 ---
-import { initCarousel } from '../lib/initCarousel';
-
 const images = [
-  '/images/hero-image.webp',
-  'https://randomuser.me/api/portraits/men/5.jpg',
+  '/images/antananarivo-madagascar.webp',
+  '/images/istambul-turkiye.webp',
+  '/images/new-york.webp',
+  '/images/san-francisco-usa.webp',
 ];
+const { t } = Astro.props;
 ---
-<div class="bg-blue-950 w-full flex items-center justify-center py-10">
-  <div class="relative w-full max-w-4xl h-96 overflow-hidden">
+<div class="bg-gray-900 w-full flex items-center justify-center py-10">
+  <div class="relative w-full max-w-4xl h-[32rem] overflow-hidden">
     <div id="carousel" class="relative w-full h-full flex transition-transform duration-700 ease-in-out">
-      {images.map((src, index) => (
+      {images.map((src:string, index:number) => (
         <div class="w-full flex-shrink-0 relative transition-all duration-500">
           <img
             src={src}
@@ -30,9 +31,58 @@ const images = [
 </div>
 
 <script is:inline type="module">
-  import { initCarousel } from '../lib/initCarousel';
-  window.addEventListener('DOMContentLoaded', () => {
-    initCarousel();
+  let currentIndex = 0;
+  const carousel = document.getElementById('carousel');
+  const next = document.getElementById('next');
+  const prev = document.getElementById('prev');
+  const totalSlides = document.querySelectorAll('#carousel > div').length;
+
+
+  if (!carousel || !next || !prev) {
+    console.warn("No se encontraron los elementos necesarios");
+  } else {
+    function updateCarousel() {
+      carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    next.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateCarousel();
+    });
+
+    prev.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateCarousel();
+    });
+  }
+  const total = slides.length;
+  function update() {
+    // set custom property for transform
+    carousel.style.setProperty('--current', current);
+    slides.forEach((slide, i) => {
+      if (i === current) {
+        slide.classList.add('opacity-100', 'scale-100');
+        slide.classList.remove('opacity-50', 'scale-90');
+      } else {
+        slide.classList.add('opacity-50', 'scale-90');
+        slide.classList.remove('opacity-100', 'scale-100');
+      }
+    });
+  }
+
+  prev.addEventListener('click', () => {
+    current = current > 0 ? current - 1 : total - 1;
+    update();
   });
+  next.addEventListener('click', () => {
+    current = current < total - 1 ? current + 1 : 0;
+    update();
+  });
+
+  // initialize
+  update();
+
 </script>
+
+
 
