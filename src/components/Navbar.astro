@@ -1,3 +1,9 @@
+---
+
+const { t } = Astro.props;
+const menu = t.navbar;
+---
+
 <section class="relative mx-auto">
     <!-- navbar -->
     <nav class="flex justify-between mx-auto bg-gray-900 text-white w-screen">
@@ -10,11 +16,11 @@
           <div class="hidden md:flex items-center space-x-8 ml-auto">
             <!-- Nav Links -->
             <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
-              <li><a class="hover:text-accent" href="#">Home</a></li>
-              <li><a class="hover:text-accent" href="#">Catagory</a></li>
-              <li><a class="hover:text-accent" href="#">Team</a></li>
-              <li><a class="hover:text-accent" href="#">Collections</a></li>
-              <li><a class="hover:text-accent" href="#">Contact Us</a></li>
+              {menu.map((item : any) => (
+                <li><a class="hover:text-accent" href={item.path} class="block py-2 hover:text-accent">
+                  {item.name}
+                </a></li>
+              ))}
             </ul>
             <!-- Language Dropdown -->
             <div class="relative hidden xl:flex items-center space-x-5">
@@ -91,13 +97,12 @@
 
     <!-- Mobile menu -->
     <div id="mobile-menu" class="bg-primary hidden md:hidden px-4 pb-4 space-y-2 font-semibold text-white">
-      <a href="#" class="block py-2 hover:text-accent">Home</a>
-      <a href="#" class="block py-2 hover:text-accent">Category</a>
-      <a href="#" class="block py-2 hover:text-accent">Team</a>
-      <a href="#" class="block py-2 hover:text-accent">Collections</a>
-      <a href="#" class="block py-2 hover:text-accent">Contact</a>
+      {menu.map((item : any) => (
+        <a href={item.path} class="block py-2 hover:text-accent">
+          {item.name}
+        </a>
+      ))}
     </div>
-
 </section>
 
 <script>
@@ -106,6 +111,7 @@
     btnId: string,
     menuId: string
   ): void => {
+    setInitialLangFlag();
     const langBtn = document.getElementById(btnId) as HTMLButtonElement | null;
     const langMenu = document.getElementById(menuId) as HTMLDivElement | null;
 
@@ -137,7 +143,7 @@
           }
 
           localStorage.setItem("selectedLang", selectedLang);
-          console.log("Idioma seleccionado:", selectedLang);
+          window.location.href = `/${selectedLang}`;
           langMenu.classList.add("hidden");
         }
       });
@@ -163,4 +169,24 @@ const btn = document.getElementById("hamburger-btn") as HTMLButtonElement;
       isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
     );
   });
+
+  //Cambiar bandera cuando redirecciona, segun el lenguage seleccionado
+ const setInitialLangFlag = (): void => {
+  const pathLang = window.location.pathname.split('/')[1]; // "/fr" → "fr"
+  const imgLangMap: Record<string, string> = {
+    en: 'svg/en.svg',
+    es: 'svg/es.svg',
+    fr: 'svg/fr.svg',
+  };
+
+  const langBtns = document.querySelectorAll<HTMLButtonElement>('#langDropdownBtn, #langDropdownBtnMobile');
+
+  langBtns.forEach((btn) => {
+    const img = btn.querySelector('img');
+    if (img && imgLangMap[pathLang]) {
+      img.setAttribute('src', imgLangMap[pathLang]);
+    }
+  });
+};
+
 </script>

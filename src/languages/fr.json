@@ -4,19 +4,23 @@
     "title": "Blue Planet Sat",
     "navbar": [{
             "name": "Accueil",
-            "path": "/fr/"
+            "path": "/fr#home"
         },
         {
-            "name": "Notre produit",
-            "path": "/fr/product/"
+            "name": "Produit",
+            "path": "/fr#product"
         },
         {
-            "name": "À propos de nous",
-            "path": "/fr/aboutus/"
+            "name": "À propos",
+            "path": "/fr#about"
+        },
+        {
+            "name": "Équipe",
+            "path": "/fr#team"
         },
         {
             "name": "Contact",
-            "path": "/fr/contact/"
+            "path": "/fr#contact"
         }
     ],
     "hero": {

@@ -21,10 +21,18 @@ const t = getTranslations(lang);
 ---
 
 <BaseLayout lang={lang || 'en'}  title={t.title}>
- <Navbar t={t}/>
-	<Hero t={t}/>
+  <Navbar t={t}/>
+  <div id="home">
+    <Hero t={t}/>
+  </div>
+	
   <Carousel />
-  <Team />
-	<AboutUs t={t}/>
+  <div id="team">
+    <Team />
+  </div>
+  
+  <div id="about">
+    <AboutUs t={t}/>
+  </div>
 	<Footer t={t}/>
 </BaseLayout>
