@@ -1,12 +1,11 @@
 ---
-
 const { t } = Astro.props;
 const menu = t.navbar;
 ---
 
 <section class="relative mx-auto">
     <!-- navbar -->
-    <nav class="flex justify-between mx-auto bg-gray-900 text-white w-screen">
+    <nav class="fixed top-0 left-0 right-0 z-50 flex justify-between mx-auto bg-gray-900 text-white w-screen">
         <div class="px-5 xl:px-12 py-5 flex w-full items-center">
           <a class="text-3xl font-bold font-heading" href="#">
             <!-- <img class="h-9" src="logo.png" alt="logo"> -->
@@ -96,9 +95,9 @@ const menu = t.navbar;
     </nav>
 
     <!-- Mobile menu -->
-    <div id="mobile-menu" class="bg-primary hidden md:hidden px-4 pb-4 space-y-2 font-semibold text-white">
+    <div id="mobile-menu" class="bg-primary fixed top-20 left-0 right-0 z-40 max-h-[calc(100vh-5rem)] overflow-y-auto py-2 px-4 font-semibold text-white space-y-2 md:hidden">
       {menu.map((item : any) => (
-        <a href={item.path} class="block py-2 hover:text-accent">
+        <a href={item.path} class="block py-2 text-right mr-3 hover:text-accent">
           {item.name}
         </a>
       ))}
@@ -145,15 +144,15 @@ const menu = t.navbar;
           localStorage.setItem("selectedLang", selectedLang);
           window.location.href = `/${selectedLang}`;
           langMenu.classList.add("hidden");
-        }
+          }
+        });
       });
-    });
-  };
+    };
 
-  // Aplica lógica a escritorio y mobile
-  setupLangDropdown("langDropdownBtn", "langDropdown");
-  setupLangDropdown("langDropdownBtnMobile", "langDropdownMobile");
-});
+    // Aplica lógica a escritorio y mobile
+    setupLangDropdown("langDropdownBtn", "langDropdown");
+    setupLangDropdown("langDropdownBtnMobile", "langDropdownMobile");
+  });
 
 const btn = document.getElementById("hamburger-btn") as HTMLButtonElement;
   const menu = document.getElementById("mobile-menu") as HTMLDivElement;
@@ -163,12 +162,20 @@ const btn = document.getElementById("hamburger-btn") as HTMLButtonElement;
     menu.classList.toggle("hidden");
     const isOpen = !menu.classList.contains("hidden");
 
-    // Animate icon if you want, this is optional
     icon.setAttribute(
       "d",
       isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
     );
   });
+
+  const menuLinks = menu.querySelectorAll("a");
+menuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    menu.classList.add("hidden");
+
+    icon.setAttribute("d", "M4 6h16M4 12h16M4 18h16");
+  });
+});
 
   //Cambiar bandera cuando redirecciona, segun el lenguage seleccionado
  const setInitialLangFlag = (): void => {

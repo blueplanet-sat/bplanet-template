@@ -20,6 +20,8 @@ const { lang } = Astro.params;
 const t = getTranslations(lang);
 ---
 
+<!-- Todo incorporar fonts en el proyecto -->
+<!-- Todo revisar que todas las img sean webp -->
 <BaseLayout lang={lang || 'en'}  title={t.title}>
   <Navbar t={t}/>
   <div id="home">
