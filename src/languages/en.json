@@ -77,5 +77,55 @@
             "description": "Previous Director of Estec Center and creator of SPOT.",
             "image": "courtois.jpg"
         }
-    ]
+    ],
+    "product": {
+        "title": "Our products",
+        "features": [{
+                "title": "Superior Image Production",
+                "description1": "0.85 meters true ground resolution",
+                "description2": "Ortho-rectified, Nadir viewing for geometric accuracy",
+                "description3": "4 spectral channels: RGB + Near Infrared",
+                "description4": "SNR > 90 with 70% MTF – Exceptional clarity",
+                "description5": "Acquisition time ~09:30 AM – consistent lighting"
+            },
+            {
+                "title": "Massive, Fast & Affordable Data",
+                "description1": "Direct-to-cloud delivery – no ground delay",
+                "description2": "Ready-to-use imagery – no scheduling",
+                "description3": "Global refresh: every ~84h (avg. 42h)",
+                "description4": "Simplified access – no expertise needed",
+                "description5": "Lowest cost/km² – unparalleled efficiency"
+            },
+            {
+                "title": "v-GLOBE: Global Coverage Reimagined",
+                "description1": "Virtual replica of Earth, refreshed weekly",
+                "description2": "No need for custom tasking or requests",
+                "description3": "High-res access to any location – even oceans",
+                "description4": "Powered by proprietary space + ground tech",
+                "description5": "Earth observation made radically simple"
+            }
+        ],
+        "section1": {
+            "title": "Global Coverage Reinvented",
+            "description": "v-GLOBE delivers a high-resolution, weekly-refreshed digital replica of Earth – instantly available without satellite scheduling or programming.",
+            "subtitle1": "Weekly Earth Replica",
+            "description1": "A complete, refreshed image of the entire planet, including oceans.",
+            "subtitle2": "Instant Access",
+            "description2": "No requests, no delays – imagery is available anytime, directly from the cloud.",
+            "subtitle3": "Sub-Meter Resolution",
+            "description3": "High detail, 4 spectral channels, and real-time usability."
+        },
+        "section2": {
+            "title": "v-GLOBE: Planet-Scale Imaging, Simplified",
+            "description": "Why wait for satellite tasking? v-GLOBE flips the script: the entire planet is scanned continuously by 12 low-cost satellites, processed onboard, and streamed directly to the Cloud.",
+            "subtitle1": "Planet-wide imagery:",
+            "description1": "Weekly refresh of the full Earth, oceans included.",
+            "subtitle2": "Cloud-native:",
+            "description2": "Images processed in space, streamed directly to internet-ready format.",
+            "subtitle3": "Ultra-efficient:",
+            "description3": "Cost per km² drops by a factor of 3–4 thanks to full automation.",
+            "subtitle4": "Cloud-to-Cloud paradigm:",
+            "description4": "Infrastructure ready for seamless machine-to-machine services."
+        }
+    }
 }
