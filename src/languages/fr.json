@@ -17,10 +17,6 @@
         {
             "name": "Équipe",
             "path": "/fr#team"
-        },
-        {
-            "name": "Contact",
-            "path": "/fr#contact"
         }
     ],
     "hero": {
@@ -147,6 +143,21 @@
             "subtitle4": "Paradigme Cloud-to-Cloud :",
             "description4": "Infrastructure prête pour les services automatisés entre machines."
         }
+    },
+    "footer": {
+        "description": "Blue Planet commercialise des images couleur de la Terre, submétriques, à haute valeur ajoutée et quasi-défense, à tout moment, en tout lieu, et à des prix compétitifs.",
+        "contact": {
+            "email": "info@blueplanet.com",
+            "phone": "+33 (0) 684 204 977",
+            "address": "Blue Planet -3 avenue Didier Daurat 31400 Toulouse - France"
+        },
+        "title1": "Contact",
+        "title2": "Navigation",
+        "title3": "Suivez-nous",
+        "social": {
+            "instagram": "https://www.instagram.com/",
+            "linkedin": "https://www.linkedin.com/"
+        },
+        "note": "Tous droits réservés."
     }
-
 }

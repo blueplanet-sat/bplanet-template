@@ -3,23 +3,18 @@
     "languageName": "Español",
     "title": "Blue Planet Sat",
     "navbar": [{
-            "name": "Inicio",
-            "path": "/es#home"
-        }, {
-            "name": "Producto",
-            "path": "/es#product"
-        }, {
-            "name": "Sobre nosotros",
-            "path": "/es#about"
-        }, {
-            "name": "Equipo",
-            "path": "/es#team"
-        },
-        {
-            "name": "Contacto",
-            "path": "/es#contact"
-        }
-    ],
+        "name": "Inicio",
+        "path": "/es#home"
+    }, {
+        "name": "Producto",
+        "path": "/es#product"
+    }, {
+        "name": "Sobre nosotros",
+        "path": "/es#about"
+    }, {
+        "name": "Equipo",
+        "path": "/es#team"
+    }],
     "hero": {
         "title": "Revolucionando la experiencia de distribución de imágenes de la Tierra",
         "subtitle": "Descubre nuestro producto y aprende más sobre nosotros",
@@ -145,6 +140,21 @@
             "subtitle4": "Paradigma Cloud-to-Cloud:",
             "description4": "Infraestructura preparada para servicios automáticos entre sistemas."
         }
+    },
+    "footer": {
+        "description": "Blue Planet comercializa imágenes en color submétricas de alta resolución y valor estratégico de nuestro planeta, en cualquier momento, lugar y a precios accesibles.",
+        "contact": {
+            "email": "info@blueplanet.com",
+            "phone": "+33 (0) 684 204 977",
+            "address": "Blue Planet -3 avenida Didier Daurat 31400 Toulouse - Francia"
+        },
+        "title1": "Contacto",
+        "title2": "Navegación",
+        "title3": "Síguenos",
+        "social": {
+            "instagram": "https://www.instagram.com/",
+            "linkedin": "https://www.linkedin.com/"
+        },
+        "note": "Todos los derechos reservados."
     }
-
 }
