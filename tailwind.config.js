@@ -14,7 +14,21 @@ module.exports = {
             },
             fontFamily: {
                 sans: ['"Readex Pro"', 'Inter', 'sans-serif'],
-            }
+            },
+            keyframes: {
+               slideInFromLeft: {
+                '0%':   { opacity: '0', transform: 'translateX(-100px)' },
+                '100%': { opacity: '1', transform: 'translateX(0)' },
+                },
+                slideInFromRight: {
+                '0%':   { opacity: '0', transform: 'translateX(100px)' },
+                '100%': { opacity: '1', transform: 'translateX(0)' },
+                },
+            },
+            animation: {
+                'slide-in-left':  'slideInFromLeft 0.7s ease-out forwards',
+                'slide-in-right': 'slideInFromRight 0.7s ease-out forwards',
+            },
         },
     },
     plugins: [],

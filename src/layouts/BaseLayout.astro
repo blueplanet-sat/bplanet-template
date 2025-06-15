@@ -6,7 +6,6 @@ interface Props {
   lang?: string;
   title: string;
 }
-
 const { lang = 'en', title } = Astro.props;
 const t = getTranslations(lang);
 ---
@@ -25,5 +24,6 @@ const t = getTranslations(lang);
 	</head>
 	<body>
 		<slot />
+		
 	</body>
 </html>

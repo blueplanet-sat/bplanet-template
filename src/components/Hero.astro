@@ -12,12 +12,20 @@ const { t } = Astro.props;
   </div> -->
   <div class="mx-auto max-w-7xl px-6 lg:px-8 -translate-y-16 sm:translate-y-0 transition-all duration-300">
     <div class="mx-auto max-w-2xl lg:mx-0">
-      <h1 class="text-5xl font-sans font-semibold tracking-tight text-white sm:text-6xl">{t.hero.title}</h1>
-      <p class="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">{t.hero.subtitle}</p>
+      <h1 class="animate-slide-in-left text-5xl font-sans font-semibold tracking-tight text-white sm:text-6xl">{t.hero.title}</h1>
+      <p class="animate-slide-in-right mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">{t.hero.subtitle}</p>
     </div>
-    <a href="#product"><button class="mt-8 text-white uppercase py-4 px-8 md:px-10 text-sm md:text-base font-medium border border-white transition-all duration-300 bg-white/10 hover:bg-white hover:text-black">
+    <a href="#product"><button class="animate-slide-in-left mt-8 text-white uppercase py-4 px-8 md:px-10 text-sm md:text-base font-medium border border-white transition-all duration-300 bg-white/10 hover:bg-white hover:text-black">
       {t.hero.buttonText}
       <span class="ml-2" aria-hidden="true">&rarr;</span>
     </button></a>
   </div>
 </div>
+<script type="module">
+  window.addEventListener('DOMContentLoaded', () => {
+    document
+      .querySelectorAll('.fade-on-load')
+      .forEach(el => el.classList.replace('opacity-0', 'opacity-100'));
+  });
+</script>
+
