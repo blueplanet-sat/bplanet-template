@@ -47,7 +47,28 @@
                 "title": "San Francisco, EE.UU.",
                 "alt": "Imagen de San Francisco, EE.UU.",
                 "path": "/images/san-francisco-usa.webp"
-            }]
+            },
+            {
+                "title": "Desierto de Sahara",
+                "alt": "Imagen de Desierto de Sahara",
+                "path": "/images/sahara-desert.webp"
+            },
+            {
+                "title": "Aukland, Nueva Zelanda",
+                "alt": "Imagen de Aukland, Nueva Zelanda",
+                "path": "/images/aukland-new-zealand.webp"
+            },
+            {
+                "title": "Golfo de México",
+                "alt": "Imagen del Golfo de México",
+                "path": "/images/gulf-mex.webp"
+            },
+            {
+                "title": "Montaña Elgon, Kenia",
+                "alt": "Imagen de la Montaña Elgon, Kenia",
+                "path": "/images/Mountain-elgon-kenya.webp"
+            }
+        ]
     }
     ,
     "team": [{

@@ -1,6 +1,7 @@
 ---
 const { t } = Astro.props;
 const product = t.product;
+
 ---
 <div>
   <section class="text-gray-200 bg-gray-900">
@@ -134,7 +135,9 @@ const product = t.product;
       </div>
       </div>
       
+      
     <section class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8 items-center">
+     
       <div class="space-y-6">
         <h2 class="text-3xl md:text-4xl font-bold text-white">
           {product.section1.title}
@@ -144,7 +147,6 @@ const product = t.product;
         </p>
 
         <div class="space-y-4">
-          <!-- Item -->
           <div class="flex items-start gap-4">
             <img src="/svg/planet.svg" alt="Planet" class="w-8 h-8 mt-1" />
             <div>
@@ -153,7 +155,6 @@ const product = t.product;
             </div>
           </div>
 
-          <!-- Item -->
           <div class="flex items-start gap-4">
             <img src="/svg/planet.svg" alt="Planet" class="w-8 h-8 mt-1" />
             <div>
@@ -162,7 +163,6 @@ const product = t.product;
             </div>
           </div>
 
-          <!-- Item -->
           <div class="flex items-start gap-4">
             <img src="/svg/planet.svg" alt="Planet" class="w-8 h-8 mt-1" />
             <div>
@@ -173,11 +173,12 @@ const product = t.product;
         </div>
       </div>
 
-      <!-- Imagen -->
+      
       <div>
         <img src="/images/image1.webp" alt="Earth from satellite" class="rounded-xl shadow-lg object-cover w-full h-full max-h-[500px] transition-transform duration-1000 hover:scale-105" />
       </div>
     </section>
+
 
     <section class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center">
       <!-- Imagen -->
@@ -213,6 +214,7 @@ const product = t.product;
         </ul>
       </div>
     </section>
+      </div>
 
   </section>
 </div>
