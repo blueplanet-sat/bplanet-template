@@ -25,10 +25,9 @@
         "subtitle": "Descubre nuestro producto y aprende más sobre nosotros",
         "buttonText": "Ver más"
     },
-    "carousel": [
-        {
-            "titleSeccion": "Imágenes de la Tierra",
-            "subtitleSeccion": "Imágenes de satélites de alta resolución",
+    "carousel": {
+            "title": "Galería de Imagenes",
+            "subtitle": "Imágenes de satélites de alta resolución",
             "images":[{
                 "title": "Antananarivo, Madagascar",
                 "alt": "Imagen de Antananarivo, Madagascar",
@@ -49,8 +48,8 @@
                 "alt": "Imagen de San Francisco, EE.UU.",
                 "path": "/images/san-francisco-usa.webp"
             }]
-        }
-    ],
+    }
+    ,
     "team": [{
             "name": "Jean-Pierre Antikidis",
             "position": "Presidente",

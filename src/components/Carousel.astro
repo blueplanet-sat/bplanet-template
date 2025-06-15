@@ -1,24 +1,43 @@
 ---
-const images = [
-  '/images/antananarivo-madagascar.webp',
-  '/images/istambul-turkiye.webp',
-  '/images/new-york.webp',
-  '/images/san-francisco-usa.webp',
-];
+interface ImageItem {
+  path: string;
+  alt: string;
+  title: string;
+}
+
 const { t } = Astro.props;
+
+let images: ImageItem[] = [];
+
+t.carousel.images.forEach((element: any) => {
+    images.push({
+        path: element.path,
+        alt: element.alt,
+        title: element.title,
+    });
+});        
 ---
 <div class="bg-gray-900 w-full flex items-center justify-center py-10">
-  <div class="relative w-full max-w-4xl h-[32rem] overflow-hidden">
-    <div id="carousel" class="relative w-full h-full flex transition-transform duration-700 ease-in-out">
-      {images.map((src:string, index:number) => (
-        <div class="w-full flex-shrink-0 relative transition-all duration-500">
-          <img
-            src={src}
-            alt={`Slide ${index + 1}`}
-            class="w-full h-full object-cover rounded-2xl border border-blue-900"
-          />
-        </div>
-      ))}
+    <div class="relative w-full max-w-4xl h-[40rem] overflow-hidden">
+    <h1 class="text-5xl font-sans font-semibold tracking-tight text-white sm:text-6xl">{t.carousel.title}</h1>
+    <br>
+    <p class="text-gray-300 mb-4">{t.carousel.subtitle}</p>
+    <div id="carousel" class="relative w-full aspect-[16/9] flex transition-transform duration-700 ease-in-out">      
+        {images.map((image, index) => (
+            <div 
+            class="w-full flex-shrink-0 relative transition-all duration-500"
+            >
+            <img
+                src={image.path}
+                alt={image.alt}
+                class="w-full h-full object-cover rounded-2xl border border-blue-900"
+            />
+            <h3 class="absolute bottom-4 left-4 text-white  bg-black/50  px-3 py-1 rounded-md backdrop-blur-sm">
+                {image.title}
+            </h3>
+            </div>
+        ))}
+       
     </div>
 
     <button id="prev" class="absolute top-1/2 left-4 -translate-y-1/2 bg-blue-800 hover:bg-blue-700 text-white p-2 rounded-full shadow z-20">

@@ -28,6 +28,31 @@
         "subtitle": "Découvrez notre produit et apprenez-en plus sur nous",
         "buttonText": "Commencer"
     },
+    "carousel": {
+        "title": "Galerie d'Images",
+        "subtitle": "Images satellites haute résolution",
+        "images": [{
+                "title": "Antananarivo, Madagascar",
+                "alt": "Image d'Antananarivo, Madagascar",
+                "path": "/images/antananarivo-madagascar.webp"
+            },
+            {
+                "title": "Istanbul, Turquie",
+                "alt": "Image d'Istanbul, Turquie",
+                "path": "/images/istambul-turkiye.webp"
+            },
+            {
+                "title": "New York, États-Unis",
+                "alt": "Image de New York, États-Unis",
+                "path": "/images/new-york.webp"
+            },
+            {
+                "title": "San Francisco, États-Unis",
+                "alt": "Image de San Francisco, États-Unis",
+                "path": "/images/san-francisco-usa.webp"
+            }
+        ]
+    },
     "team": [{
             "name": "Jean-Pierre Antikidis",
             "position": "Président",
