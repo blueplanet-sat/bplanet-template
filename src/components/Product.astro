@@ -1,265 +1,219 @@
 ---
-// FeaturesSection.astro
-const features = [
-  {
-    title: "Agricultura de Precisión",
-    description:
-      "Detectá patrones de humedad, temperatura y vegetación en tiempo real para optimizar cultivos y rendimientos.",
-    image: "https://images.unsplash.com/photo-1618461574370-0b70b12f4ee5?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    title: "Detección de Deforestación",
-    description:
-      "Monitoreá cambios en el uso del suelo y actividades ilegales en zonas protegidas con datos satelitales.",
-    image: "https://images.unsplash.com/photo-1543716349-b0a92b770dad?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    title: "Monitoreo Urbano",
-    description:
-      "Controlá el crecimiento urbano, la planificación territorial y el impacto ambiental de las ciudades.",
-    image: "https://images.unsplash.com/photo-1650222360656-8a3061cb004f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    title: "Inspección de Infraestructura",
-    description:
-      "Supervisá rutas, oleoductos, tendidos eléctricos o construcciones en lugares remotos o de difícil acceso.",
-    image: "https://plus.unsplash.com/premium_photo-1673346583682-aeb6ee6bdddb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-];
+const { t } = Astro.props;
+const product = t.product;
 ---
-
 <div>
-    <section class="text-gray-200 bg-gray-900">
-        <div class="max-w-6xl mx-auto px-5 py-24 ">
-          <div class="text-center mb-20">
-            <h1 class=" title-font  mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl">Our products</h1>
-            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">L'informatique est vaste et les langages naissent presque à tout moment, je fais tout mon possible pour être à la hauteur afin de répondre au besoin de mes clients et d'apporter de l'aide aux nouveaux développeurs.</p>
-            <div class="flex mt-6 justify-center">
-              <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+  <section class="text-gray-200 bg-gray-900">
+      <div class="max-w-6xl mx-auto px-5 py-24 ">
+        <div class="text-center mb-10">
+          <h1 class=" title-font  mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl">{product.title}</h1>
+          <div class="flex mt-6 justify-center">
+            <div class="w-16 h-1 rounded-full bg-accent inline-flex"></div>
+          </div>
+        </div>
+        
+      <div class="grid gap-6 md:grid-cols-3 text-white p-6 rounded-xl shadow-xl">
+      <!-- CARD 1: High-Resolution Satellite Imagery -->
+      <div class="bg-gradient-to-b from-gray-900 to-gray-800 p-6 rounded-lg shadow-md">
+          <div class="flex items-center justify-center mb-4">
+              <img src="svg/image.svg" class="w-12 h-12" alt="Icon svg">
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-center">{product.features[0].title}</h3>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-green-300 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 13l4 4L19 7" />
+                </svg>
+                {product.features[0].description1}
+            </li>
+            <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-green-300 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 13l4 4L19 7" />
+                </svg>
+                {product.features[0].description2}
+            </li>
+            <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-green-300 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 13l4 4L19 7" />
+                </svg>
+                {product.features[0].description3}
+            </li>
+            <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-green-300 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 13l4 4L19 7" />
+                </svg>
+                {product.features[0].description4}
+            </li>
+            <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-green-300 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 13l4 4L19 7" />
+                </svg>
+                {product.features[0].description5}
+            </li>
+          </ul>
+      </div>
+
+      <!-- CARD 2: Massive, Fast & Affordable Data -->
+      <div class="bg-gradient-to-b from-gray-900 to-gray-800 p-6 rounded-lg shadow-md">
+          <div class="flex items-center justify-center mb-4">
+          <img src="svg/earth.svg" class="w-12 h-12" alt="Icon svg">
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-center">{product.features[1].title}</h3>
+          <ul class="space-y-3 text-sm">
+          <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-blue-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7" />
+              </svg>
+              {product.features[1].description1}
+          </li>
+          <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-blue-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7" />
+              </svg>
+              {product.features[1].description2}
+          </li>
+          <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-blue-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7" />
+              </svg>
+              {product.features[1].description3}
+          </li>
+          <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-blue-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7" />
+              </svg>
+              {product.features[1].description4}
+          </li>
+          <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-blue-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7" />
+              </svg>
+              {product.features[1].description5}
+          </li>
+          </ul>
+      </div>
+
+      <!-- CARD 3: v-GLOBE: Global Coverage Reimagined -->
+      <div class="bg-gradient-to-b from-gray-900 to-gray-800 p-6 rounded-lg shadow-md">
+          <div class="flex items-center justify-center mb-4">
+          <img src="svg/satellite.svg" class="w-12 h-12" alt="Icon svg">
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-center">{product.features[2].title}</h3>
+          <ul class="space-y-3 text-sm">
+          <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-yellow-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7" />
+              </svg>
+              {product.features[2].description1}
+          </li>
+          <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-yellow-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7" />
+              </svg>
+              {product.features[2].description2}
+          </li>
+          <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-yellow-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7" />
+              </svg>
+              {product.features[2].description3}
+          </li>
+          <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-yellow-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7" />
+              </svg>
+              {product.features[2].description4}
+          </li>
+          <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-yellow-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7" />
+              </svg>
+              {product.features[2].description5}
+          </li>
+          </ul>
+      </div>
+      </div>
+      
+    <section class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8 items-center">
+      <div class="space-y-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-white">
+          {product.section1.title}
+        </h2>
+        <p class="text-lg text-gray-300">
+          {product.section1.description}
+        </p>
+
+        <div class="space-y-4">
+          <!-- Item -->
+          <div class="flex items-start gap-4">
+            <img src="/svg/planet.svg" alt="Planet" class="w-8 h-8 mt-1" />
+            <div>
+              <h3 class="text-white font-semibold">{product.section1.subtitle1}</h3>
+              <p class="text-gray-400 text-sm">{product.section1.description1}</p>
             </div>
           </div>
-          
-        <div class="grid gap-6 md:grid-cols-3 text-white p-6 rounded-xl shadow-xl">
-        <!-- CARD 1: High-Resolution Satellite Imagery -->
-        <div class="bg-gradient-to-b from-gray-900 to-gray-800 p-6 rounded-lg shadow-md">
-            <div class="flex items-center justify-center mb-4">
-                <img src="svg/image.svg" class="w-12 h-12" alt="Icon svg">
-            <!-- <svg class="w-12 h-12 text-green-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-                <path d="M12 2a10 10 0 100 20 10 10 0 000-20zM8 12l2 2 4-4" />
-            </svg> -->
-            </div>
-            <h3 class="text-xl font-semibold mb-4 text-center">Superior Image Production</h3>
-            <ul class="space-y-3 text-sm">
-            <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-300 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M5 13l4 4L19 7" />
-                </svg>
-                0.85 meters true ground resolution
-            </li>
-            <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-300 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M5 13l4 4L19 7" />
-                </svg>
-                Ortho-rectified, Nadir viewing for geometric accuracy
-            </li>
-            <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-300 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M5 13l4 4L19 7" />
-                </svg>
-                4 spectral channels: RGB + Near Infrared
-            </li>
-            <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-300 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M5 13l4 4L19 7" />
-                </svg>
-                SNR > 90 with 70% MTF – Exceptional clarity
-            </li>
-            <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-300 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M5 13l4 4L19 7" />
-                </svg>
-                Acquisition time ~09:30 AM – consistent lighting
-            </li>
-            </ul>
-        </div>
 
-        <!-- CARD 2: Massive, Fast & Affordable Data -->
-        <div class="bg-gradient-to-b from-gray-900 to-gray-800 p-6 rounded-lg shadow-md">
-            <div class="flex items-center justify-center mb-4">
-            <img src="svg/earth.svg" class="w-12 h-12" alt="Icon svg">
+          <!-- Item -->
+          <div class="flex items-start gap-4">
+            <img src="/svg/planet.svg" alt="Planet" class="w-8 h-8 mt-1" />
+            <div>
+              <h3 class="text-white font-semibold">{product.section1.subtitle2}</h3>
+              <p class="text-gray-400 text-sm">{product.section1.description2}</p>
             </div>
-            <h3 class="text-xl font-semibold mb-4 text-center">Massive, Fast & Affordable Data</h3>
-            <ul class="space-y-3 text-sm">
-            <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-blue-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M5 13l4 4L19 7" />
-                </svg>
-                Direct-to-cloud delivery – no ground delay
-            </li>
-            <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-blue-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M5 13l4 4L19 7" />
-                </svg>
-                Ready-to-use imagery – no scheduling
-            </li>
-            <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-blue-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M5 13l4 4L19 7" />
-                </svg>
-                Global refresh: every ~84h (avg. 42h)
-            </li>
-            <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-blue-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M5 13l4 4L19 7" />
-                </svg>
-                Simplified access – no expertise needed
-            </li>
-            <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-blue-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M5 13l4 4L19 7" />
-                </svg>
-                Lowest cost/km² – unparalleled efficiency
-            </li>
-            </ul>
-        </div>
+          </div>
 
-        <!-- CARD 3: v-GLOBE: Global Coverage Reimagined -->
-        <div class="bg-gradient-to-b from-gray-900 to-gray-800 p-6 rounded-lg shadow-md">
-            <div class="flex items-center justify-center mb-4">
-            <img src="svg/satellite.svg" class="w-12 h-12" alt="Icon svg">
+          <!-- Item -->
+          <div class="flex items-start gap-4">
+            <img src="/svg/planet.svg" alt="Planet" class="w-8 h-8 mt-1" />
+            <div>
+              <h3 class="text-white font-semibold">{product.section1.subtitle3}</h3>
+              <p class="text-gray-400 text-sm">{product.section1.description3}</p>
             </div>
-            <h3 class="text-xl font-semibold mb-4 text-center">v-GLOBE: Global Coverage Reimagined</h3>
-            <ul class="space-y-3 text-sm">
-            <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-yellow-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M5 13l4 4L19 7" />
-                </svg>
-                Virtual replica of Earth, refreshed weekly
-            </li>
-            <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-yellow-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M5 13l4 4L19 7" />
-                </svg>
-                No need for custom tasking or requests
-            </li>
-            <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-yellow-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M5 13l4 4L19 7" />
-                </svg>
-                High-res access to any location – even oceans
-            </li>
-            <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-yellow-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M5 13l4 4L19 7" />
-                </svg>
-                Powered by proprietary space + ground tech
-            </li>
-            <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-yellow-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M5 13l4 4L19 7" />
-                </svg>
-                Earth observation made radically simple
-            </li>
-            </ul>
-        </div>
-        </div>
-<section class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8 items-center">
-  <!-- Texto -->
-  <div class="space-y-6">
-    <h2 class="text-3xl md:text-4xl font-bold text-white">
-      🌍 Global Coverage Reinvented
-    </h2>
-    <p class="text-lg text-gray-300">
-      v-GLOBE delivers a high-resolution, weekly-refreshed digital replica of Earth – instantly available without satellite scheduling or programming.
-    </p>
-
-    <div class="space-y-4">
-      <!-- Item -->
-      <div class="flex items-start gap-4">
-        <img src="/icons/planet.svg" alt="Planet" class="w-8 h-8 mt-1" />
-        <div>
-          <h3 class="text-white font-semibold">Weekly Earth Replica</h3>
-          <p class="text-gray-400 text-sm">A complete, refreshed image of the entire planet, including oceans.</p>
+          </div>
         </div>
       </div>
 
-      <!-- Item -->
-      <div class="flex items-start gap-4">
-        <img src="/icons/cloud-download.svg" alt="Cloud" class="w-8 h-8 mt-1" />
-        <div>
-          <h3 class="text-white font-semibold">Instant Access</h3>
-          <p class="text-gray-400 text-sm">No requests, no delays – imagery is available anytime, directly from the cloud.</p>
-        </div>
+      <!-- Imagen -->
+      <div>
+        <img src="/images/image1.webp" alt="Earth from satellite" class="rounded-xl shadow-lg object-cover w-full h-full max-h-[500px]" />
       </div>
-
-      <!-- Item -->
-      <div class="flex items-start gap-4">
-        <img src="/icons/satellite.svg" alt="Satellite" class="w-8 h-8 mt-1" />
-        <div>
-          <h3 class="text-white font-semibold">Sub-Meter Resolution</h3>
-          <p class="text-gray-400 text-sm">High detail, 4 spectral channels, and real-time usability.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Imagen -->
-  <div>
-    <img src="/images/image1.webp" alt="Earth from satellite" class="rounded-xl shadow-lg object-cover w-full h-full max-h-[500px]" />
-  </div>
-</section>
-
-<section class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center">
-  <!-- Imagen -->
-  <div>
-    <img src="/images/image1.webp" alt="v-GLOBE overview" class="rounded-xl shadow-xl object-cover w-full h-full max-h-[500px]" />
-  </div>
-
-  <!-- Texto -->
-  <div class="space-y-6">
-    <h2 class="text-3xl md:text-4xl font-bold text-white">
-      🌍 v-GLOBE: Planet-Scale Imaging, Simplified
-    </h2>
-    <p class="text-lg text-gray-300">
-      Why wait for satellite tasking? <strong>v-GLOBE</strong> flips the script: the entire planet is scanned continuously by 12 low-cost satellites, processed onboard, and streamed directly to the Cloud.
-    </p>
-    <ul class="space-y-4 text-gray-300">
-      <li class="flex gap-3 items-start">
-        <svg class="w-6 h-6 text-green-400 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 11c0-3.314 1.343-6 3-6s3 2.686 3 6-1.343 6-3 6-3-2.686-3-6z" /><path d="M12 2v20" /></svg>
-        <span><strong>Planet-wide imagery:</strong> Weekly refresh of the full Earth, oceans included.</span>
-      </li>
-      <li class="flex gap-3 items-start">
-        <svg class="w-6 h-6 text-blue-400 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" /></svg>
-        <span><strong>Cloud-native:</strong> Images processed in space, streamed directly to internet-ready format.</span>
-      </li>
-      <li class="flex gap-3 items-start">
-        <svg class="w-6 h-6 text-yellow-400 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
-        <span><strong>Ultra-efficient:</strong> Cost per km² drops by a factor of 3–4 thanks to full automation.</span>
-      </li>
-      <li class="flex gap-3 items-start">
-        <svg class="w-6 h-6 text-pink-400 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" /></svg>
-        <span><strong>Cloud-to-Cloud paradigm:</strong> Infrastructure ready for seamless machine-to-machine services.</span>
-      </li>
-    </ul>
-  </div>
-</section>
-
-        <!-- <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
-            <div class="rounded lg:col-span-2">
-                <h2>A new user experience with so easy access to imagery</h2>
-                <p>The project, code name v-GLOBE, (for Virtual GLOBE) is based on a never experienced  way to conceive Earth Observation. Instead of producing "images" requested by users on a case by case basis, the goal is bigger but simpler:
-
-                "Create the full virtual reproduction of the planet image"  at very high resolution stored as a BIG DATA weekly refreshed.
-                Instead of collecting bit and pieces of the Earth following individual users demand, better catch the whole planet , process it completely and make it accessible on a simplified fashion  at a cost second to none.Images as needed by users are accesible anytime without prior satellite programing, thus making access to data overwhelming simple and at very reduced prices .
-
-                Blue Planet intend to be the first operator able to provide both sub-meter resolution, 4 spectral channels and  the full Earth surface weekly refreshed (including oceans). Such a giant data set can be captured and efficiently accessible at lowest costs thanks to novel space & ground (patented) technologies.
-
-                Blue Planet v-Globe program will bring a new standards for metric imagery distribution with an unknown level of comfort for users.</p>
-            </div>
-            <div class="rounded">
-                <img src="images/image1.webp" alt="">
-            </div>
-        </div> -->
     </section>
+
+    <section class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center">
+      <!-- Imagen -->
+      <div class="order-2 md:order-1">
+        <img src="/images/image2.webp" alt="v-GLOBE overview" class="rounded-xl shadow-xl object-cover w-full h-full max-h-[500px]" />
+      </div>
+
+      <!-- Texto -->
+      <div class="space-y-6 order-1 md:order-2">
+        <h2 class="text-3xl md:text-4xl font-bold text-white">
+          {product.section2.title}
+        </h2>
+        <p class="text-lg text-gray-300">
+          {product.section2.description}
+        </p>
+        <ul class="space-y-4 text-gray-300">
+          <li class="flex gap-3 items-start">
+            <img src="svg/check.svg" class="w-5 h-5" alt="Icon svg">
+            <span><strong>{product.section2.subtitle1}</strong> {product.section2.description1}</span>
+          </li>
+          <li class="flex gap-3 items-start">
+            <img src="svg/check.svg" class="w-5 h-5" alt="Icon svg">
+            <span><strong>{product.section2.subtitle2}</strong> {product.section2.description2}</span>
+          </li>
+          <li class="flex gap-3 items-start">
+            <img src="svg/check.svg" class="w-5 h-5" alt="Icon svg">
+            <span><strong>{product.section2.subtitle3}</strong> {product.section2.description3}</span>
+          </li>
+          <li class="flex gap-3 items-start">
+            <img src="svg/check.svg" class="w-5 h-5" alt="Icon svg">
+            <span><strong>{product.section2.subtitle4}</strong> {product.section2.description4}</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </section>
 </div>
 
