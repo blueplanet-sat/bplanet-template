@@ -24,6 +24,51 @@
         "subtitle": "Découvrez notre produit et apprenez-en plus sur nous",
         "buttonText": "Commencer"
     },
+    "carousel": {
+        "title": "Galerie d'Images",
+        "subtitle": "Images satellites haute résolution",
+        "images": [{
+                "title": "Antananarivo, Madagascar",
+                "alt": "Image d'Antananarivo, Madagascar",
+                "path": "/images/antananarivo-madagascar.webp"
+            },
+            {
+                "title": "Istanbul, Turquie",
+                "alt": "Image d'Istanbul, Turquie",
+                "path": "/images/istambul-turkiye.webp"
+            },
+            {
+                "title": "New York, États-Unis",
+                "alt": "Image de New York, États-Unis",
+                "path": "/images/new-york.webp"
+            },
+            {
+                "title": "San Francisco, États-Unis",
+                "alt": "Image de San Francisco, États-Unis",
+                "path": "/images/san-francisco-usa.webp"
+            },
+            {
+                "title": "Désert du Sahara",
+                "alt": "Image du Désert du Sahara",
+                "path": "/images/sahara-desert.webp"
+            },
+            {
+                "title": "Auckland, Nouvelle-Zélande",
+                "alt": "Image d'Auckland, Nouvelle-Zélande",
+                "path": "/images/aukland-new-zealand.webp"
+            },
+            {
+                "title": "Golfe du Mexique",
+                "alt": "Image du Golfe du Mexique",
+                "path": "/images/gulf-mex.webp"
+            },
+            {
+                "title": "Montagne Elgon, Kenya",
+                "alt": "Image de la Montagne Elgon, Kenya",
+                "path": "/images/Mountain-elgon-kenya.webp"
+            }
+        ]
+    },
     "team": [{
             "name": "Jean-Pierre Antikidis",
             "position": "Président",

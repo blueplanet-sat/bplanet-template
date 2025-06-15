@@ -1,23 +1,43 @@
 ---
-import { initCarousel } from '../lib/initCarousel';
+interface ImageItem {
+  path: string;
+  alt: string;
+  title: string;
+}
 
-const images = [
-  '/images/hero-image.webp',
-  'https://randomuser.me/api/portraits/men/5.jpg',
-];
+const { t } = Astro.props;
+
+let images: ImageItem[] = [];
+
+t.carousel.images.forEach((element: any) => {
+    images.push({
+        path: element.path,
+        alt: element.alt,
+        title: element.title,
+    });
+});        
 ---
-<div class="bg-blue-950 w-full flex items-center justify-center py-10">
-  <div class="relative w-full max-w-4xl h-96 overflow-hidden">
-    <div id="carousel" class="relative w-full h-full flex transition-transform duration-700 ease-in-out">
-      {images.map((src, index) => (
-        <div class="w-full flex-shrink-0 relative transition-all duration-500">
-          <img
-            src={src}
-            alt={`Slide ${index + 1}`}
-            class="w-full h-full object-cover rounded-2xl border border-blue-900"
-          />
-        </div>
-      ))}
+<div class="bg-gray-900 w-full flex items-center justify-center py-10">
+    <div class="relative w-full max-w-4xl h-[40rem] overflow-hidden">
+    <h1 class="text-5xl font-sans font-semibold tracking-tight text-white sm:text-6xl">{t.carousel.title}</h1>
+    <br>
+    <p class="text-gray-300 mb-4">{t.carousel.subtitle}</p>
+    <div id="carousel" class="relative w-full aspect-[16/9] flex transition-transform duration-700 ease-in-out">      
+        {images.map((image, index) => (
+            <div 
+            class="w-full flex-shrink-0 relative transition-all duration-500"
+            >
+            <img
+                src={image.path}
+                alt={image.alt}
+                class="w-full h-full object-cover rounded-2xl border border-blue-900"
+            />
+            <h3 class="absolute bottom-4 left-4 text-white  bg-black/50  px-3 py-1 rounded-md backdrop-blur-sm">
+                {image.title}
+            </h3>
+            </div>
+        ))}
+       
     </div>
 
     <button id="prev" class="absolute top-1/2 left-4 -translate-y-1/2 bg-blue-800 hover:bg-blue-700 text-white p-2 rounded-full shadow z-20">
@@ -30,9 +50,58 @@ const images = [
 </div>
 
 <script is:inline type="module">
-  import { initCarousel } from '../lib/initCarousel';
-  window.addEventListener('DOMContentLoaded', () => {
-    initCarousel();
+  let currentIndex = 0;
+  const carousel = document.getElementById('carousel');
+  const next = document.getElementById('next');
+  const prev = document.getElementById('prev');
+  const totalSlides = document.querySelectorAll('#carousel > div').length;
+
+
+  if (!carousel || !next || !prev) {
+    console.warn("No se encontraron los elementos necesarios");
+  } else {
+    function updateCarousel() {
+      carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    next.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateCarousel();
+    });
+
+    prev.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateCarousel();
+    });
+  }
+  const total = slides.length;
+  function update() {
+    // set custom property for transform
+    carousel.style.setProperty('--current', current);
+    slides.forEach((slide, i) => {
+      if (i === current) {
+        slide.classList.add('opacity-100', 'scale-100');
+        slide.classList.remove('opacity-50', 'scale-90');
+      } else {
+        slide.classList.add('opacity-50', 'scale-90');
+        slide.classList.remove('opacity-100', 'scale-100');
+      }
+    });
+  }
+
+  prev.addEventListener('click', () => {
+    current = current > 0 ? current - 1 : total - 1;
+    update();
   });
+  next.addEventListener('click', () => {
+    current = current < total - 1 ? current + 1 : 0;
+    update();
+  });
+
+  // initialize
+  update();
+
 </script>
+
+
 

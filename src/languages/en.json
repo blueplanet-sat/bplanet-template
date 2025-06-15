@@ -24,6 +24,51 @@
         "subtitle": "Discover our product and learn more about us",
         "buttonText": "Start"
     },
+    "carousel": {
+        "title": "Image Gallery",
+        "subtitle": "High-resolution satellite images",
+        "images": [{
+                "title": "Antananarivo, Madagascar",
+                "alt": "Image of Antananarivo, Madagascar",
+                "path": "/images/antananarivo-madagascar.webp"
+            },
+            {
+                "title": "Istanbul, Turkey",
+                "alt": "Image of Istanbul, Turkey",
+                "path": "/images/istambul-turkiye.webp"
+            },
+            {
+                "title": "New York, USA",
+                "alt": "Image of New York, USA",
+                "path": "/images/new-york.webp"
+            },
+            {
+                "title": "San Francisco, USA",
+                "alt": "Image of San Francisco, USA",
+                "path": "/images/san-francisco-usa.webp"
+            },
+            {
+                "title": "Sahara Desert",
+                "alt": "Image of Sahara Desert",
+                "path": "/images/sahara-desert.webp"
+            },
+            {
+                "title": "Auckland, New Zealand",
+                "alt": "Image of Auckland, New Zealand",
+                "path": "/images/aukland-new-zealand.webp"
+            },
+            {
+                "title": "Gulf of Mexico",
+                "alt": "Image of Gulf of Mexico",
+                "path": "/images/gulf-mex.webp"
+            },
+            {
+                "title": "Mountain of Elgon, Kenya",
+                "alt": "Image of Mountain of Elgon, Kenya",
+                "path": "/images/Mountain-elgon-kenya.webp"
+            }
+        ]
+    },    
     "team": [{
             "name": "Jean-Pierre Antikidis",
             "position": "President",
