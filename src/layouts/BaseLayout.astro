@@ -1,6 +1,7 @@
 ---
 import { getTranslations } from '../lib/i18n';
 import '../styles/style.css';
+import 'aos/dist/aos.css';
 // import Analytics from '@vercel/analytics/astro'
 interface Props {
   lang?: string;
@@ -24,6 +25,6 @@ const t = getTranslations(lang);
 	</head>
 	<body>
 		<slot />
-		
+		<script type="module" src="/src/lib/initAos.ts"></script>
 	</body>
 </html>
