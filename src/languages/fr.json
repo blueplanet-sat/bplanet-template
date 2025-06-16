@@ -11,12 +11,12 @@
             "path": "/fr#product"
         },
         {
-            "name": "À propos",
-            "path": "/fr#about"
-        },
-        {
             "name": "Équipe",
             "path": "/fr#team"
+        },
+        {
+            "name": "À propos",
+            "path": "/fr#about"
         }
     ],
     "hero": {
@@ -69,7 +69,10 @@
             }
         ]
     },
-    "team": [{
+    "team": {
+        "title": "Notre Équipe",
+        "subtitle": "Rencontrez les experts derrière Blue Planet",
+        "members": [{
             "name": "Jean-Pierre Antikidis",
             "position": "Président",
             "description": "Ancien chef des systèmes d'information spatiale au CNES.",
@@ -93,7 +96,8 @@
             "description": "Ancien directeur du centre Estec et créateur du programme SPOT.",
             "image": "courtois.jpg"
         }
-    ],
+    ]
+    },
     "product": {
         "title": "Nos produits",
         "features": [{

@@ -2,7 +2,8 @@
     "language": "en",
     "languageName": "English",
     "title": "Blue Planet Sat",
-    "navbar": [{
+    "navbar": [
+        {
             "name": "Home",
             "path": "/en#home"
         },
@@ -11,12 +12,12 @@
             "path": "/en#product"
         },
         {
-            "name": "About Us",
-            "path": "/en#about"
-        },
-        {
             "name": "Team",
             "path": "/en#team"
+        },
+        {
+            "name": "About Us",
+            "path": "/en#about"
         }
     ],
     "hero": {
@@ -69,31 +70,36 @@
             }
         ]
     },    
-    "team": [{
+    "team": {
+        "title": "The core team",
+        "subtitle": "Concept inventors and founders",
+        "members":
+        [{
             "name": "Jean-Pierre Antikidis",
             "position": "President",
             "description": "Former Head of Space Information Systems at CNES.",
             "image": "antikidis.jpg"
-        },
-        {
-            "name": "Bernard Plano",
-            "position": "Former President",
-            "description": "Former president of Matra-System Information.",
-            "image": "plano.jpg"
-        },
-        {
-            "name": "Jean-Jacques Favier",
-            "position": "Astronaut & Head of Prospective",
-            "description": "Astronaut STS-78 and former head of prospective at CNES.",
-            "image": "favier.webp"
-        },
-        {
-            "name": "Michel Courtois",
-            "position": "Director",
-            "description": "Previous Director of Estec Center and creator of SPOT.",
-            "image": "courtois.jpg"
-        }
-    ],
+            },
+            {
+                "name": "Bernard Plano",
+                "position": "Former President",
+                "description": "Former president of Matra-System Information.",
+                "image": "plano.jpg"
+            },
+            {
+                "name": "Jean-Jacques Favier",
+                "position": "Astronaut & Head of Prospective",
+                "description": "Astronaut STS-78 and former head of prospective at CNES.",
+                "image": "favier.webp"
+            },
+            {
+                "name": "Michel Courtois",
+                "position": "Director",
+                "description": "Previous Director of Estec Center and creator of SPOT.",
+                "image": "courtois.jpg"
+            }
+        ]
+    },
     "product": {
         "title": "Our products",
         "features": [{
