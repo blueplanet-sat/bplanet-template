@@ -12,7 +12,7 @@ const t = getTranslations(lang);
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html lang={lang} class="overflow-y-scroll">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -23,7 +23,7 @@ const t = getTranslations(lang);
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="overflow-x-hidden">
 		<slot />
 		<script type="module" src="/src/lib/initAos.ts"></script>
 	</body>
