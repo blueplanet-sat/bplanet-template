@@ -148,6 +148,11 @@
             "description4": "Infrastructure prête pour les services automatisés entre machines."
         }
     },
+    "about": {
+        "name": "À propos",
+        "title": "La vision de Blue Planet découle de concepts développés par le CNES, l'INRIA et Orange Labs",
+        "subtitle": "L’entreprise a été fondée en 2009 par Jean-Pierre Antikidis, ancien chef de l’Information des Systèmes Spatiaux au CNES et expert international en gestion des données, et Jean Jacques Favier, ancien astronaute de la NASA (STS78) et Directeur de l’Innovation au CNES, actuellement professeur et président du Comité de Pilotage de la Recherche à l’Université Internationale de l’Espace."
+    },
     "footer": {
         "description": "Blue Planet commercialise des images couleur de la Terre, submétriques, à haute valeur ajoutée et quasi-défense, à tout moment, en tout lieu, et à des prix compétitifs.",
         "contact": {
