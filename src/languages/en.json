@@ -150,6 +150,11 @@
             "description4": "Infrastructure ready for seamless machine-to-machine services."
         }
     },
+    "about": {
+        "name": "About Us",
+        "title": "Blue Planet vision derives from concepts developed by CNES, INRIA and Orange Labs",
+        "subtitle": "The company was founded in 2009 by Jean-Pierre Antikidis, former head of Space System Information at CNES and data management international expert, Jean Jacques Favier, former NASA STS78 Astronaut and Director of innovation at CNES, presently professor and Chair of Research Steering Committee at the International Space University. "
+    },
     "footer": {
         "description": "Blue Planet commercializes fresh and high value « near defence » submeter color imagery of our planet, any time, any place, and at bottom prices.",
         "contact": {
