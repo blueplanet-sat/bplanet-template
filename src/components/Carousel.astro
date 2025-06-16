@@ -17,36 +17,57 @@ t.carousel.images.forEach((element: any) => {
     });
 });        
 ---
-<div class="bg-gray-900 w-full flex items-center justify-center py-10">
-    <div class="relative w-full max-w-4xl h-[40rem] overflow-hidden">
-    <h1 class="text-5xl font-sans font-semibold tracking-tight text-white sm:text-6xl">{t.carousel.title}</h1>
-    <br>
-    <p class="text-gray-300 mb-4">{t.carousel.subtitle}</p>
-    <div id="carousel" class="relative w-full aspect-[16/9] flex transition-transform duration-700 ease-in-out">      
-        {images.map((image, index) => (
-            <div 
-            class="w-full flex-shrink-0 relative transition-all duration-500"
-            >
-            <img
-                src={image.path}
-                alt={image.alt}
-                class="w-full h-full object-cover rounded-2xl border border-blue-900"
-            />
-            <h3 class="absolute bottom-4 left-4 text-white  bg-black/50  px-3 py-1 rounded-md backdrop-blur-sm">
-                {image.title}
-            </h3>
-            </div>
-        ))}
-       
+<div class="bg-gray-900 w-full flex flex-col items-center py-10">
+  
+  <!-- 1. Header -->
+  <div class="text-center mb-10 max-w-4xl w-full px-4">
+    <h1 class="text-white title-font mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl md:text-6xl">
+      {t.carousel.title}
+    </h1>
+    <div class="flex justify-center mb-4">
+      <div class="w-16 h-1 rounded-full bg-accent"></div>
+    </div>
+    <p class="text-gray-300">{t.carousel.subtitle}</p>
+  </div>
+  
+  <!-- 2. Carrusel + Botones -->
+  <div class="relative w-full max-w-4xl aspect-video overflow-hidden">
+    <!-- Slides -->
+    <div
+      id="carousel"
+      class="flex h-full transition-transform duration-700 ease-in-out"
+    >
+      {images.map((image) => (
+        <div class="w-full flex-shrink-0 relative transition-all duration-500">
+          <img
+            src={image.path}
+            alt={image.alt}
+            class="w-full h-full object-cover rounded-2xl border border-blue-900"
+          />
+          <h3 class="absolute bottom-6 left-4 text-white bg-black/50 px-3 py-1 rounded-md backdrop-blur-sm">
+            {image.title}
+          </h3>
+        </div>
+      ))}
     </div>
 
-    <button id="prev" class="absolute top-1/2 left-4 -translate-y-1/2 bg-blue-800 hover:bg-blue-700 text-white p-2 rounded-full shadow z-20">
+    <!-- Prev -->
+    <button
+      id="prev"
+      aria-label="Anterior"
+      class="absolute top-1/2 left-4 -translate-y-1/2 bg-blue-800 hover:bg-blue-700 text-white p-2 rounded-full shadow z-20"
+    >
       &#10094;
     </button>
-    <button id="next" class="absolute top-1/2 right-4 -translate-y-1/2 bg-blue-800 hover:bg-blue-700 text-white p-2 rounded-full shadow z-20">
+    <!-- Next -->
+    <button
+      id="next"
+      aria-label="Siguiente"
+      class="absolute top-1/2 right-4 -translate-y-1/2 bg-blue-800 hover:bg-blue-700 text-white p-2 rounded-full shadow z-20"
+    >
       &#10095;
     </button>
-  </div>
+  </div>  
 </div>
 
 <script is:inline type="module">
@@ -74,10 +95,10 @@ t.carousel.images.forEach((element: any) => {
       updateCarousel();
     });
   }
-  const total = slides.length;
+  const total = totalSlides.length;
   function update() {
     // set custom property for transform
-    carousel.style.setProperty('--current', current);
+    carousel.style.setProperty('--current', currentIndex);
     slides.forEach((slide, i) => {
       if (i === current) {
         slide.classList.add('opacity-100', 'scale-100');
