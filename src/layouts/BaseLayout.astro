@@ -20,11 +20,33 @@ const t = getTranslations(lang);
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+		<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body class="overflow-x-hidden">
 		<slot />
-		<script type="module" src="/src/lib/initAos.ts"></script>
+
+		<!-- 2) CDN de AOS JS como módulo ESM -->
+		<script
+		type="module"
+		src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.esm.js"
+		></script>
+
+		<!-- 3) Inicializas AOS -->
+		<script>
+		// aquí AOS ya existe globalmente
+		import AOS from 'aos';  
+		document.addEventListener('DOMContentLoaded', () => {
+			AOS.init({
+			offset: 120,
+			duration: 400,
+			once: true,
+			});
+		});
+		</script>
 	</body>
 </html>
