@@ -16,6 +16,10 @@
             "path": "/en#team"
         },
         {
+            "name": "Sponsors",
+            "path": "/en#sponsors"
+        },
+        {
             "name": "About Us",
             "path": "/en#about"
         }
@@ -78,7 +82,7 @@
             "name": "Jean-Pierre Antikidis",
             "position": "President",
             "description": "Former Head of Space Information Systems at CNES.",
-            "image": "antikidis.jpg"
+            "image": "antikidis.webp"
             },
             {
                 "name": "Bernard Plano",
@@ -96,7 +100,7 @@
                 "name": "Michel Courtois",
                 "position": "Director",
                 "description": "Previous Director of Estec Center and creator of SPOT.",
-                "image": "courtois.jpg"
+                "image": "courtois.webp"
             }
         ]
     },
@@ -149,6 +153,10 @@
             "subtitle4": "Cloud-to-Cloud paradigm:",
             "description4": "Infrastructure ready for seamless machine-to-machine services."
         }
+    },
+    "partners": {
+        "title": "Our Sponsors",
+        "subtitle": "We are thankful to each and every company sponsored our technology which helped us to continue working on it."
     },
     "about": {
         "name": "About Us",
