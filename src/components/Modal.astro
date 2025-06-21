@@ -1,0 +1,48 @@
+---
+const { id, title, content, image, video, linkedin, iconName, iconBg = 'bg-white' } = Astro.props;
+---
+
+<div id={id} class="modal-overlay fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-90 transition-opacity duration-300">
+  <div class="relative max-w-md w-full mx-auto px-4">
+
+    <div class="relative bg-white rounded-[2rem] px-6 pt-16 pb-8 text-center shadow-2xl z-20 scale-100 transition-transform duration-300">
+      <!-- {iconName && (
+        <div class={`absolute -top-10 left-1/2 -translate-x-1/2 rounded-full p-4 ${iconBg} shadow-lg`}>
+          <img src={`${iconName}`} class="w-12 h-12" alt="Icono">
+        </div>
+      )} -->
+
+      <div class="absolute -top-14 left-1/2 -translate-x-1/2 rounded-full shadow-lg border-4 border-white">
+        <img src={`${image}`}  class="w-24 h-24 rounded-full object-cover" />
+      </div>
+
+      <button class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-600 text-white hover:bg-slate-800 transition"
+        aria-label="Cerrar modal" onclick={`document.getElementById('${id}').classList.remove('flex'); document.getElementById('${id}').classList.add('hidden');`}>
+        ✕
+      </button>
+
+      <h2 class="text-2xl font-semibold text-black mb-2">{title}</h2>
+      <p class="text-gray-700 whitespace-pre-line">{content}</p>
+
+      {video && (
+        <div class="mt-6">
+          <iframe
+            src={video}
+            class="w-full aspect-video rounded-lg border"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      )}
+
+      {linkedin && (
+        <div class="mt-4">
+          <a href={linkedin} target="_blank" class="inline-flex items-center gap-2 text-blue-600 hover:underline">
+            <img src="/svg/linkedin.svg" class="w-5 h-5" alt="LinkedIn" />
+            LinkedIn
+          </a>
+        </div>
+      )}
+    </div>
+  </div>
+</div>

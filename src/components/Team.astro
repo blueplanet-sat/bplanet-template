@@ -1,4 +1,6 @@
 ---
+import Modal from "./Modal.astro";
+
 const { t } = Astro.props;
 const team = t.team;
 ---
@@ -19,7 +21,7 @@ const team = t.team;
       {
         team.members.map((member : any) => (
           <div
-            class="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-md transition-all duration-500 hover:shadow-xl hover:-translate-y-1"
+            class="group relative flex flex-col justify-between h-full overflow-hidden rounded-2xl bg-white p-6 shadow-md transition-all duration-500 hover:shadow-xl hover:-translate-y-1"
           >
             <span class="absolute inset-0 rounded-2xl border-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
             <img
@@ -37,6 +39,10 @@ const team = t.team;
               <p class="mt-2 text-sm text-gray-500 group-hover:text-gray-600">
                 {member.description}
               </p>
+              <button class="btn-info mt-4"
+                  onclick="document.getElementById('modal-bio').classList.remove('hidden'); document.getElementById('modal-bio').classList.add('flex');">
+                  {team.buttonText}
+              </button>
             </div>
           </div>
         ))
@@ -44,3 +50,12 @@ const team = t.team;
     </div>
   </div>
 </section>
+
+<Modal
+  id="modal-bio"
+  title="Jean-Pierre Antikidis"
+  content="President & CEO – Cofundador de Blue Planet"
+  image="/images/antikidis.webp"
+  video="https://www.youtube.com/embed/_g0-TUus3ok"
+  linkedin="https://www.linkedin.com/in/antikidis/"
+  />

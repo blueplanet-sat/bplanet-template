@@ -2,8 +2,7 @@
     "language": "en",
     "languageName": "English",
     "title": "Blue Planet Sat",
-    "navbar": [
-        {
+    "navbar": [{
             "name": "Home",
             "path": "/en#home"
         },
@@ -73,16 +72,18 @@
                 "path": "/images/Mountain-elgon-kenya.webp"
             }
         ]
-    },    
+    },
     "team": {
         "title": "The core team",
         "subtitle": "Concept inventors and founders",
-        "members":
-        [{
-            "name": "Jean-Pierre Antikidis",
-            "position": "President",
-            "description": "Former Head of Space Information Systems at CNES.",
-            "image": "antikidis.webp"
+        "members": [{
+                "name": "Jean-Pierre Antikidis",
+                "position": "President",
+                "description": "Former Head of Space Information Systems at CNES.",
+                "image": "antikidis.webp",
+                "bio": "Jean-Pierre Antikidis is an expert in aerospace systems...\nFue responsable de sistemas de información espacial en el CNES y posee una amplia trayectoria...",
+                "video": "https://www.youtube.com/embed/_g0-TUus3ok",
+                "linkedin": "https://www.linkedin.com/in/jeanpierreantikidis"
             },
             {
                 "name": "Bernard Plano",
@@ -102,7 +103,8 @@
                 "description": "Previous Director of Estec Center and creator of SPOT.",
                 "image": "courtois.webp"
             }
-        ]
+        ],
+        "buttonText": "Learn more"
     },
     "product": {
         "title": "Our products",
