@@ -10,52 +10,48 @@ const team = t.team;
     <div class="mx-auto mb-16 max-w-2xl text-center" data-aos="flip-down" data-aos-duration="1000">
       <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">{team.title}</h2>
       <div class="flex mt-6 justify-center">
-            <div class="w-16 h-1 rounded-full bg-accent inline-flex"></div>
-          </div>
-      <p class="mt-4 text-lg text-gray-600">
-        {team.subtitle}
-      </p>
+        <div class="w-16 h-1 rounded-full bg-accent inline-flex"></div>
+      </div>
+      <p class="mt-4 text-lg text-gray-600">{team.subtitle}</p>
     </div>
-    
+
     <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4" data-aos="zoom-out-down" data-aos-duration="1000">
       {
-        team.members.map((member : any) => (
-          <div
-            class="group relative flex flex-col justify-between h-full overflow-hidden rounded-2xl bg-white p-6 shadow-md transition-all duration-500 hover:shadow-xl hover:-translate-y-1"
-          >
-            <span class="absolute inset-0 rounded-2xl border-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
-            <img
-              class="mx-auto h-24 w-24 rounded-full object-cover border-2 border-accent group-hover:border-accent/50 transition-all duration-500"
-              src={`images/${member.image}`}
-              alt={`Portrait of ${member.name}`}
-            />
-            <div class="mt-6 text-center relative z-10">
-              <h3 class="text-lg font-semibold text-gray-900 group-hover:text-accent transition-colors duration-500">
-                {member.name}
-              </h3>
-              <p class="text-accent text-sm font-medium group-hover:text-gray-700">
-                {member.position}
-              </p>
-              <p class="mt-2 text-sm text-gray-500 group-hover:text-gray-600">
-                {member.description}
-              </p>
-              <button class="btn-info mt-4"
-                  onclick="document.getElementById('modal-bio').classList.remove('hidden'); document.getElementById('modal-bio').classList.add('flex');">
+        team.members.map((member : any, index: number) => {
+          const modalId = `modal-${index}`;
+          return (
+            <div class="group relative flex flex-col justify-between h-full overflow-hidden rounded-2xl bg-white p-6 shadow-md transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
+              <span class="absolute inset-0 rounded-2xl border-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+              <img
+                class="mx-auto h-24 w-24 rounded-full object-cover border-2 border-accent group-hover:border-accent/50 transition-all duration-500"
+                src={`images/${member.image}`}
+                alt={`Portrait of ${member.name}`}
+              />
+              <div class="mt-6 text-center relative z-10">
+                <h3 class="text-lg font-semibold text-gray-900 group-hover:text-accent transition-colors duration-500">
+                  {member.name}
+                </h3>
+                <p class="text-accent text-sm font-medium group-hover:text-gray-700">
+                  {member.role}
+                </p>
+                <p class="mt-2 text-sm text-gray-500 group-hover:text-gray-600">
+                  {member.description}
+                </p>
+                <button
+                  class="btn-info mt-4"
+                  onclick={`document.getElementById('${modalId}').classList.remove('hidden'); document.getElementById('${modalId}').classList.add('flex');`}
+                >
                   {team.buttonText}
-              </button>
+                </button>
+              </div>
             </div>
-          </div>
-        ))
+          );
+        })
       }
     </div>
   </div>
 </section>
 
-<Modal
-  id="modal-bio"
-  title="Jean-Pierre Antikidis"
-  content="President & CEO – Cofundador de Blue Planet"
-  image="/images/antikidis.webp"
-  video="https://www.youtube.com/embed/_g0-TUus3ok"
-  linkedin="https://www.linkedin.com/in/antikidis/"
-  />
+{team.members.map((member : any, index: number) => (
+  <Modal id={`modal-${index}`} member={member} team={team} />
+))}

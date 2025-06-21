@@ -2,20 +2,24 @@
     "language": "es",
     "languageName": "Español",
     "title": "Blue Planet Sat",
-    "navbar": [{
+    "navbar": [
+        {
             "name": "Inicio",
             "path": "/es#home"
-        }, {
+        },
+        {
             "name": "Producto",
             "path": "/es#product"
-        }, {
+        },
+        {
             "name": "Equipo",
             "path": "/es#team"
         },
         {
             "name": "Patrocinadores",
             "path": "/en#sponsors"
-        }, {
+        },
+        {
             "name": "Sobre nosotros",
             "path": "/es#about"
         }
@@ -28,7 +32,8 @@
     "carousel": {
         "title": "Galería de Imagenes",
         "subtitle": "Imágenes de satélites de alta resolución",
-        "images": [{
+        "images": [
+            {
                 "title": "Antananarivo, Madagascar",
                 "alt": "Imagen de Antananarivo, Madagascar",
                 "path": "/images/antananarivo-madagascar.webp"
@@ -73,36 +78,81 @@
     "team": {
         "title": "Nuestro equipo",
         "subtitle": "Un equipo de expertos apasionados",
-        "members": [{
+        "linksTitle": "Links de interés",
+        "members": [
+            {
                 "name": "Jean-Pierre Antikidis",
-                "position": "Presidente",
-                "description": "Ex Jefe de Sistemas de Información Espacial en CNES.",
-                "image": "antikidis.webp"
+                "role": "Presidente & CEO – Cofundador",
+                "description": "Exjefe del Sistema de Información Espacial del CNES y experto internacional en gestión de datos espaciales",
+                "experience": [
+                    {
+                        "item": "Gestionó proyectos de sistemas terrestres para Pakistán, África y Asia, y pasó 8 años en la Agencia Espacial Europea."
+                    },
+                    {
+                        "item": "Responsable en el CNES de los conceptos para futuros sistemas terrestres y delegado francés en grupos asesores científicos y técnicos."
+                    },
+                    {
+                        "item": "Inventor de tecnologías de computación avanzadas, siendo parte del grupo inicial que concibió lo que hoy se conoce como Cloud."
+                    }
+                ],
+                "currentRole": "Presidente y CEO de Blue Planet. Lidera el desarrollo técnico del programa v-GLOBE desde 2009, con enfoque en sensores espaciales, telecomunicaciones y sistemas Cloud.",
+                "linkedin": "https://www.linkedin.com/in/jean-pierre-antikidis-4231382/",
+                "image": "antikidis.webp",
+                "video": "https://www.youtube.com/embed/_g0-TUus3ok",
+                "videoDescription": "Jean-Pierre Antikidis L'espace, la communication et le futur."
             },
             {
                 "name": "Bernard Plano",
-                "position": "Ex Presidente",
-                "description": "Ex presidente de Matra-System Information.",
-                "image": "plano.jpg"
+                "role": "Líder del equipo industrial",
+                "description": "Exjefe del Sistema de Información de Matra y gerente de alto nivel",
+                "experience": [
+                    {
+                        "item": "Gestionó proyectos de sistemas terrestres para Pakistán, África y Asia, y pasó 8 años en la Agencia Espacial Europea."
+                    }
+                ],
+                "currentRole": null,
+                "linkedin": null,
+                "image": "plano.jpg",
+                "video": null,
+                "videoDescription": null
             },
             {
                 "name": "Jean-Jacques Favier",
-                "position": "Astronauta y Jefe de Prospectiva",
-                "description": "Astronauta STS-78 y ex jefe de prospectiva en CNES.",
-                "image": "favier.webp"
+                "role": "Astronauta & Responsable de Cooperación Internacional",
+                "description": "Exastronauta de la NASA (STS78) y Director de innovación en el CNES",
+                "experience": [
+                    {
+                        "item": "Gestionó proyectos de sistemas terrestres para Pakistán, África y Asia, y pasó 8 años en la Agencia Espacial Europea."
+                    }
+                ],
+                "currentRole": null,
+                "linkedin": null,
+                "image": "favier.webp",
+                "video": null,
+                "videoDescription": null
             },
             {
                 "name": "Michel Courtois",
-                "position": "Director",
-                "description": "Ex Director del Centro Estec y creador del programa SPOT.",
-                "image": "courtois.webp"
+                "role": "CTO – Jefe técnico del segmento espacial",
+                "description": "Exjefe del Sistema SPOT de Observación de la Tierra y exdirector del centro de investigación ESA/ESTEC",
+                "experience": [
+                    {
+                        "item": "Gestionó proyectos de sistemas terrestres para Pakistán, África y Asia, y pasó 8 años en la Agencia Espacial Europea."
+                    }
+                ],
+                "currentRole": null,
+                "linkedin": null,
+                "image": "courtois.webp",
+                "video": null,
+                "videoDescription": null
             }
         ],
         "buttonText": "Ver más"
     },
     "product": {
         "title": "Nuestros productos",
-        "features": [{
+        "features": [
+            {
                 "title": "Producción de Imágenes Superior",
                 "description1": "0.85 metros de resolución real en tierra",
                 "description2": "Ortorrectificadas, vista nadir para precisión geométrica",
