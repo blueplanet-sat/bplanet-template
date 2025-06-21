@@ -1,0 +1,199 @@
+---
+// You can add any Astro frontmatter logic here if needed
+const services = [
+  {
+    title: "Cartografía, catastro",
+    description: "El uso de imágenes satelitales para la elaboración de mapas es muy común hoy en día. Los clientes optan por imágenes de mayor resolución, a la vez que solicitan reducciones de precios.",
+    image: "/placeholder.svg?height=400&width=600",
+    // features: ["NDVI Analysis", "Crop Health Assessment", "Irrigation Planning"],
+    category: "Agriculture"
+  },
+  {
+    title: "Agricultura",
+    description: "La agricultura estadística es una demostracion de aplicacion exitosa de la observación de la Tierra desde el espacio. El precio de los datos por km cuadrado es un factor determinante. Las imágenes espaciales ayudarán a implementar prácticas de gestión agrícola sostenibles, a la vez que garantizan la preservación de los recursos de suelo, tierra y agua.",
+    image: "/placeholder.svg?height=400&width=600",
+    // features: ["Land Use Mapping", "Infrastructure Planning", "Growth Analysis"],
+    category: "Urban"
+  },
+  {
+    title: "Bosques",
+    description: "La gestión forestal es fundamental para el monitoreo de la evolución del clima mundial. Además, es un indicador clave del impacto de las actividades humanas en nuestro entorno natural. V-Globe es un proveedor ideal para este tipo de aplicación que requiere una cobertura rápida y masiva.",
+    image: "/placeholder.svg?height=400&width=600",
+    // features: ["Change Detection", "Forest Monitoring", "Climate Analysis"],
+    category: "Environment"
+  },
+  {
+    title: "Recursos pesqueros",
+    description: "La teledetección de las propiedades oceánicas tiene el potencial de proporcionar información para la gobernanza de los ecosistemas a escala global y regional. Gracias a su cobertura total de la Tierra y a su capacidad de observación espectral, v-GLOBE puede contribuir a la gestión pesquera mediante la observación del color del océano.",
+    image: "/placeholder.svg?height=400&width=600",
+    // features: ["Emergency Response", "Damage Assessment", "Recovery Planning"],
+    category: "Emergency"
+  },
+  {
+    title: "Desarrollo de territorios y ciudades",
+    description: "Una visión global de un territorio es una herramienta esencial de gestión. Al poder analizar la situación de las carreteras, los edificios e incluso los aparcamientos, las organizaciones públicas pueden controlar y gestionar mejor el desarrollo de las ciudades.",
+    image: "/placeholder.svg?height=400&width=600",
+    // features: ["Ship Tracking", "Coastal Erosion", "Marine Protection"],
+    category: "Maritime"
+  },
+  {
+    title: "Preservación de la Vida Silvestre y paisaje natural",
+    description: "La información recopilada desde el espacio facilita un monitoreo confiable y consistente, al combinarse con otros datos digitales para crear mapas, imágenes y gráficos dinámicos que pueden emplearse en la investigación o para orientar la gestión de la vida silvestre. Los satélites con ciclos de actualización rápidos, como v-GLOBE, son ideales para la generación repetitiva de imágenes y el monitoreo de los cambios naturales.",
+    image: "/placeholder.svg?height=400&width=600",
+    // features: ["Geological Mapping", "Resource Detection", "Site Analysis"],
+    category: "Mining"
+  },
+  {
+    title: "Petróleo, gas, minerales, aguas subterráneas, energía hidráulica",
+    description: "En el sector del petróleo y gas en alta mar, el costo de construir plataformas de producción capaces de soportar condiciones climáticas severas se está volviendo indispensable.",
+    image: "/placeholder.svg?height=400&width=600",
+    // features: ["Geological Mapping", "Resource Detection", "Site Analysis"],
+    category: "Mining"
+  },
+  {
+    title: "Gestión de riesgos, seguros y prevención",
+    description: "El monitoreo espacial de riesgos naturales como ciclones, inundaciones, sequías y volcanes nos proporciona información fiable y práctica, fácil de usar para planificadores, expertos técnicos, empresas, países, agricultores, tráfico aéreo y otros; en otras palabras, para toda la sociedad.",
+    image: "/placeholder.svg?height=400&width=600",
+    // // features: ["Geological Mapping", "Resource Detection", "Site Analysis"],
+    category: "Mining"
+  },  
+  {
+    title: "Ingeniería civil y gestión de la construcción urbana",
+    description: "Los datos de teledetección satelital se han utilizado con éxito para el mapeo, la supervisión, la planificación y el desarrollo de la expansión urbana, el uso del suelo y el entorno urbano. También se puede evaluar el tráfico, la oferta inmobiliaria y turística, así como, en muchos países en desarrollo, la expansión de barrios marginales sobre terrenos baldíos y la zonificación del uso del suelo urbano.",
+    image: "/placeholder.svg?height=400&width=600",
+    // // features: ["Geological Mapping", "Resource Detection", "Site Analysis"],
+    category: "Mining"
+  },
+  {
+    title: "Gestión del agua y vigilancia de inundaciones",
+    description: "La falta de agua potable para beber, el saneamiento, la agricultura y la industria frena el desarrollo económico y social. Las imágenes generadas por el satélite se utilizan para caracterizar y monitorear el uso del suelo y la calidad del agua cerca de las costas y las playas públicas. Las inundaciones son uno de los desastres naturales más costosos en términos de daños materiales. Las",
+    image: "/placeholder.svg?height=400&width=600",
+    // features: ["Geological Mapping", "Resource Detection", "Site Analysis"],
+    category: "Mining"
+  },
+  {
+    title: "Información de usuarios para internet",
+    description: "Los datos de mercado actuales (imágenes, mapas, etc.) disponibles en los sitios web de geoportales rara vez se actualizan (una vez cada uno o dos años) y ofrecen resoluciones muy irregulares, lo que limita el desarrollo de aplicaciones masivas. El suministro masivo de imágenes de alta calidad de V-GLOBE es, sin duda, una oferta sólida que puede ayudar a los líderes de la economía digital a consolidar su posición actual.",
+    image: "/placeholder.svg?height=400&width=600",
+    // features: ["Geological Mapping", "Resource Detection", "Site Analysis"],
+    category: "Mining"
+  },
+  {
+    title: "Defensa, inteligencia",
+    description: "El uso del planeta completo con resolución métrica, actualizado semanalmente, constituye un magnífico conjunto de BIG DATA que contiene un potencial de inteligencia invisible pero de gran valor. La información de interés suele encontrarse en lugares donde nadie mira y el valor de un conjunto completo del planeta, producido sistemáticamente por v-GLOBE, podría generar gran interés",
+    image: "/placeholder.svg?height=400&width=600",
+    // features: ["Geological Mapping", "Resource Detection", "Site Analysis"],
+    category: "Mining"
+  },
+];
+---
+
+<section class="py-16 px-4 md:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
+  <div class="max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-4">
+        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 2L3 7v11a1 1 0 001 1h3v-6h6v6h3a1 1 0 001-1V7l-7-5z"/>
+        </svg>
+        Satellite Imagery Services
+      </div>
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+        Earth Observation
+        <span class="text-blue-600">Solutions</span>
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Advanced satellite photography and imagery analysis for industries worldwide. 
+        From precision agriculture to urban planning, we deliver high-resolution insights from space.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-16">
+      {services.map((service) => (
+        <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:-translate-y-2">
+          <!-- Image Container -->
+          <div class="relative overflow-hidden h-48 bg-gradient-to-br from-blue-500 to-purple-600">
+            <img 
+              src={service.image || "/placeholder.svg"} 
+              alt={service.title}
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 bg-white/90 backdrop-blur-sm text-blue-600 text-xs font-semibold rounded-full">
+                {service.category}
+              </span>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+          </div>
+
+          <!-- Content -->
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+              {service.title}
+            </h3>
+            <p class="text-gray-600 mb-4 leading-relaxed">
+              {service.description}
+            </p>
+
+            <!-- Features -->
+            {/* <div class="space-y-2 mb-6">
+              {service.features?.map((feature) => (
+                <div class="flex items-center text-sm text-gray-700">
+                  <svg class="w-4 h-4 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  {feature}
+                </div>
+              ))}
+            </div> */}
+
+            <!-- CTA Button -->
+            <button class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+              Leer Más
+            </button>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Bottom CTA Section -->
+    <div class="text-center bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 md:p-12 text-white">
+      <h3 class="text-2xl md:text-3xl font-bold mb-4">
+        Ready to See Earth from Above?
+      </h3>
+      <p class="text-blue-100 mb-6 max-w-2xl mx-auto">
+        Get in touch with our satellite imagery experts to discuss your project requirements 
+        and discover how our advanced earth observation solutions can benefit your organization.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button class="bg-white text-blue-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors duration-300">
+          Request Consultation
+        </button>
+        <button class="border-2 border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-white hover:text-blue-600 transition-colors duration-300">
+          View Portfolio
+        </button>
+      </div>
+    </div>
+
+    <!-- Technical Specs -->
+    <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div class="space-y-2">
+        <div class="text-3xl font-bold text-blue-600">0.3m</div>
+        <div class="text-gray-600 text-sm">Resolution</div>
+      </div>
+      <div class="space-y-2">
+        <div class="text-3xl font-bold text-blue-600">24/7</div>
+        <div class="text-gray-600 text-sm">Coverage</div>
+      </div>
+      <div class="space-y-2">
+        <div class="text-3xl font-bold text-blue-600">15+</div>
+        <div class="text-gray-600 text-sm">Satellites</div>
+      </div>
+      <div class="space-y-2">
+        <div class="text-3xl font-bold text-blue-600">48h</div>
+        <div class="text-gray-600 text-sm">Delivery</div>
+      </div>
+    </div>
+  </div>
+</section>
