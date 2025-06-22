@@ -2,33 +2,38 @@
     "language": "es",
     "languageName": "Español",
     "title": "Blue Planet Sat",
-    "navbar": [{
-        "name": "Inicio",
-        "path": "/es#home"
-    }, {
-        "name": "Producto",
-        "path": "/es#product"
-    }, {
-        "name": "Equipo",
-        "path": "/es#team"
-    },
-    {
+    "navbar": [
+        {
+            "name": "Inicio",
+            "path": "/es#home"
+        },
+        {
+            "name": "Producto",
+            "path": "/es#product"
+        },
+        {
+            "name": "Equipo",
+            "path": "/es#team"
+        },
+        {
             "name": "Patrocinadores",
             "path": "/en#sponsors"
+        },
+        {
+            "name": "Sobre nosotros",
+            "path": "/es#about"
         }
-    , {
-        "name": "Sobre nosotros",
-        "path": "/es#about"
-    }],
+    ],
     "hero": {
         "title": "Revolucionando la experiencia de distribución de imágenes de la Tierra",
         "subtitle": "Descubre nuestro producto y aprende más sobre nosotros",
         "buttonText": "Ver más"
     },
     "carousel": {
-            "title": "Galería de Imagenes",
-            "subtitle": "Imágenes de satélites de alta resolución",
-            "images":[{
+        "title": "Galería de Imagenes",
+        "subtitle": "Imágenes de satélites de alta resolución",
+        "images": [
+            {
                 "title": "Antananarivo, Madagascar",
                 "alt": "Imagen de Antananarivo, Madagascar",
                 "path": "/images/antananarivo-madagascar.webp"
@@ -69,40 +74,124 @@
                 "path": "/images/Mountain-elgon-kenya.webp"
             }
         ]
-    }
-    ,
+    },
     "team": {
         "title": "Nuestro equipo",
         "subtitle": "Un equipo de expertos apasionados",
-        "members": [{
-            "name": "Jean-Pierre Antikidis",
-            "position": "Presidente",
-            "description": "Ex Jefe de Sistemas de Información Espacial en CNES.",
-            "image": "antikidis.webp"
-        },
-        {
-            "name": "Bernard Plano",
-            "position": "Ex Presidente",
-            "description": "Ex presidente de Matra-System Information.",
-            "image": "plano.jpg"
-        },
-        {
-            "name": "Jean-Jacques Favier",
-            "position": "Astronauta y Jefe de Prospectiva",
-            "description": "Astronauta STS-78 y ex jefe de prospectiva en CNES.",
-            "image": "favier.webp"
-        },
-        {
-            "name": "Michel Courtois",
-            "position": "Director",
-            "description": "Ex Director del Centro Estec y creador del programa SPOT.",
-            "image": "courtois.webp"
-        }
-    ]
+        "linksTitle": "Links de interés",
+        "members": [
+            {
+                "name": "Jean-Pierre Antikidis",
+                "role": "Presidente & CEO – Cofundador",
+                "description": "Exjefe del Sistema de Información Espacial del CNES y experto internacional en gestión de datos espaciales",
+                "experience": [
+                    {
+                        "item": "Gestionó proyectos de sistemas terrestres para Pakistán, África y Asia, y pasó 8 años en la Agencia Espacial Europea."
+                    },
+                    {
+                        "item": "Responsable en el CNES de los conceptos para futuros sistemas terrestres y delegado francés en grupos asesores científicos y técnicos."
+                    },
+                    {
+                        "item": "Inventor de tecnologías de computación avanzadas, siendo parte del grupo inicial que concibió lo que hoy se conoce como Cloud."
+                    }
+                ],
+                "currentRole": "Presidente y CEO de Blue Planet. Lidera el desarrollo técnico del programa v-GLOBE desde 2009, con enfoque en sensores espaciales, telecomunicaciones y sistemas Cloud.",
+                "linkedin": "https://www.linkedin.com/in/jean-pierre-antikidis-4231382/",
+                "image": "antikidis.webp",
+                "video": "https://www.youtube.com/embed/_g0-TUus3ok",
+                "videoDescription": "Jean-Pierre Antikidis L'espace, la communication et le futur."
+            },
+            {
+                "name": "Jean-Jacques Favier",
+                "role": "Astronauta y Director de Cooperación Internacional",
+                "description": "Exespecialista de carga útil en la misión STS-78 de la NASA y Director de Innovación en el CNES",
+                "experience": [
+                    {
+                        "item": "Participó en la misión STS-78 del transbordador Columbia de la NASA en 1996 como especialista de carga útil, pasando más de 16 días en el espacio."
+                    },
+                    {
+                        "item": "Primer científico francés en el espacio, contribuyó a programas de investigación en microgravedad como MEPHISTO."
+                    },
+                    {
+                        "item": "Director adjunto de Conceptos Avanzados y Estrategia en CNES, tras desempeñarse como Director adjunto de Tecnología Espacial."
+                    },
+                    {
+                        "item": "Dirigió el Laboratorio de Solidificación en la Comisión Francesa de Energía Atómica (CEA) y publicó más de 150 artículos científicos."
+                    },
+                    {
+                        "item": "Cofundador de Blue Planet, promoviendo constelaciones de microsatélites de observación terrestre de alta resolución."
+                    }
+                ],
+                "currentRole": "Hasta 2023 contribuyó al desarrollo estratégico de Blue Planet y apoyó colaboraciones internacionales.",
+                "linkedin": null,
+                "image": "favier.webp",
+                "video": null,
+                "videoDescription": null
+            },
+            {
+                "name": "Bernard Plano",
+                "role": "Líder del Equipo Industrial",
+                "description": "Ejecutivo senior en aeroespacial y defensa, ex CEO de Matra Systems & Information y estratega en negocios internacionales",
+                "experience": [
+                    {
+                        "item": "Ingeniero electricista con un MBA de la Escuela de Negocios HEC."
+                    },
+                    {
+                        "item": "Se unió a Matra/EADS a fines de los 80, se especializó en sistemas de datos para defensa y fue CEO de Matra Systems & Information (1996–2004)."
+                    },
+                    {
+                        "item": "Vicepresidente Ejecutivo de Desarrollo Internacional en EADS, responsable de sistemas de defensa y espacio en más de 50 países."
+                    },
+                    {
+                        "item": "Fundó Plano BP Consulting y lideró el desarrollo internacional estratégico en Spacebel, líder europeo en procesamiento de información espacial."
+                    },
+                    {
+                        "item": "Supervisó programas espaciales europeos como Ariane, SPOT, Helios y Hipparcos."
+                    }
+                ],
+                "currentRole": "Responsable del equipo industrial en Blue Planet desde 2012, liderando la gestión del equipo y red de proveedores, y apoyando el crecimiento estratégico y financiero de la empresa.",
+                "linkedin": "https://www.linkedin.com/in/bernard-plano-a10070b/",
+                "image": "plano.jpg",
+                "video": null,
+                "videoDescription": null
+            },
+            {
+                "name": "Michel Courtois",
+                "role": "CTO – Responsable técnico del segmento espacial",
+                "description": "Ex Director de ESA/ESTEC y responsable del programa SPOT en CNES",
+                "experience": [
+                    {
+                        "item": "Graduado de la École Polytechnique y ENSAE en 1971 como ingeniero aeroespacial."
+                    },
+                    {
+                        "item": "Lideró el desarrollo del satélite francés SPOT de observación terrestre en CNES, lanzado en 1986, base de los programas europeos comerciales."
+                    },
+                    {
+                        "item": "Ocupó cargos directivos en CNES, incluyendo Director Adjunto de Aplicaciones y Director del Centro Espacial de Toulouse."
+                    },
+                    {
+                        "item": "Vicepresidente y CTO de Alcatel Space, liderando más de 1500 ingenieros en desarrollo técnico y gestión de calidad."
+                    },
+                    {
+                        "item": "Director de Gestión Técnica y de Calidad en ESA y jefe de ESTEC (2004–2010)."
+                    },
+                    {
+                        "item": "Galardonado con numerosos premios, incluyendo la Legión de Honor (2000), Orden Nacional del Mérito (1991) y el Gran Premio de la ANAE (1987)."
+                    }
+                ],
+                "currentRole": "Presidente de la Fundación Van Allen y CTO de Blue Planet para el segmento espacial del programa v-GLOBE, asegurando calidad y desempeño técnico.",
+                "linkedin": null,
+                "image": "courtois.webp",
+                "video": null,
+                "videoDescription": null
+            }
+        ],
+        "buttonText": "Ver más"
     },
     "product": {
         "title": "Nuestros productos",
-        "features": [{
+        "features": [
+            {
                 "title": "Producción de Imágenes Superior",
                 "description1": "0.85 metros de resolución real en tierra",
                 "description2": "Ortorrectificadas, vista nadir para precisión geométrica",
