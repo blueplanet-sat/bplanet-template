@@ -82,65 +82,104 @@
         "members": [
             {
                 "name": "Jean-Pierre Antikidis",
-                "role": "President & CEO – Cofundador",
-                "description": "Former head of Space System Information at CNES and Space Data management international expert",
+                "role": "President & CEO – Co-founder",
+                "description": "Former head of Space System Information at CNES and international expert in Space Data management",
                 "experience": [
                     {
-                        "item": "Gestionó proyectos de sistemas terrestres para Pakistán, África y Asia, y pasó 8 años en la Agencia Espacial Europea."
+                        "item": "Managed ground systems projects for Pakistan, Africa, and Asia, and spent 8 years at the European Space Agency."
                     },
                     {
-                        "item": "Responsable en el CNES de los conceptos para futuros sistemas terrestres y delegado francés en grupos asesores científicos y técnicos."
+                        "item": "Responsible at CNES for concepts of future ground systems and French delegate in scientific and technical advisory groups."
                     },
                     {
-                        "item": "Inventor de tecnologías de computación avanzadas, siendo parte del grupo inicial que concibió lo que hoy se conoce como Cloud."
+                        "item": "Inventor of advanced computing technologies, part of the initial group that conceived what is now known as the Cloud."
                     }
                 ],
-                "currentRole": "Presidente y CEO de Blue Planet. Lidera el desarrollo técnico del programa v-GLOBE desde 2009, con enfoque en sensores espaciales, telecomunicaciones y sistemas Cloud.",
+                "currentRole": "President and CEO of Blue Planet. Leads the technical development of the v-GLOBE program since 2009, focusing on space sensors, telecommunications, and Cloud systems.",
                 "linkedin": "https://www.linkedin.com/in/jean-pierre-antikidis-4231382/",
                 "image": "antikidis.webp",
                 "video": "https://www.youtube.com/embed/_g0-TUus3ok",
                 "videoDescription": "Jean-Pierre Antikidis L'espace, la communication et le futur."
             },
             {
-                "name": "Bernard Plano",
-                "role": "Industrial Team Leader",
-                "description": "Former head of Matra System Information and highly skilled manager",
-                "experience": [
-                    {
-                        "item": "Gestionó proyectos de sistemas terrestres para Pakistán, África y Asia, y pasó 8 años en la Agencia Espacial Europea."
-                    }
-                ],
-                "currentRole": null,
-                "linkedin": null,
-                "image": "plano.jpg",
-                "video": null,
-                "videoDescription": null
-            },
-            {
                 "name": "Jean-Jacques Favier",
-                "role": "Astronauta & Responsable de Cooperación Internacional",
-                "description": "Former NASA STS78 Astronaut and Director of innovation at CNES",
+                "role": "Astronaut & Director of International Cooperation",
+                "description": "Former NASA STS-78 Payload Specialist and Director of Innovation at CNES",
                 "experience": [
                     {
-                        "item": "Gestionó proyectos de sistemas terrestres para Pakistán, África y Asia, y pasó 8 años en la Agencia Espacial Europea."
+                        "item": "Participated in NASA’s STS-78 Columbia mission in 1996 as Payload Specialist, spending over 16 days in space."
+                    },
+                    {
+                        "item": "First French scientist in space, contributed to microgravity materials research programs like MEPHISTO."
+                    },
+                    {
+                        "item": "Deputy Director of Advanced Concepts and Strategy at CNES, after serving as Deputy Director of Space Technology."
+                    },
+                    {
+                        "item": "Led the Solidification Laboratory at the French Atomic Energy Commission (CEA) and authored over 150 scientific papers."
+                    },
+                    {
+                        "item": "Co-founder of Blue Planet, promoting Earth observation microsatellite constellations with high spatial resolution."
                     }
                 ],
-                "currentRole": null,
+                "currentRole": "Until 2023, he contributed to the strategic development of Blue Planet and supported international collaborations.",
                 "linkedin": null,
                 "image": "favier.webp",
                 "video": null,
                 "videoDescription": null
             },
             {
-                "name": "Michel Courtois",
-                "role": "CTO – Jefe técnico del segmento espacial",
-                "description": "Former Head of the French SPOT Earth Observing System and former head of ESA/ESTEC research center",
+                "name": "Bernard Plano",
+                "role": "Industrial Team Leader",
+                "description": "Senior aerospace and defense executive, former CEO of Matra Systems & Information, and international business strategist",
                 "experience": [
                     {
-                        "item": "Gestionó proyectos de sistemas terrestres para Pakistán, África y Asia, y pasó 8 años en la Agencia Espacial Europea."
+                        "item": "Electrical engineer with an MBA from HEC Business School."
+                    },
+                    {
+                        "item": "Joined Matra/EADS in the late 1980s, specialized in data systems for defense; led Matra Systems & Information as Chairman & CEO (1996–2004)."
+                    },
+                    {
+                        "item": "Executive VP of International Business Development at EADS, with responsibility for defense and space systems in over 50 countries."
+                    },
+                    {
+                        "item": "Founded Plano BP Consulting and led strategic international development at Spacebel, a leader in European space information systems."
+                    },
+                    {
+                        "item": "Oversaw major European space programs like Ariane, SPOT, Helios, and Hipparcos."
                     }
                 ],
-                "currentRole": null,
+                "currentRole": "Industrial team manager at Blue Planet since 2012, guiding team management and supplier networks, and supporting the company’s strategic and financial evolution.",
+                "linkedin": "https://www.linkedin.com/in/bernard-plano-a10070b/",
+                "image": "plano.jpg",
+                "video": null,
+                "videoDescription": null
+            },
+            {
+                "name": "Michel Courtois",
+                "role": "CTO – Head of Space Segment Engineering",
+                "description": "Former Director at ESA/ESTEC and SPOT satellite program lead engineer at CNES",
+                "experience": [
+                    {
+                        "item": "Graduated from École Polytechnique and ENSAE in 1971 as an aerospace engineer."
+                    },
+                    {
+                        "item": "Led the development of the French Earth Observation SPOT satellite at CNES, launched in 1986, laying the foundation for European commercial EO programs."
+                    },
+                    {
+                        "item": "Held leadership roles at CNES including Deputy Director for applications and Director of the Toulouse Space Center."
+                    },
+                    {
+                        "item": "Appointed CTO and Vice President of Alcatel Space, managing over 1500 engineers in charge of technical development and quality."
+                    },
+                    {
+                        "item": "Served as Director of Technical and Quality Management at ESA and Head of ESTEC (2004–2010)."
+                    },
+                    {
+                        "item": "Recipient of numerous awards, including the Legion of Honour (2000), National Order of Merit (1991), and the Grand Prix of ANAE (1987)."
+                    }
+                ],
+                "currentRole": "President of the Van Allen Foundation and CTO of Blue Planet for the v-GLOBE space segment, overseeing quality and technical performance.",
                 "linkedin": null,
                 "image": "courtois.webp",
                 "video": null,

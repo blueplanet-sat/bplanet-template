@@ -102,46 +102,85 @@
                 "videoDescription": "Jean-Pierre Antikidis L'espace, la communication et le futur."
             },
             {
-                "name": "Bernard Plano",
-                "role": "Chef de l'équipe industrielle",
-                "description": "Ancien responsable du Système d’Information de Matra et manager hautement qualifié",
-                "experience": [
-                    {
-                        "item": "A géré des projets de systèmes terrestres pour le Pakistan, l’Afrique et l’Asie, et a passé 8 ans à l’Agence Spatiale Européenne."
-                    }
-                ],
-                "currentRole": null,
-                "linkedin": null,
-                "image": "plano.jpg",
-                "video": null,
-                "videoDescription": null
-            },
-            {
                 "name": "Jean-Jacques Favier",
-                "role": "Astronaute & Responsable de la coopération internationale",
-                "description": "Ancien astronaute de la NASA (STS78) et Directeur de l’innovation au CNES",
+                "role": "Astronaute et Directeur de la coopération internationale",
+                "description": "Ancien spécialiste de charge utile pour la mission STS-78 de la NASA et Directeur de l’innovation au CNES",
                 "experience": [
                     {
-                        "item": "A géré des projets de systèmes terrestres pour le Pakistan, l’Afrique et l’Asie, et a passé 8 ans à l’Agence Spatiale Européenne."
+                        "item": "A participé à la mission STS-78 de la navette Columbia de la NASA en 1996 comme spécialiste de charge utile, avec plus de 16 jours passés dans l’espace."
+                    },
+                    {
+                        "item": "Premier scientifique français dans l’espace, il a contribué à des programmes de recherche en microgravité tels que MEPHISTO."
+                    },
+                    {
+                        "item": "Directeur adjoint des Concepts Avancés et de la Stratégie au CNES, après avoir été Directeur adjoint de la Technologie Spatiale."
+                    },
+                    {
+                        "item": "Responsable du Laboratoire de Solidification au CEA et auteur de plus de 150 publications scientifiques."
+                    },
+                    {
+                        "item": "Cofondateur de Blue Planet, promouvant les constellations de microsatellites d'observation terrestre à haute résolution."
                     }
                 ],
-                "currentRole": null,
+                "currentRole": "Jusqu’en 2023, il a contribué au développement stratégique de Blue Planet et soutenu les coopérations internationales.",
                 "linkedin": null,
                 "image": "favier.webp",
                 "video": null,
                 "videoDescription": null
             },
             {
-                "name": "Michel Courtois",
-                "role": "CTO – Chef technique du segment spatial",
-                "description": "Ancien responsable du système d'observation de la Terre SPOT et ancien directeur du centre de recherche ESA/ESTEC",
+                "name": "Bernard Plano",
+                "role": "Chef de l’équipe industrielle",
+                "description": "Cadre supérieur de l’aérospatiale et de la défense, ancien PDG de Matra Systems & Information et expert en stratégie internationale",
                 "experience": [
                     {
-                        "item": "A géré des projets de systèmes terrestres pour le Pakistan, l’Afrique et l’Asie, et a passé 8 ans à l’Agence Spatiale Européenne."
+                        "item": "Ingénieur électricien avec un MBA de l’école de commerce HEC."
+                    },
+                    {
+                        "item": "A rejoint Matra/EADS à la fin des années 1980, spécialisé dans les systèmes de données de défense ; PDG de Matra Systems & Information (1996–2004)."
+                    },
+                    {
+                        "item": "Vice-président exécutif du développement international chez EADS, en charge des systèmes de défense et spatiaux dans plus de 50 pays."
+                    },
+                    {
+                        "item": "Fondateur de Plano BP Consulting et responsable du développement stratégique chez Spacebel, un leader européen du traitement d'information spatiale."
+                    },
+                    {
+                        "item": "Superviseur de programmes spatiaux majeurs comme Ariane, SPOT, Helios et Hipparcos."
                     }
                 ],
-                "currentRole": null,
+                "currentRole": "Responsable de l’équipe industrielle de Blue Planet depuis 2012, encadrant la gestion d’équipe, les fournisseurs et l’évolution stratégique et financière de l’entreprise.",
                 "linkedin": null,
+                "image": "plano.jpg",
+                "video": null,
+                "videoDescription": null
+            },
+            {
+                "name": "Michel Courtois",
+                "role": "CTO – Directeur technique du segment spatial",
+                "description": "Ancien directeur de l’ESA/ESTEC et ingénieur principal du programme SPOT au CNES",
+                "experience": [
+                    {
+                        "item": "Diplômé de l’École Polytechnique et de l’ENSAE en 1971 en tant qu’ingénieur aérospatial."
+                    },
+                    {
+                        "item": "Responsable du développement du satellite français d’observation de la Terre SPOT au CNES, lancé en 1986, base du programme européen commercial."
+                    },
+                    {
+                        "item": "A occupé des postes de direction au CNES, notamment en tant que Directeur adjoint des applications et Directeur du Centre spatial de Toulouse."
+                    },
+                    {
+                        "item": "Vice-président et directeur technique d’Alcatel Space, supervisant plus de 1500 ingénieurs."
+                    },
+                    {
+                        "item": "Directeur de la gestion technique et de la qualité à l’ESA et chef de l’ESTEC (2004–2010)."
+                    },
+                    {
+                        "item": "Lauréat de nombreux prix, dont la Légion d’honneur (2000), l’Ordre national du Mérite (1991) et le Grand Prix de l’ANAE (1987)."
+                    }
+                ],
+                "currentRole": "Président de la Fondation Van Allen et CTO de Blue Planet pour le segment spatial de v-GLOBE, garantissant la qualité et la performance technique.",
+                "linkedin": "https://www.linkedin.com/in/bernard-plano-a10070b/",
                 "image": "courtois.webp",
                 "video": null,
                 "videoDescription": null
