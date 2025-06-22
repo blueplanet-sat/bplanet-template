@@ -2,12 +2,14 @@
 const { t } = Astro.props;
 const currentYear = new Date().getFullYear();
 ---
-<footer class="bg-gray-900 text-white px-6 py-12">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
+<footer class="bg-gray-900 text-white px-6 py-12">
+  <div
+    class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10"
+  >
     <!-- Logo y descripción -->
     <div class="flex flex-col gap-4">
-      <img src="/images/logo.png" alt="Blue Planet Logo" class="w-32" />
+      <img src="/images/logo.webp" alt="Blue Planet Logo" class="w-32" />
       <p class="text-sm text-gray-300">
         {t.footer.description}
       </p>
@@ -17,11 +19,19 @@ const currentYear = new Date().getFullYear();
     <div>
       <h3 class="text-lg font-semibold mb-3">{t.footer.title2}</h3>
       <ul class="space-y-2 text-sm text-gray-400">
-        {t.navbar.map((item : any) => (
-                <li><a class="hover:text-accent" href={item.path} class="block py-2 hover:text-accent">
-                  {item.name}
-                </a></li>
-              ))}
+        {
+          t.navbar.map((item: any) => (
+            <li>
+              <a
+                class="hover:text-accent"
+                href={item.path}
+                class="block py-2 hover:text-accent"
+              >
+                {item.name}
+              </a>
+            </li>
+          ))
+        }
       </ul>
     </div>
 
@@ -30,15 +40,20 @@ const currentYear = new Date().getFullYear();
       <h3 class="text-lg font-semibold mb-3">{t.footer.title1}</h3>
       <ul class="text-sm text-gray-400 space-y-2">
         <li class="flex items-center gap-2">
-            <img src="svg/email.svg" alt="Email icon" class="w-6 h-6"> 
-            <a href={`mailto:${t.footer.contact.email}`} class="hover:text-accent">{t.footer.contact.email}</a>
+          <img src="svg/email.svg" alt="Email icon" class="w-6 h-6" />
+          <a href={`mailto:${t.footer.contact.email}`} class="hover:text-accent"
+            >{t.footer.contact.email}</a
+          >
         </li>
         <li class="flex items-center gap-2">
-            <img src="svg/phone.svg" alt="Phone icon" class="w-6 h-6"> 
-            <a href="tel:+1234567890" class="hover:text-accent">{t.footer.contact.phone}</a>
+          <img src="svg/phone.svg" alt="Phone icon" class="w-6 h-6" />
+          <a href="tel:+1234567890" class="hover:text-accent"
+            >{t.footer.contact.phone}</a
+          >
         </li>
         <li class="flex items-center gap-2">
-            <img src="svg/address.svg" alt="Address icon" class="w-6 h-6"> {t.footer.contact.address}
+          <img src="svg/address.svg" alt="Address icon" class="w-6 h-6" />
+          {t.footer.contact.address}
         </li>
       </ul>
     </div>
@@ -47,14 +62,21 @@ const currentYear = new Date().getFullYear();
       <h3 class="text-lg font-semibold mb-3">{t.footer.title3}</h3>
       <div class="flex gap-4 text-gray-400">
         <a target="_blank" href={`${t.footer.social.instagram}`}>
-            <img src="svg/instagram.svg" alt="Instagram icon" class="w-6 h-6 hover:opacity-50" >
+          <img
+            src="svg/instagram.svg"
+            alt="Instagram icon"
+            class="w-6 h-6 hover:opacity-50"
+          />
         </a>
         <a target="_blank" href={`${t.footer.social.linkedin}`}>
-            <img src="svg/linkedin.svg" alt="Linkedin icon" class="w-7 h-6 hover:opacity-50" >
+          <img
+            src="svg/linkedin.svg"
+            alt="Linkedin icon"
+            class="w-7 h-6 hover:opacity-50"
+          />
         </a>
       </div>
     </div>
-
   </div>
 
   <div class="mt-12 text-center text-sm text-gray-500">
