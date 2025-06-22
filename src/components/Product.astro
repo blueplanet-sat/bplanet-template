@@ -1,221 +1,383 @@
 ---
 const { t } = Astro.props;
 const product = t.product;
-
 ---
+
 <div>
   <section class="text-gray-200 bg-gray-900">
-      <div class="max-w-6xl mx-auto px-5 py-12">
-        <div class="text-center mb-10">
-          <h1 data-aos="slide-up" class=" title-font  mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl">{product.title}</h1>
-          <div class="flex mt-6 justify-center">
-            <div class="w-16 h-1 rounded-full bg-accent inline-flex"></div>
-          </div>
+    <div class="max-w-6xl mx-auto px-5 py-12">
+      <div class="text-center mb-10">
+        <h1
+          data-aos="slide-up"
+          class="title-font mb-4 text-4xl font-extrabold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl"
+        >
+          {product.title}
+        </h1>
+        <div class="flex mt-6 justify-center">
+          <div class="w-16 h-1 rounded-full bg-accent inline-flex"></div>
         </div>
-        
-      <div class="grid gap-6 md:grid-cols-3 text-white p-6 rounded-xl shadow-xl" data-aos="fade-up" data-aos-delay="400">
-      <!-- CARD 1: High-Resolution Satellite Imagery -->
-      <div class="bg-gradient-to-b from-gray-900 to-gray-800 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
-          <div class="flex items-center justify-center mb-4">
-              <img src="svg/image.svg" class="w-12 h-12" alt="Icon svg">
-          </div>
-          <h3 class="text-xl font-semibold mb-4 text-center">{product.features[0].title}</h3>
-          <ul class="space-y-3 text-sm">
-            <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-300 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M5 13l4 4L19 7" />
-                </svg>
-                {product.features[0].description1}
-            </li>
-            <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-300 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M5 13l4 4L19 7" />
-                </svg>
-                {product.features[0].description2}
-            </li>
-            <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-300 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M5 13l4 4L19 7" />
-                </svg>
-                {product.features[0].description3}
-            </li>
-            <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-300 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M5 13l4 4L19 7" />
-                </svg>
-                {product.features[0].description4}
-            </li>
-            <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-green-300 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M5 13l4 4L19 7" />
-                </svg>
-                {product.features[0].description5}
-            </li>
-          </ul>
       </div>
 
-      <!-- CARD 2: Massive, Fast & Affordable Data -->
-      <div class="bg-gradient-to-b from-gray-900 to-gray-800 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+      <div
+        class="grid gap-6 md:grid-cols-3 text-white p-6 rounded-xl shadow-xl"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        <!-- CARD 1: High-Resolution Satellite Imagery -->
+        <div
+          class="bg-gradient-to-b from-gray-900 to-gray-800 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+        >
           <div class="flex items-center justify-center mb-4">
-          <img src="svg/earth.svg" class="w-12 h-12" alt="Icon svg">
+            <img
+              src="svg/image.svg"
+              class="w-12 h-12"
+              alt="Icon svg"
+              loading="lazy"
+            />
           </div>
-          <h3 class="text-xl font-semibold mb-4 text-center">{product.features[1].title}</h3>
+          <h3 class="text-xl font-semibold mb-4 text-center">
+            {product.features[0].title}
+          </h3>
           <ul class="space-y-3 text-sm">
-          <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-blue-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path d="M5 13l4 4L19 7" />
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-green-300 mt-1"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M5 13l4 4L19 7"></path>
+              </svg>
+              {product.features[0].description1}
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-green-300 mt-1"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M5 13l4 4L19 7"></path>
+              </svg>
+              {product.features[0].description2}
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-green-300 mt-1"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M5 13l4 4L19 7"></path>
+              </svg>
+              {product.features[0].description3}
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-green-300 mt-1"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M5 13l4 4L19 7"></path>
+              </svg>
+              {product.features[0].description4}
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-green-300 mt-1"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M5 13l4 4L19 7"></path>
+              </svg>
+              {product.features[0].description5}
+            </li>
+          </ul>
+        </div>
+
+        <!-- CARD 2: Massive, Fast & Affordable Data -->
+        <div
+          class="bg-gradient-to-b from-gray-900 to-gray-800 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+        >
+          <div class="flex items-center justify-center mb-4">
+            <img
+              src="svg/earth.svg"
+              class="w-12 h-12"
+              alt="Icon svg"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-center">
+            {product.features[1].title}
+          </h3>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-blue-300 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 13l4 4L19 7"></path>
               </svg>
               {product.features[1].description1}
-          </li>
-          <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-blue-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path d="M5 13l4 4L19 7" />
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-blue-300 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 13l4 4L19 7"></path>
               </svg>
               {product.features[1].description2}
-          </li>
-          <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-blue-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path d="M5 13l4 4L19 7" />
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-blue-300 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 13l4 4L19 7"></path>
               </svg>
               {product.features[1].description3}
-          </li>
-          <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-blue-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path d="M5 13l4 4L19 7" />
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-blue-300 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 13l4 4L19 7"></path>
               </svg>
               {product.features[1].description4}
-          </li>
-          <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-blue-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path d="M5 13l4 4L19 7" />
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-blue-300 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 13l4 4L19 7"></path>
               </svg>
               {product.features[1].description5}
-          </li>
+            </li>
           </ul>
-      </div>
+        </div>
 
-      <!-- CARD 3: v-GLOBE: Global Coverage Reimagined -->
-      <div class="bg-gradient-to-b from-gray-900 to-gray-800 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+        <!-- CARD 3: v-GLOBE: Global Coverage Reimagined -->
+        <div
+          class="bg-gradient-to-b from-gray-900 to-gray-800 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+        >
           <div class="flex items-center justify-center mb-4">
-          <img src="svg/satellite.svg" class="w-12 h-12" alt="Icon svg">
+            <img
+              src="svg/satellite.svg"
+              class="w-12 h-12"
+              alt="Icon svg"
+              loading="lazy"
+            />
           </div>
-          <h3 class="text-xl font-semibold mb-4 text-center">{product.features[2].title}</h3>
+          <h3 class="text-xl font-semibold mb-4 text-center">
+            {product.features[2].title}
+          </h3>
           <ul class="space-y-3 text-sm">
-          <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-yellow-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path d="M5 13l4 4L19 7" />
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-yellow-300 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 13l4 4L19 7"></path>
               </svg>
               {product.features[2].description1}
-          </li>
-          <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-yellow-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path d="M5 13l4 4L19 7" />
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-yellow-300 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 13l4 4L19 7"></path>
               </svg>
               {product.features[2].description2}
-          </li>
-          <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-yellow-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path d="M5 13l4 4L19 7" />
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-yellow-300 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 13l4 4L19 7"></path>
               </svg>
               {product.features[2].description3}
-          </li>
-          <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-yellow-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path d="M5 13l4 4L19 7" />
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-yellow-300 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 13l4 4L19 7"></path>
               </svg>
               {product.features[2].description4}
-          </li>
-          <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-yellow-300 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path d="M5 13l4 4L19 7" />
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-yellow-300 mt-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 13l4 4L19 7"></path>
               </svg>
               {product.features[2].description5}
-          </li>
+            </li>
           </ul>
-      </div>
-      </div>
-      
-      
-    <section class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8 items-center" data-aos="fade-right" data-aos-delay="400">
-     
-      <div class="space-y-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-white">
-          {product.section1.title}
-        </h2>
-        <p class="text-lg text-gray-300">
-          {product.section1.description}
-        </p>
-
-        <div class="space-y-4">
-          <div class="flex items-start gap-4">
-            <img src="/svg/planet.svg" alt="Planet" class="w-8 h-8 mt-1" />
-            <div>
-              <h3 class="text-white font-semibold">{product.section1.subtitle1}</h3>
-              <p class="text-gray-400 text-sm">{product.section1.description1}</p>
-            </div>
-          </div>
-
-          <div class="flex items-start gap-4">
-            <img src="/svg/planet.svg" alt="Planet" class="w-8 h-8 mt-1" />
-            <div>
-              <h3 class="text-white font-semibold">{product.section1.subtitle2}</h3>
-              <p class="text-gray-400 text-sm">{product.section1.description2}</p>
-            </div>
-          </div>
-
-          <div class="flex items-start gap-4">
-            <img src="/svg/planet.svg" alt="Planet" class="w-8 h-8 mt-1" />
-            <div>
-              <h3 class="text-white font-semibold">{product.section1.subtitle3}</h3>
-              <p class="text-gray-400 text-sm">{product.section1.description3}</p>
-            </div>
-          </div>
         </div>
       </div>
 
-      
-      <div>
-        <img src="/images/image1.webp" alt="Earth from satellite" class="rounded-xl shadow-lg object-cover w-full h-full max-h-[500px] transition-transform duration-1000 hover:scale-105" />
-      </div>
-    </section>
+      <section
+        class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8 items-center"
+        data-aos="fade-right"
+        data-aos-delay="400"
+      >
+        <div class="space-y-6">
+          <h2 class="text-3xl md:text-4xl font-bold text-white">
+            {product.section1.title}
+          </h2>
+          <p class="text-lg text-gray-300">
+            {product.section1.description}
+          </p>
 
+          <div class="space-y-4">
+            <div class="flex items-start gap-4">
+              <img
+                src="/svg/planet.svg"
+                alt="Planet"
+                class="w-8 h-8 mt-1"
+                loading="lazy"
+              />
+              <div>
+                <h3 class="text-white font-semibold">
+                  {product.section1.subtitle1}
+                </h3>
+                <p class="text-gray-400 text-sm">
+                  {product.section1.description1}
+                </p>
+              </div>
+            </div>
 
-    <section class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center" data-aos="fade-left" data-aos-delay="400">
-      <!-- Imagen -->
-      <div class="order-2 md:order-1">
-        <img src="/images/image2.webp" alt="v-GLOBE overview" class="rounded-xl shadow-xl object-cover w-full h-full max-h-[500px] transition-transform duration-1000 hover:scale-105" />
-      </div>
+            <div class="flex items-start gap-4">
+              <img
+                src="/svg/planet.svg"
+                alt="Planet"
+                class="w-8 h-8 mt-1"
+                loading="lazy"
+              />
+              <div>
+                <h3 class="text-white font-semibold">
+                  {product.section1.subtitle2}
+                </h3>
+                <p class="text-gray-400 text-sm">
+                  {product.section1.description2}
+                </p>
+              </div>
+            </div>
 
-      <!-- Texto -->
-      <div class="space-y-6 order-1 md:order-2">
-        <h2 class="text-3xl md:text-4xl font-bold text-white">
-          {product.section2.title}
-        </h2>
-        <p class="text-lg text-gray-300">
-          {product.section2.description}
-        </p>
-        <ul class="space-y-4 text-gray-300">
-          <li class="flex gap-3 items-start">
-            <img src="svg/check.svg" class="w-5 h-5" alt="Icon svg">
-            <span><strong>{product.section2.subtitle1}</strong> {product.section2.description1}</span>
-          </li>
-          <li class="flex gap-3 items-start">
-            <img src="svg/check.svg" class="w-5 h-5" alt="Icon svg">
-            <span><strong>{product.section2.subtitle2}</strong> {product.section2.description2}</span>
-          </li>
-          <li class="flex gap-3 items-start">
-            <img src="svg/check.svg" class="w-5 h-5" alt="Icon svg">
-            <span><strong>{product.section2.subtitle3}</strong> {product.section2.description3}</span>
-          </li>
-          <li class="flex gap-3 items-start">
-            <img src="svg/check.svg" class="w-5 h-5" alt="Icon svg">
-            <span><strong>{product.section2.subtitle4}</strong> {product.section2.description4}</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-      </div>
+            <div class="flex items-start gap-4">
+              <img
+                src="/svg/planet.svg"
+                alt="Planet"
+                class="w-8 h-8 mt-1"
+                loading="lazy"
+              />
+              <div>
+                <h3 class="text-white font-semibold">
+                  {product.section1.subtitle3}
+                </h3>
+                <p class="text-gray-400 text-sm">
+                  {product.section1.description3}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div>
+          <img
+            src="/images/image1.webp"
+            alt="Earth from satellite"
+            loading="lazy"
+            class="rounded-xl shadow-lg object-cover w-full h-full max-h-[500px] transition-transform duration-1000 hover:scale-105"
+          />
+        </div>
+      </section>
+
+      <section
+        class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center"
+        data-aos="fade-left"
+        data-aos-delay="400"
+      >
+        <!-- Imagen -->
+        <div class="order-2 md:order-1">
+          <img
+            src="/images/image2.webp"
+            alt="v-GLOBE overview"
+            loading="lazy"
+            class="rounded-xl shadow-xl object-cover w-full h-full max-h-[500px] transition-transform duration-1000 hover:scale-105"
+          />
+        </div>
+
+        <!-- Texto -->
+        <div class="space-y-6 order-1 md:order-2">
+          <h2 class="text-3xl md:text-4xl font-bold text-white">
+            {product.section2.title}
+          </h2>
+          <p class="text-lg text-gray-300">
+            {product.section2.description}
+          </p>
+          <ul class="space-y-4 text-gray-300">
+            <li class="flex gap-3 items-start">
+              <img src="svg/check.svg" class="w-5 h-5" alt="Icon svg" />
+              <span
+                ><strong>{product.section2.subtitle1}</strong>
+                {product.section2.description1}</span
+              >
+            </li>
+            <li class="flex gap-3 items-start">
+              <img src="svg/check.svg" class="w-5 h-5" alt="Icon svg" />
+              <span
+                ><strong>{product.section2.subtitle2}</strong>
+                {product.section2.description2}</span
+              >
+            </li>
+            <li class="flex gap-3 items-start">
+              <img src="svg/check.svg" class="w-5 h-5" alt="Icon svg" />
+              <span
+                ><strong>{product.section2.subtitle3}</strong>
+                {product.section2.description3}</span
+              >
+            </li>
+            <li class="flex gap-3 items-start">
+              <img src="svg/check.svg" class="w-5 h-5" alt="Icon svg" />
+              <span
+                ><strong>{product.section2.subtitle4}</strong>
+                {product.section2.description4}</span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
   </section>
 </div>
-
