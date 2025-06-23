@@ -1,8 +1,18 @@
---- 
-const { lang } = Astro.params;
- if (!lang) {
-  return Astro.redirect('/en');
-}
 ---
 
+---
 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      window.location.replace("/en");
+    </script>
+    <noscript>
+      <meta http-equiv="refresh" content="0; url=/en" />
+    </noscript>
+    <title>Redirecting...</title>
+  </head>
+  <body></body>
+</html>

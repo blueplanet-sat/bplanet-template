@@ -1,0 +1,120 @@
+---
+const { id, member, team } = Astro.props;
+---
+
+<div
+  id={id}
+  class="modal-overlay fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-90 transition-opacity duration-300"
+  onclick={`document.getElementById('${id}').classList.remove('flex'); document.getElementById('${id}').classList.add('hidden');`}
+>
+  <div class="relative max-w-md w-full mx-auto px-4 mt-10">
+    <!-- Contenedor que no tiene el scroll ni overflow -->
+    <div
+      class="relative bg-white rounded-[2rem] pt-20 pb-8 px-6 text-center shadow-2xl z-20 scale-100 transition-transform duration-300 max-h-[90vh] flex flex-col"
+      onclick="event.stopPropagation()"
+    >
+      <div
+        class="absolute -top-14 left-1/2 -translate-x-1/2 rounded-full shadow-lg border-4 border-white z-30"
+      >
+        <img
+          src={`images/${member.image}`}
+          class="w-24 h-24 rounded-full object-cover"
+        />
+      </div>
+
+      <!-- Contenido scrollable -->
+      <div
+        id="modal-scroll-content"
+        class="overflow-y-auto pr-2"
+        style="max-height: calc(90vh - 5rem);"
+      >
+        <button
+          class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-600 text-white hover:bg-slate-800 transition"
+          aria-label="Cerrar modal"
+          onclick={`document.getElementById('${id}').classList.remove('flex'); document.getElementById('${id}').classList.add('hidden');`}
+        >
+          ✕
+        </button>
+
+        <div class="text-center mb-6">
+          <h2 class="text-xl font-bold text-gray-900">{member.name}</h2>
+          <h3 class="text-accent font-medium">{member.role}</h3>
+          <p class="italic text-gray-500 mt-2">"{member.description}"</p>
+          {
+            member.linkedin && (
+              <div>
+                <a
+                  href={member.linkedin}
+                  target="_blank"
+                  class="inline-flex items-center gap-2"
+                >
+                  <img
+                    src="svg/linkedin-blue.svg"
+                    alt="Logo Linkedin"
+                    class="inline-block w-5 h-5 mt-2 hover:cursor-pointer"
+                  />
+                </a>
+              </div>
+            )
+          }
+        </div>
+
+        <ul class="space-y-2 text-sm text-gray-700 text-left">
+          {
+            member.currentRole && (
+              <li class="flex items-start gap-2">
+                <img
+                  src="svg/check.svg"
+                  alt="Check point"
+                  class="inline-block w-5 h-5"
+                />{" "}
+                {member.currentRole}
+              </li>
+            )
+          }
+          {
+            member.experience.length > 0 && (
+              <>
+                {member.experience.map((exp: any, idx: any) => (
+                  <li class="flex items-start gap-2">
+                    <img
+                      src="svg/check.svg"
+                      alt="Check point"
+                      class="w-5 h-5 mt-1 flex-shrink-0"
+                    />
+                    <span>{exp.item}</span>
+                  </li>
+                ))}
+              </>
+            )
+          }
+        </ul>
+
+        {
+          member.video && (
+            <div class="mt-6">
+              <p class="text-accent font-medium">{team.linksTitle}</p>
+              <ul class="mt-2 space-y-2 text-sm text-gray-700">
+                <li class="flex items-start gap-2">
+                  <img
+                    src="/svg/youtube.svg"
+                    alt="YouTube icon"
+                    class="w-5 h-5 pt-[2px]"
+                  />
+                  <a
+                    href={member.video}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-blue-600 hover:underline"
+                  >
+                    {member.videoDescription}
+                  </a>
+                </li>
+              </ul>
+            </div>
+          )
+        }
+      </div>
+    </div>
+  </div>
+</div>

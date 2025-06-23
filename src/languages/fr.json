@@ -2,7 +2,8 @@
     "language": "fr",
     "languageName": "Français",
     "title": "Blue Planet Sat",
-    "navbar": [{
+    "navbar": [
+        {
             "name": "Accueil",
             "path": "/fr#home"
         },
@@ -31,7 +32,8 @@
     "carousel": {
         "title": "Galerie d'Images",
         "subtitle": "Images satellites haute résolution",
-        "images": [{
+        "images": [
+            {
                 "title": "Antananarivo, Madagascar",
                 "alt": "Image d'Antananarivo, Madagascar",
                 "path": "/images/antananarivo-madagascar.webp"
@@ -76,35 +78,120 @@
     "team": {
         "title": "Notre Équipe",
         "subtitle": "Rencontrez les experts derrière Blue Planet",
-        "members": [{
-            "name": "Jean-Pierre Antikidis",
-            "position": "Président",
-            "description": "Ancien chef des systèmes d'information spatiale au CNES.",
-            "image": "antikidis.webp"
-        },
-        {
-            "name": "Bernard Plano",
-            "position": "Ancien Président",
-            "description": "Ancien président de Matra-System Information.",
-            "image": "plano.jpg"
-        },
-        {
-            "name": "Jean-Jacques Favier",
-            "position": "Astronaute et Chef de la prospective",
-            "description": "Astronaute STS-78 et ancien chef de la prospective au CNES.",
-            "image": "favier.webp"
-        },
-        {
-            "name": "Michel Courtois",
-            "position": "Directeur",
-            "description": "Ancien directeur du centre Estec et créateur du programme SPOT.",
-            "image": "courtois.webp"
-        }
-    ]
+        "linksTitle": "Liens utiles",
+        "members": [
+            {
+                "name": "Jean-Pierre Antikidis",
+                "role": "Président & CEO – Cofondateur",
+                "description": "Ancien responsable du Système d’Information Spatiale au CNES et expert international en gestion des données spatiales",
+                "experience": [
+                    {
+                        "item": "A géré des projets de systèmes terrestres pour le Pakistan, l’Afrique et l’Asie, et a passé 8 ans à l’Agence Spatiale Européenne."
+                    },
+                    {
+                        "item": "Responsable au CNES des concepts pour les futurs systèmes terrestres et délégué français dans des groupes consultatifs scientifiques et techniques."
+                    },
+                    {
+                        "item": "Inventeur de technologies informatiques avancées, faisant partie du groupe initial qui a conçu ce qu'on appelle aujourd'hui le Cloud."
+                    }
+                ],
+                "currentRole": "Président et CEO de Blue Planet. Dirige le développement technique du programme v-GLOBE depuis 2009, avec un accent sur les capteurs spatiaux, les télécommunications et les systèmes Cloud.",
+                "linkedin": "https://www.linkedin.com/in/jean-pierre-antikidis-4231382/",
+                "image": "antikidis.webp",
+                "video": "https://www.youtube.com/embed/_g0-TUus3ok",
+                "videoDescription": "Jean-Pierre Antikidis L'espace, la communication et le futur."
+            },
+            {
+                "name": "Jean-Jacques Favier",
+                "role": "Astronaute et Directeur de la coopération internationale",
+                "description": "Ancien spécialiste de charge utile pour la mission STS-78 de la NASA et Directeur de l’innovation au CNES",
+                "experience": [
+                    {
+                        "item": "A participé à la mission STS-78 de la navette Columbia de la NASA en 1996 comme spécialiste de charge utile, avec plus de 16 jours passés dans l’espace."
+                    },
+                    {
+                        "item": "Premier scientifique français dans l’espace, il a contribué à des programmes de recherche en microgravité tels que MEPHISTO."
+                    },
+                    {
+                        "item": "Directeur adjoint des Concepts Avancés et de la Stratégie au CNES, après avoir été Directeur adjoint de la Technologie Spatiale."
+                    },
+                    {
+                        "item": "Responsable du Laboratoire de Solidification au CEA et auteur de plus de 150 publications scientifiques."
+                    },
+                    {
+                        "item": "Cofondateur de Blue Planet, promouvant les constellations de microsatellites d'observation terrestre à haute résolution."
+                    }
+                ],
+                "currentRole": "Jusqu’en 2023, il a contribué au développement stratégique de Blue Planet et soutenu les coopérations internationales.",
+                "linkedin": null,
+                "image": "favier.webp",
+                "video": null,
+                "videoDescription": null
+            },
+            {
+                "name": "Bernard Plano",
+                "role": "Chef de l’équipe industrielle",
+                "description": "Cadre supérieur de l’aérospatiale et de la défense, ancien PDG de Matra Systems & Information et expert en stratégie internationale",
+                "experience": [
+                    {
+                        "item": "Ingénieur électricien avec un MBA de l’école de commerce HEC."
+                    },
+                    {
+                        "item": "A rejoint Matra/EADS à la fin des années 1980, spécialisé dans les systèmes de données de défense ; PDG de Matra Systems & Information (1996–2004)."
+                    },
+                    {
+                        "item": "Vice-président exécutif du développement international chez EADS, en charge des systèmes de défense et spatiaux dans plus de 50 pays."
+                    },
+                    {
+                        "item": "Fondateur de Plano BP Consulting et responsable du développement stratégique chez Spacebel, un leader européen du traitement d'information spatiale."
+                    },
+                    {
+                        "item": "Superviseur de programmes spatiaux majeurs comme Ariane, SPOT, Helios et Hipparcos."
+                    }
+                ],
+                "currentRole": "Responsable de l’équipe industrielle de Blue Planet depuis 2012, encadrant la gestion d’équipe, les fournisseurs et l’évolution stratégique et financière de l’entreprise.",
+                "linkedin": null,
+                "image": "plano.webp",
+                "video": null,
+                "videoDescription": null
+            },
+            {
+                "name": "Michel Courtois",
+                "role": "CTO – Directeur technique du segment spatial",
+                "description": "Ancien directeur de l’ESA/ESTEC et ingénieur principal du programme SPOT au CNES",
+                "experience": [
+                    {
+                        "item": "Diplômé de l’École Polytechnique et de l’ENSAE en 1971 en tant qu’ingénieur aérospatial."
+                    },
+                    {
+                        "item": "Responsable du développement du satellite français d’observation de la Terre SPOT au CNES, lancé en 1986, base du programme européen commercial."
+                    },
+                    {
+                        "item": "A occupé des postes de direction au CNES, notamment en tant que Directeur adjoint des applications et Directeur du Centre spatial de Toulouse."
+                    },
+                    {
+                        "item": "Vice-président et directeur technique d’Alcatel Space, supervisant plus de 1500 ingénieurs."
+                    },
+                    {
+                        "item": "Directeur de la gestion technique et de la qualité à l’ESA et chef de l’ESTEC (2004–2010)."
+                    },
+                    {
+                        "item": "Lauréat de nombreux prix, dont la Légion d’honneur (2000), l’Ordre national du Mérite (1991) et le Grand Prix de l’ANAE (1987)."
+                    }
+                ],
+                "currentRole": "Président de la Fondation Van Allen et CTO de Blue Planet pour le segment spatial de v-GLOBE, garantissant la qualité et la performance technique.",
+                "linkedin": "https://www.linkedin.com/in/bernard-plano-a10070b/",
+                "image": "courtois.webp",
+                "video": null,
+                "videoDescription": null
+            }
+        ],
+        "buttonText": "En savoir plus"
     },
     "product": {
         "title": "Nos produits",
-        "features": [{
+        "features": [
+            {
                 "title": "Production d'Images Supérieure",
                 "description1": "Résolution au sol réelle de 0,85 mètre",
                 "description2": "Ortho-rectifiées, vue nadir pour une précision géométrique",
@@ -172,8 +259,7 @@
         "title2": "Navigation",
         "title3": "Suivez-nous",
         "social": {
-            "instagram": "https://www.instagram.com/",
-            "linkedin": "https://www.linkedin.com/"
+            "linkedin": "https://www.linkedin.com/company/blue-planet/"
         },
         "note": "Tous droits réservés."
     }
