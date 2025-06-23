@@ -16,6 +16,9 @@ const t = getTranslations(lang);
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={t.footer.description} />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
     <link rel="icon" type="image/webp" href="/images/logo.webp" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,8 +30,6 @@ const t = getTranslations(lang);
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css"
     />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
   </head>
   <body class="overflow-x-hidden">
     <slot />
