@@ -8,8 +8,8 @@
             "path": "/en#home"
         },
         {
-            "name": "Product",
-            "path": "/en#product"
+            "name": "Technology",
+            "path": "/en#technology"
         },
         {
             "name": "Team",
@@ -18,6 +18,10 @@
         {
             "name": "Sponsors",
             "path": "/en#sponsors"
+        },
+        {
+            "name": "Testimonials",
+            "path": "/en#testimonials"
         },
         {
             "name": "About Us",
@@ -189,7 +193,7 @@
         "buttonText": "Learn more"
     },
     "product": {
-        "title": "Our products",
+        "title": "Our Technology",
         "features": [
             {
                 "title": "Superior Image Production",
@@ -242,6 +246,10 @@
     "partners": {
         "title": "Our Sponsors",
         "subtitle": "We are thankful to each and every company sponsored our technology which helped us to continue working on it."
+    },
+    "testimonials": {
+        "title": "Testimonials",
+        "subtitle": "We are proud to have a growing community of partners who trust us for their Earth observation needs."
     },
     "about": {
         "name": "About Us",

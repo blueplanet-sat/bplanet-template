@@ -8,8 +8,8 @@
             "path": "/fr#home"
         },
         {
-            "name": "Produit",
-            "path": "/fr#product"
+            "name": "Technologie",
+            "path": "/fr#technology"
         },
         {
             "name": "Équipe",
@@ -18,6 +18,10 @@
         {
             "name": "Sponsors",
             "path": "/en#sponsors"
+        },
+        {
+            "name": "Témoignages",
+            "path": "/fr#testimonials"
         },
         {
             "name": "À propos",
@@ -189,7 +193,7 @@
         "buttonText": "En savoir plus"
     },
     "product": {
-        "title": "Nos produits",
+        "title": "Notre Technologie",
         "features": [
             {
                 "title": "Production d'Images Supérieure",
@@ -242,6 +246,10 @@
     "partners": {
         "title": "Nos Sponsors",
         "subtitle": "Nous remercions chaque entreprise ayant sponsorisé notre technologie, ce qui nous a permis de continuer à la développer."
+    },
+    "testimonials": {
+        "title": "Témoignages",
+        "subtitle": "Nous sommes fiers de compter une communauté croissante de partenaires qui nous font confiance pour leurs besoins en observation de la Terre."
     },
     "about": {
         "name": "À propos",
