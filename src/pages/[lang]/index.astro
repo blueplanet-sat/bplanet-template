@@ -1,20 +1,21 @@
 ---
-import AboutUs from '../../components/AboutUs.astro';
-import Carousel from '../../components/Carousel.astro';
-import Footer from '../../components/Footer.astro';
-import Hero from '../../components/Hero.astro';
-import Navbar from '../../components/Navbar.astro';
-import Product from '../../components/Product.astro';
-import Team from '../../components/Team.astro';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getTranslations } from '../../lib/i18n';
-import Sponsors from '@/components/Sponsors.astro';
+import Testimonials from "@/components/Testimonials.astro";
+import AboutUs from "../../components/AboutUs.astro";
+import Carousel from "../../components/Carousel.astro";
+import Footer from "../../components/Footer.astro";
+import Hero from "../../components/Hero.astro";
+import Navbar from "../../components/Navbar.astro";
+import Product from "../../components/Product.astro";
+import Team from "../../components/Team.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getTranslations } from "../../lib/i18n";
+import Sponsors from "@/components/Sponsors.astro";
 
 export async function getStaticPaths() {
   return [
-    { params: { lang: 'en' } },
-    { params: { lang: 'es' } },
-    { params: { lang: 'fr' } }
+    { params: { lang: "en" } },
+    { params: { lang: "es" } },
+    { params: { lang: "fr" } },
   ];
 }
 
@@ -22,33 +23,36 @@ const { lang } = Astro.params;
 const t = getTranslations(lang);
 ---
 
-<!-- Todo incorporar fonts en el proyecto -->
-<!-- Todo revisar que todas las img sean webp -->
-<BaseLayout lang={lang || 'en'}  title={t.title}>
-  <Navbar t={t}/>
+<!-- Todo incorporar fonts en el proyecto --><!-- Todo revisar que todas las img sean webp -->
+<BaseLayout lang={lang || "en"} title={t.title}>
+  <Navbar t={t} />
 
   <div id="home">
-    <Hero t={t}/>
+    <Hero t={t} />
   </div>
 
-  <div id="product">
-    <Product t={t}/>
+  <div id="technology">
+    <Product t={t} />
   </div>
-	
+
   <!-- <div id="carousel-bp">
     <Carousel t={t}/>
   </div> -->
 
   <div id="team">
-    <Team t={t}/>
+    <Team t={t} />
   </div>
 
   <div id="sponsors">
-    <Sponsors t={t}/>
+    <Sponsors t={t} />
   </div>
-  
+
+  <div id="testimonials">
+    <Testimonials t={t} />
+  </div>
+
   <div id="about">
-    <AboutUs t={t}/>
+    <AboutUs t={t} />
   </div>
-	<Footer t={t}/>
+  <Footer t={t} />
 </BaseLayout>
