@@ -17,7 +17,7 @@
         },
         {
             "name": "Sponsors",
-            "path": "/en#sponsors"
+            "path": "/fr#sponsors"
         },
         {
             "name": "Témoignages",
@@ -63,9 +63,9 @@
                 "path": "/images/sahara-desert.webp"
             },
             {
-                "title": "Auckland, Nouvelle-Zélande",
-                "alt": "Image d'Auckland, Nouvelle-Zélande",
-                "path": "/images/aukland-new-zealand.webp"
+                "title": "Rosario, Argentine",
+                "alt": "Image d'Rosario, Argentine",
+                "path": "/images/rosario-ARG.webp"
             },
             {
                 "title": "Golfe du Mexique",

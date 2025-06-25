@@ -1,4 +1,5 @@
 ---
+import Excellency from '@/components/Excellency.astro';
 import Testimonials from "@/components/Testimonials.astro";
 import AboutUs from "../../components/AboutUs.astro";
 import Carousel from "../../components/Carousel.astro";
@@ -35,6 +36,10 @@ const t = getTranslations(lang);
     <Product t={t} />
   </div>
 
+  <div id="excellency">
+    <Excellency t={t}/>
+  </div>
+	
   <!-- <div id="carousel-bp">
     <Carousel t={t}/>
   </div> -->

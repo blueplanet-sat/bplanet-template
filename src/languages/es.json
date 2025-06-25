@@ -17,7 +17,7 @@
         },
         {
             "name": "Patrocinadores",
-            "path": "/en#sponsors"
+            "path": "/es#sponsors"
         },
         {
             "name": "Testimonios",
@@ -63,9 +63,9 @@
                 "path": "/images/sahara-desert.webp"
             },
             {
-                "title": "Aukland, Nueva Zelanda",
-                "alt": "Imagen de Aukland, Nueva Zelanda",
-                "path": "/images/aukland-new-zealand.webp"
+                "title": "Rosario, Argentina",
+                "alt": "Imagen de Rosario, Argentina",
+                "path": "/images/rosario-ARG.webp"
             },
             {
                 "title": "Golfo de México",
