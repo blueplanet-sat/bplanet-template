@@ -243,6 +243,94 @@
             "description4": "Infrastructure prête pour les services automatisés entre machines."
         }
     },
+    "excellency": {
+        "title": "Comment OT crée de la valeur",
+        "subtitle": "L'observation de la Terre par satellite est un outil absolument essentiel pour développer l'information et suivre nos progrès à toutes les échelles géographiques alors que nous explorons de nouvelles voies de développement orientées vers la gestion durable de la planète, tout en abordant de manière unifiée la réduction des risques de catastrophes, le changement climatique et le développement durable.",
+        "services": [
+            {
+            "title": "Cartographie et cadastre",
+            "description": "L'utilisation d'images satellites pour la création de cartes est très courante aujourd'hui. Les clients choisissent des images à plus haute résolution tout en demandant des réductions de prix.",
+            "image": "/images/cartografia.webp",
+            "features": ["Cartes topographiques", "Analyse de l'utilisation des sols", "Suivi des changements de terrain"],
+            "category": "Cartographie et cadastre"
+            },
+            {
+            "title": "Agriculture de précision",
+            "description": "L'agriculture statistique est une démonstration de l'application réussie de l'observation de la Terre depuis l'espace. Le coût des données par kilomètre carré est un facteur déterminant. Les images spatiales aideront à mettre en œuvre des pratiques de gestion agricole durables tout en garantissant la préservation des ressources en sol, terre et eau.",
+            "image": "/images/agricultura.webp?height=400&width=600",
+            "features": ["Analyse NDVI", "Évaluation de la santé des cultures", "Planification de l'irrigation"],
+            "category": "Agriculture"
+            },
+            {
+            "title": "Vérification de la chaîne d'approvisionnement",
+            "description": "La gestion forestière est essentielle pour surveiller l'évolution du climat mondial. De plus, elle est un indicateur clé de l'impact des activités humaines sur notre environnement naturel. V-Globe est un fournisseur idéal pour ce type d'application nécessitant une couverture rapide et à grande échelle.",
+            "image": "/images/bosque-canada.webp?height=400&width=600",
+            "features": ["Surveillance de la déforestation", "Gestion durable des forêts", "Analyse de la biodiversité"],
+            "category": "Foresterie"
+            },
+            {
+            "title": "Ressources halieutiques",
+            "description": "La télédétection des propriétés océaniques a le potentiel de fournir des informations pour la gouvernance des écosystèmes aux échelles mondiale et régionale. Grâce à sa couverture totale de la Terre et à sa capacité d'observation spectrale, V-Globe peut contribuer à la gestion des pêches par l'observation de la couleur de l'océan.",
+            "image": "/images/aukland-new-zealand.webp?height=400&width=600",
+            "features": ["Surveillance des ressources halieutiques", "Analyse des habitats marins", "Gestion durable"],
+            "category": "Maritime"
+            },
+            {
+            "title": "Optimisation des itinéraires",
+            "description": "Optimisation de la consommation de carburant et des émissions dans le transport. La télédétection spatiale offre une vue globale des infrastructures de transport, permettant aux entreprises et aux gouvernements d'optimiser les itinéraires, de réduire les coûts opérationnels et de minimiser l'impact environnemental.",
+            "image": "/images/gulf-mex.webp?height=400&width=600",
+            "features": ["Optimisation des itinéraires", "Réduction des coûts opérationnels", "Minimisation de l'impact environnemental"],
+            "category": "Transport et logistique"
+            },
+            {
+            "title": "Préservation de la faune et du paysage naturel",
+            "description": "Les informations recueillies depuis l'espace permettent un suivi fiable et cohérent en les combinant avec d'autres données numériques pour créer des cartes, des images et des graphiques dynamiques pouvant être utilisés pour la recherche ou pour orienter la gestion de la faune. Les satellites à cycles de revisite rapides, comme V-Globe, sont idéaux pour la génération répétitive d'images et la surveillance des changements naturels.",
+            "image": "/images/rio-amazonas.webp?height=400&width=600",
+            "features": ["Suivi de la faune", "Conservation des habitats", "Analyse de la biodiversité"],
+            "category": "Flore et faune"
+            },
+            {
+            "title": "Pétrole, gaz, minéraux, eaux souterraines, énergie hydraulique",
+            "description": "Dans le secteur pétrolier et gazier en haute mer, le coût de construction de plateformes de production capables de résister à des conditions météorologiques sévères devient indispensable.",
+            "image": "/images/Mountain-elgon-kenya.webp?height=400&width=600",
+            "features": ["Exploration des ressources", "Surveillance environnementale", "Planification de projets"],
+            "category": "Ressources naturelles"
+            },
+            {
+            "title": "Génie civil et gestion de la construction urbaine",
+            "description": "Les données de télédétection satellitaire ont été utilisées avec succès pour la cartographie, la surveillance, la planification et le développement de l'expansion urbaine, de l'utilisation des sols et de l'environnement urbain. Elles permettent également d'évaluer le trafic, l'offre immobilière et touristique, ainsi que, dans de nombreux pays en développement, l'expansion des bidonvilles sur des terrains vacants et le zonage de l'utilisation des sols urbains.",
+            "image": "/images/unknowplace.webp?height=400&width=600",
+            "features": ["Surveillance des infrastructures", "Planification urbaine", "Analyse de la croissance"],
+            "category": "Génie civil"
+            },
+            {
+            "title": "Alerte précoce",
+            "description": "Prédiction des inondations, des feux de forêt et des épidémies. La télédétection spatiale fournit une vision globale des schémas climatiques, de la température du sol et d'autres facteurs environnementaux pouvant aider à prévoir des événements extrêmes. Ces informations sont cruciales pour la planification et la réponse aux catastrophes.",
+            "image": "/images/niza-FRANCIA.webp?height=400&width=600",
+            "features": ["Prévision des inondations", "Surveillance des feux de forêt", "Détection des épidémies"],
+            "category": "Alerte précoce"
+            },
+            {
+            "title": "Analyse post-événement",
+            "description": "L'analyse post-événement implique l'utilisation d'images satellites pour évaluer l'impact d'événements naturels tels que tremblements de terre, inondations et ouragans. Ces images aident les autorités à comprendre l'ampleur des dégâts, à planifier la reprise et à coordonner les efforts d'aide.",
+            "image": "/images/gulf-mex.webp?height=400&width=600",
+            "features": ["Évaluation des dommages", "Planification de la reprise", "Coordination de l'aide"],
+            "category": "Analyse post-événement"
+            },
+            {
+            "title": "Expériences pour les consommateurs",
+            "description": "Alertes en temps réel : qualité de l'air, niveaux d'UV, conditions météorologiques et pollen. Les images satellites fournissent des données précises sur la qualité de l'air, le rayonnement UV et d'autres facteurs environnementaux affectant la santé publique. Ces alertes aident les individus à prendre des décisions éclairées concernant leur santé et leur bien-être.",
+            "image": "/images/estrecho-gibraltar.webp?height=400&width=600",
+            "features": ["Alertes sur la qualité de l'air", "Niveaux de rayonnement UV", "Conditions météorologiques locales"],
+            "category": "Consommateurs"
+            }
+        ],
+        "cta": {
+            "title": "Prêt à voir la Terre vue d'en haut?",
+            "description": "Contactez nos experts en imagerie satellite pour discuter des exigences de votre projet et découvrir comment nos solutions avancées d'observation de la Terre peuvent profiter à votre organisation.",
+            "buttonText": "Voir la galerie d'images"
+        }
+    },
     "partners": {
         "title": "Nos Sponsors",
         "subtitle": "Nous remercions chaque entreprise ayant sponsorisé notre technologie, ce qui nous a permis de continuer à la développer."
