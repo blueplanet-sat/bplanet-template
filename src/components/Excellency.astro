@@ -89,7 +89,7 @@ import PortfolioModal from './Modal-Carousel.astro';
 <section class="py-16 px-4 md:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
   <div class="max-w-7xl mx-auto">
     <!-- Section Header -->
-    <div class="text-center mb-10">
+    <!-- <div class="text-center mb-10">
         <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             {excellency.title}
           </h2>          
@@ -99,18 +99,27 @@ import PortfolioModal from './Modal-Carousel.astro';
           <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             {excellency.subtitle}            
       </p>
+    </div> -->
+
+    <div class="mx-auto mb-16 max-w-2xl text-center" data-aos="flip-down" data-aos-duration="1000">
+      <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">{excellency.title}</h2>
+      <div class="flex mt-6 justify-center">
+        <div class="w-16 h-1 rounded-full bg-accent inline-flex"></div>
+      </div>
+      <p class="mt-4 text-lg text-gray-600">{excellency.subtitle}</p>
     </div>
 
     <!-- Carousel Container -->
-    <div class="relative">
+    <div class="relative mb-8">
       <!-- Carousel Wrapper -->
-      <div class="overflow-hidden rounded-2xl">
-        <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out">
+      <div class="overflow-hidden rounded-2xl pb-6 w-full">
+        <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out items-stretch w-full">
           {services.map((service: any) => (
-            <div class=" md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
-              <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
-                <!-- Image Container -->
-                <div class="relative overflow-hidden h-48 bg-gradient-to-br from-blue-500 to-purple-600">
+            <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-2 sm:px-3 flex">
+              <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 h-full flex flex-col">
+
+              <!-- Image Container -->
+                <div class="relative overflow-hidden h-48 bg-gradient-to-br from-gray-900 to-primary">
                   <img
                     src={service.image || "/placeholder.svg"}
                     alt={service.title}
@@ -125,11 +134,11 @@ import PortfolioModal from './Modal-Carousel.astro';
                 </div>
 
                 <!-- Content -->
-                <div class="p-3">
+                <div class="p-3 flex flex-col flex-grow">
                   <h3 class="text-lg font-bold text-gray-900 mb-3 hover:text-blue-600 transition-colors">
                     {service.title}
                   </h3>
-                  <p class="text-gray-600 mb-4 leading-relaxed">
+                  <p class="text-gray-600 mb-4 leading-relaxed flex-grow">
                     {service.description}
                   </p>
 
@@ -146,7 +155,7 @@ import PortfolioModal from './Modal-Carousel.astro';
                   </div> */}
 
                   <!-- CTA Button -->
-                  <button class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                  <button class="mt-auto w-full bg-gradient-to-r from-gray-900 to-primary text-white font-semibold py-3 px-6 rounded-lg hover:from-primary hover:to-gray-900 transition-all duration-300 transform focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                     Leer Más
                   </button>
                 </div>
@@ -159,7 +168,7 @@ import PortfolioModal from './Modal-Carousel.astro';
       <!-- Navigation Buttons -->
       <button
         id="prev-btn"
-        class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm hover:bg-white text-gray-800 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-10 opacity-50 disabled:cursor-not-allowed hover:scale-105 hover:bg-blue-600 hover:opacity-100"
+        class="hidden sm:flex absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm text-gray-800 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-10 opacity-50 disabled:cursor-not-allowed hover:scale-105 hover:bg-blue-600 hover:opacity-100"
         aria-label="Previous slide"
       >
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -169,13 +178,14 @@ import PortfolioModal from './Modal-Carousel.astro';
 
       <button
         id="next-btn"
-        class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm hover:bg-white text-gray-800 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-10 opacity-50 disabled:cursor-not-allowed hover:scale-105 hover:bg-blue-600 hover:opacity-100"
+        class="hidden sm:flex absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm text-gray-800 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-10 opacity-50 disabled:cursor-not-allowed hover:scale-105 hover:bg-blue-600 hover:opacity-100"
         aria-label="Next slide"
       >
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
         </svg>
       </button>
+
     </div>
 
     <!-- Carousel Indicators -->
@@ -190,7 +200,7 @@ import PortfolioModal from './Modal-Carousel.astro';
     </div>
 
     <!-- Bottom CTA Section -->
-    <div class="text-center bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 md:p-12 text-white">
+    <div class="text-center bg-gradient-to-r from-gray-900 to-primary rounded-2xl p-8 md:p-12 text-white">
       <h3 class="text-2xl md:text-3xl font-bold mb-4">
         {cta.title}
       </h3>
