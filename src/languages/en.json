@@ -80,7 +80,7 @@
         ]
     },
     "team": {
-        "title": "The core team",
+        "title": "Management Team",
         "subtitle": "Concept inventors and founders",
         "linksTitle": "Useful links",
         "members": [
@@ -100,35 +100,32 @@
                     }
                 ],
                 "currentRole": "President and CEO of Blue Planet. Leads the technical development of the v-GLOBE program since 2009, focusing on space sensors, telecommunications, and Cloud systems.",
-                "linkedin": "https://www.linkedin.com/in/jean-pierre-antikidis-4231382/",
+                "linkedin": null,
                 "image": "antikidis.webp",
-                "video": "https://www.youtube.com/embed/_g0-TUus3ok",
-                "videoDescription": "Jean-Pierre Antikidis L'espace, la communication et le futur."
+                "video": null,
+                "videoDescription": null
             },
             {
-                "name": "Jean-Jacques Favier",
-                "role": "Astronaut & Director of International Cooperation",
-                "description": "Former NASA STS-78 Payload Specialist and Director of Innovation at CNES",
+                "name": "Patrice Brudieu",
+                "role": "Adviser – Space Policy & Program Strategy",
+                "description": "Former Deputy Director at CNES and adviser at the French Ministry of Space Policy.",
                 "experience": [
                     {
-                        "item": "Participated in NASA’s STS-78 Columbia mission in 1996 as Payload Specialist, spending over 16 days in space."
+                        "item": "Worked at CNES as a system engineer in Earth observation satellites, and later Deputy Director in charge of program management, valorization, and defense affairs."
                     },
                     {
-                        "item": "First French scientist in space, contributed to microgravity materials research programs like MEPHISTO."
+                        "item": "Held key responsibilities at the European Space Agency (ESA) within the manned flight program."
                     },
                     {
-                        "item": "Deputy Director of Advanced Concepts and Strategy at CNES, after serving as Deputy Director of Space Technology."
+                        "item": "Led the ministerial department responsible for the French Space Policy for six years, gaining high-level strategic insight into European and French space organizations."
                     },
                     {
-                        "item": "Led the Solidification Laboratory at the French Atomic Energy Commission (CEA) and authored over 150 scientific papers."
-                    },
-                    {
-                        "item": "Co-founder of Blue Planet, promoting Earth observation microsatellite constellations with high spatial resolution."
+                        "item": "Advisor to Blue Planet on technical, managerial, and funding strategies for EO-based programs and satellite infrastructure."
                     }
                 ],
-                "currentRole": "Until 2023, he contributed to the strategic development of Blue Planet and supported international collaborations.",
+                "currentRole": "Senior project adviser to Blue Planet, supporting strategic development and partnerships in the European space ecosystem.",
                 "linkedin": null,
-                "image": "favier.webp",
+                "image": "brudieu.webp",
                 "video": null,
                 "videoDescription": null
             },
@@ -154,7 +151,7 @@
                     }
                 ],
                 "currentRole": "Industrial team manager at Blue Planet since 2012, guiding team management and supplier networks, and supporting the company’s strategic and financial evolution.",
-                "linkedin": "https://www.linkedin.com/in/bernard-plano-a10070b/",
+                "linkedin": null,
                 "image": "plano.webp",
                 "video": null,
                 "videoDescription": null
@@ -247,83 +244,127 @@
         "title": "How EO Generates Value",
         "subtitle": "Satellite Earth Observation is an absolutely essential tool for generating information and monitoring our progress at all geographic scales as we explore new development pathways aimed at sustainable management of the planet, tackling disaster risk reduction, climate change, and sustainable development in an integrated way.",
         "services": [
-        {
-            "title": "Cartography and Cadastre",
-            "description": "The use of satellite imagery for map creation is very common today. Clients opt for higher-resolution images while also requesting price reductions.",
-            "image": "/images/cartografia.webp",
-            "features": ["Topographic maps", "Land use analysis", "Terrain change monitoring"],
-            "category": "Cartography and Cadastre"
-        },
-        {
-            "title": "Precision Agriculture",
-            "description": "Precision agriculture exemplifies the successful application of Earth observation from space. Data cost per square kilometer is a determining factor. Satellite imagery helps implement sustainable agricultural management practices while ensuring the preservation of soil, land, and water resources.",
-            "image": "/images/agricultura.webp?height=400&width=600",
-            "features": ["NDVI analysis", "Crop health assessment", "Irrigation planning"],
-            "category": "Agriculture"
-        },
-        {
-            "title": "Supply Chain Verification",
-            "description": "Forest management is fundamental to monitoring global climate evolution. Moreover, it is a key indicator of the impact of human activities on our natural environment. V-Globe is an ideal provider for applications requiring rapid, large-scale coverage.",
-            "image": "/images/bosque-canada.webp?height=400&width=600",
-            "features": ["Deforestation monitoring", "Sustainable forest management", "Biodiversity analysis"],
-            "category": "Forestry"
-        },
-        {
-            "title": "Fisheries Resources",
-            "description": "Remote sensing of ocean properties provides critical information for ecosystem governance at global and regional scales. Thanks to its total-Earth coverage and spectral observation capability, V-Globe can support fisheries management through ocean color monitoring.",
-            "image": "/images/aukland-new-zealand.webp?height=400&width=600",
-            "features": ["Fisheries resources monitoring", "Marine habitat analysis", "Sustainable management"],
-            "category": "Maritime"
-        },
-        {
-            "title": "Route Optimization",
-            "description": "Optimization of fuel consumption and emissions in transportation. Satellite remote sensing gives a comprehensive view of transport infrastructure, enabling companies and governments to optimize routes, reduce operating costs, and minimize environmental impact.",
-            "image": "/images/gulf-mex.webp?height=400&width=600",
-            "features": ["Route optimization", "Operational cost reduction", "Environmental impact minimization"],
-            "category": "Transportation and Logistics"
-        },
-        {
-            "title": "Wildlife and Natural Landscape Preservation",
-            "description": "Information collected from space enables reliable, consistent monitoring by combining it with other digital data to create dynamic maps, images, and graphics for research or to guide wildlife management. Satellites with rapid revisit cycles, like V-Globe, are ideal for repetitive image generation and natural change monitoring.",
-            "image": "/images/rio-amazonas.webp?height=400&width=600",
-            "features": ["Wildlife monitoring", "Habitat conservation", "Biodiversity analysis"],
-            "category": "Flora and Fauna"
-        },
-        {
-            "title": "Oil, Gas, Minerals, Groundwater, Hydraulic Energy",
-            "description": "In the offshore oil and gas sector, building production platforms capable of withstanding severe weather conditions is becoming essential.",
-            "image": "/images/Mountain-elgon-kenya.webp?height=400&width=600",
-            "features": ["Resource exploration", "Environmental monitoring", "Project planning"],
-            "category": "Natural Resources"
-        },
-        {
-            "title": "Civil Engineering and Urban Construction Management",
-            "description": "Satellite remote sensing data has been successfully used for mapping, monitoring, planning, and developing urban expansion, land use, and the urban environment. It can also assess traffic, real-estate and tourism offerings, as well as the growth of informal settlements on vacant land and urban land-use zoning in many developing countries.",
-            "image": "/images/unknowplace.webp?height=400&width=600",
-            "features": ["Infrastructure monitoring", "Urban planning", "Growth analysis"],
-            "category": "Civil Engineering"
-        },
-        {
-            "title": "Early Warning",
-            "description": "Prediction of floods, wildfires, and disease outbreaks. Satellite remote sensing provides a comprehensive view of climate patterns, soil temperature, and other environmental factors that help forecast extreme events. This information is crucial for disaster planning and response.",
-            "image": "/images/niza-FRANCIA.webp?height=400&width=600",
-            "features": ["Flood prediction", "Wildfire monitoring", "Disease outbreak detection"],
-            "category": "Early Warning"
-        },
-        {
-            "title": "Post-Event Analysis",
-            "description": "Post-event analysis uses satellite imagery to assess the impact of natural events such as earthquakes, floods, and hurricanes. These images help authorities understand damage extent, plan recovery efforts, and coordinate relief operations.",
-            "image": "/images/gulf-mex.webp?height=400&width=600",
-            "features": ["Damage assessment", "Recovery planning", "Aid coordination"],
-            "category": "Post-Event Analysis"
-        },
-        {
-            "title": "Consumer Experiences",
-            "description": "Real-time alerts: air quality, UV levels, weather conditions, and pollen. Satellite imagery provides accurate data on air quality, UV radiation, and other environmental factors affecting public health. These alerts help individuals make informed decisions about their health and well-being.",
-            "image": "/images/estrecho-gibraltar.webp?height=400&width=600",
-            "features": ["Air quality alerts", "UV radiation levels", "Local weather conditions"],
-            "category": "Consumers"
-        }
+            {
+                "title": "Cartography and Cadastre",
+                "description": "The use of satellite imagery for map creation is very common today. Clients opt for higher-resolution images while also requesting price reductions.",
+                "image": "/images/cartografia.webp",
+                "features": [
+                    "Topographic maps",
+                    "Land use analysis",
+                    "Terrain change monitoring"
+                ],
+                "category": "Cartography and Cadastre"
+            },
+            {
+                "title": "Precision Agriculture",
+                "description": "Precision agriculture exemplifies the successful application of Earth observation from space. Data cost per square kilometer is a determining factor. Satellite imagery helps implement sustainable agricultural management practices while ensuring the preservation of soil, land, and water resources.",
+                "image": "/images/agricultura.webp?height=400&width=600",
+                "features": [
+                    "NDVI analysis",
+                    "Crop health assessment",
+                    "Irrigation planning"
+                ],
+                "category": "Agriculture"
+            },
+            {
+                "title": "Supply Chain Verification",
+                "description": "Forest management is fundamental to monitoring global climate evolution. Moreover, it is a key indicator of the impact of human activities on our natural environment. V-Globe is an ideal provider for applications requiring rapid, large-scale coverage.",
+                "image": "/images/bosque-canada.webp?height=400&width=600",
+                "features": [
+                    "Deforestation monitoring",
+                    "Sustainable forest management",
+                    "Biodiversity analysis"
+                ],
+                "category": "Forestry"
+            },
+            {
+                "title": "Fisheries Resources",
+                "description": "Remote sensing of ocean properties provides critical information for ecosystem governance at global and regional scales. Thanks to its total-Earth coverage and spectral observation capability, V-Globe can support fisheries management through ocean color monitoring.",
+                "image": "/images/aukland-new-zealand.webp?height=400&width=600",
+                "features": [
+                    "Fisheries resources monitoring",
+                    "Marine habitat analysis",
+                    "Sustainable management"
+                ],
+                "category": "Maritime"
+            },
+            {
+                "title": "Route Optimization",
+                "description": "Optimization of fuel consumption and emissions in transportation. Satellite remote sensing gives a comprehensive view of transport infrastructure, enabling companies and governments to optimize routes, reduce operating costs, and minimize environmental impact.",
+                "image": "/images/gulf-mex.webp?height=400&width=600",
+                "features": [
+                    "Route optimization",
+                    "Operational cost reduction",
+                    "Environmental impact minimization"
+                ],
+                "category": "Transportation and Logistics"
+            },
+            {
+                "title": "Wildlife and Natural Landscape Preservation",
+                "description": "Information collected from space enables reliable, consistent monitoring by combining it with other digital data to create dynamic maps, images, and graphics for research or to guide wildlife management. Satellites with rapid revisit cycles, like V-Globe, are ideal for repetitive image generation and natural change monitoring.",
+                "image": "/images/rio-amazonas.webp?height=400&width=600",
+                "features": [
+                    "Wildlife monitoring",
+                    "Habitat conservation",
+                    "Biodiversity analysis"
+                ],
+                "category": "Flora and Fauna"
+            },
+            {
+                "title": "Oil, Gas, Minerals, Groundwater, Hydraulic Energy",
+                "description": "In the offshore oil and gas sector, building production platforms capable of withstanding severe weather conditions is becoming essential.",
+                "image": "/images/Mountain-elgon-kenya.webp?height=400&width=600",
+                "features": [
+                    "Resource exploration",
+                    "Environmental monitoring",
+                    "Project planning"
+                ],
+                "category": "Natural Resources"
+            },
+            {
+                "title": "Civil Engineering and Urban Construction Management",
+                "description": "Satellite remote sensing data has been successfully used for mapping, monitoring, planning, and developing urban expansion, land use, and the urban environment. It can also assess traffic, real-estate and tourism offerings, as well as the growth of informal settlements on vacant land and urban land-use zoning in many developing countries.",
+                "image": "/images/unknowplace.webp?height=400&width=600",
+                "features": [
+                    "Infrastructure monitoring",
+                    "Urban planning",
+                    "Growth analysis"
+                ],
+                "category": "Civil Engineering"
+            },
+            {
+                "title": "Early Warning",
+                "description": "Prediction of floods, wildfires, and disease outbreaks. Satellite remote sensing provides a comprehensive view of climate patterns, soil temperature, and other environmental factors that help forecast extreme events. This information is crucial for disaster planning and response.",
+                "image": "/images/niza-FRANCIA.webp?height=400&width=600",
+                "features": [
+                    "Flood prediction",
+                    "Wildfire monitoring",
+                    "Disease outbreak detection"
+                ],
+                "category": "Early Warning"
+            },
+            {
+                "title": "Post-Event Analysis",
+                "description": "Post-event analysis uses satellite imagery to assess the impact of natural events such as earthquakes, floods, and hurricanes. These images help authorities understand damage extent, plan recovery efforts, and coordinate relief operations.",
+                "image": "/images/gulf-mex.webp?height=400&width=600",
+                "features": [
+                    "Damage assessment",
+                    "Recovery planning",
+                    "Aid coordination"
+                ],
+                "category": "Post-Event Analysis"
+            },
+            {
+                "title": "Consumer Experiences",
+                "description": "Real-time alerts: air quality, UV levels, weather conditions, and pollen. Satellite imagery provides accurate data on air quality, UV radiation, and other environmental factors affecting public health. These alerts help individuals make informed decisions about their health and well-being.",
+                "image": "/images/estrecho-gibraltar.webp?height=400&width=600",
+                "features": [
+                    "Air quality alerts",
+                    "UV radiation levels",
+                    "Local weather conditions"
+                ],
+                "category": "Consumers"
+            }
         ],
         "cta": {
             "title": "Ready to See Earth from Above?",
