@@ -8,6 +8,10 @@
             "path": "/en#home"
         },
         {
+            "name": "Vision",
+            "path": "/en#vision"
+        },
+        {
             "name": "Technology",
             "path": "/en#technology"
         },
@@ -32,6 +36,16 @@
         "title": "Revolutionizing Earth Imagery Distribution Experience",
         "subtitle": "Discover our product and learn more about us",
         "buttonText": "Start"
+    },
+    "vision": {
+        "title": "Our Vision",
+        "subtitle": "A 'Living Planet' Virtual Earth 'SuperMarket'",
+        "text": "We 'Xerox' the Full Planet",
+        "textTwo": "A never proposed concept by which fresh space images are treated as any other commercial 'fresh goods' able to be ordered and obtained in matter of a few clicks.",
+        "textThree": "A game changer",
+        "textFour": " V-GLOBE provides a lightning fast, cost-effective way to view the entire planet from above.",
+        "textFive": "We are committed to making Earth observation accessible, affordable, and easy to use for everyone, from governments and NGOs to businesses and individuals.",
+        "textSix": "Our technology enables real-time access to high-quality satellite imagery, empowering users to make informed decisions and take action based on the most up-to-date information available."
     },
     "carousel": {
         "title": "Image Gallery",
