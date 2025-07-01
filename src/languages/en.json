@@ -2,7 +2,8 @@
     "language": "en",
     "languageName": "English",
     "title": "Blue Planet Sat",
-    "navbar": [{
+    "navbar": [
+        {
             "name": "Home",
             "path": "/en#home"
         },
@@ -35,7 +36,8 @@
     "carousel": {
         "title": "Image Gallery",
         "subtitle": "High-resolution satellite images",
-        "images": [{
+        "images": [
+            {
                 "title": "Antananarivo, Madagascar",
                 "alt": "Image of Antananarivo, Madagascar",
                 "path": "/images/antananarivo-madagascar.webp"
@@ -81,11 +83,13 @@
         "title": "Management Team",
         "subtitle": "Concept inventors and founders",
         "linksTitle": "Useful links",
-        "members": [{
+        "members": [
+            {
                 "name": "Jean-Pierre Antikidis",
                 "role": "President & CEO – Co-founder",
                 "description": "Former head of Space System Information at CNES and international expert in Space Data management",
-                "experience": [{
+                "experience": [
+                    {
                         "item": "Managed ground systems projects for Pakistan, Africa, and Asia, and spent 8 years at the European Space Agency."
                     },
                     {
@@ -105,7 +109,8 @@
                 "name": "Patrice Brudieu",
                 "role": "Adviser – Space Policy & Program Strategy",
                 "description": "Former Deputy Director at CNES and adviser at the French Ministry of Space Policy.",
-                "experience": [{
+                "experience": [
+                    {
                         "item": "Worked at CNES as a system engineer in Earth observation satellites, and later Deputy Director in charge of program management, valorization, and defense affairs."
                     },
                     {
@@ -128,7 +133,8 @@
                 "name": "Bernard Plano",
                 "role": "Industrial Team Leader",
                 "description": "Senior aerospace and defense executive, former CEO of Matra Systems & Information, and international business strategist",
-                "experience": [{
+                "experience": [
+                    {
                         "item": "Electrical engineer with an MBA from HEC Business School."
                     },
                     {
@@ -154,7 +160,8 @@
                 "name": "Michel Courtois",
                 "role": "CTO – Head of Space Segment Engineering",
                 "description": "Former Director at ESA/ESTEC and SPOT satellite program lead engineer at CNES",
-                "experience": [{
+                "experience": [
+                    {
                         "item": "Graduated from École Polytechnique and ENSAE in 1971 as an aerospace engineer."
                     },
                     {
@@ -184,7 +191,9 @@
     },
     "product": {
         "title": "Our Technology",
-        "features": [{
+        "subtitle": "A never experienced technical revolution with satellites directly plugged onto a Cloud bringing a new level of simplicity and economical efficiency",
+        "features": [
+            {
                 "title": "Highly confortable access to images",
                 "description1": "No need to contact satellite operators.",
                 "description2": "Everything is ready on demand",
@@ -210,6 +219,15 @@
             }
         ],
         "section1": {
+            "title": "A striking evolution and simplification of Earth observation data handling and processing",
+            "subtitle1": "Full planet",
+            "description1": "continuously covered and automated production.",
+            "subtitle2": "Big Data",
+            "description2": "offer making use of the most advanced Internet/Cloud technology",
+            "subtitle3": "On line super-market",
+            "description3": "low-cost and massive production business model."
+        },
+        "section2": {
             "title": "Global Coverage Reinvented",
             "description": "v-GLOBE delivers a high-resolution, weekly-refreshed digital replica of Earth – instantly available without satellite scheduling or programming.",
             "subtitle1": "Weekly Earth Replica",
@@ -219,7 +237,7 @@
             "subtitle3": "Sub-Meter Resolution",
             "description3": "High detail, 4 spectral channels, and real-time usability."
         },
-        "section2": {
+        "section3": {
             "title": "v-GLOBE: Planet-Scale Imaging, Simplified",
             "description": "Why wait for satellite tasking? v-GLOBE flips the script: the entire planet is scanned continuously by 12 low-cost satellites, processed onboard, and streamed directly to the Cloud.",
             "subtitle1": "Planet-wide imagery:",
@@ -235,7 +253,8 @@
     "excellency": {
         "title": "How EO Generates Value",
         "subtitle": "Satellite Earth Observation is an absolutely essential tool for generating information and monitoring our progress at all geographic scales as we explore new development pathways aimed at sustainable management of the planet, tackling disaster risk reduction, climate change, and sustainable development in an integrated way.",
-        "services": [{
+        "services": [
+            {
                 "title": "Cartography and Cadastre",
                 "description": "The use of satellite imagery for map creation is very common today. Clients opt for higher-resolution images while also requesting price reductions.",
                 "image": "/images/cartografia.webp",
@@ -370,7 +389,8 @@
     "testimonials": {
         "title": "Testimonies",
         "subtitle": "What global experts say about Blue Planet",
-        "items": [{
+        "items": [
+            {
                 "quote": "The dream machine we all expect to monitor whole continents and food delivery to countries under stress.",
                 "author": "FAO expert",
                 "source": "FAO",
