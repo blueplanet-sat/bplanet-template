@@ -6,8 +6,29 @@ const cta = excellency.cta || {};
 import PortfolioModal from './Modal-Carousel.astro';
 
 ---
+<style is:global>
+  .custom-shape-divider-top-1751413772 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 10;
+  }
+  .custom-shape-divider-top-1751413772 svg {
+    position: relative;
+    display: block;
+    width: calc(157% + 1.3px);
+    height: 180px;
+  }
+  .custom-shape-divider-top-1751413772 .shape-fill {
+    fill: #0A2540;
+  }
+</style>
 
 <section class="pt-16 pb-4 px-4 md:px-6 lg:px-8">
+
   <div class="max-w-7xl mx-auto">
     <!-- Section Header -->
     <!-- <div class="text-center mb-10">
