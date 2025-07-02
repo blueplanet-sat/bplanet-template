@@ -21,6 +21,7 @@
 }
 
 .modal-overlay.flex {
+
   display: flex;
 }
 
@@ -57,4 +58,5 @@
 
 .custom-shape-divider-bottom-1751421812 .shape-fill {
   fill: #020617;
+
 }
