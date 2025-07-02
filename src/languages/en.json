@@ -16,20 +16,16 @@
             "path": "/en#technology"
         },
         {
+            "name": "Company",
+            "path": "/en#company"
+        },
+        {
             "name": "Team",
             "path": "/en#team"
         },
         {
-            "name": "Sponsors",
-            "path": "/en#sponsors"
-        },
-        {
             "name": "Testimonies",
             "path": "/en#testimonies"
-        },
-        {
-            "name": "About Us",
-            "path": "/en#about"
         }
     ],
     "hero": {
@@ -208,12 +204,12 @@
         "subtitle": "A never experienced technical revolution with satellites directly plugged onto a Cloud bringing a new level of simplicity and economical efficiency",
         "features": [
             {
-                "title": "Highly confortable access to images",
-                "description1": "No need to contact satellite operators.",
+                "title": "Blue Planet is a Big Data Provider",
+                "description1": "No need to contact satellite operators",
                 "description2": "Everything is ready on demand",
                 "description3": "Access imagery directly from the Blue Planet data store",
                 "description4": "Browse, select, and download the data you need at any time",
-                "description5": "Instant access to high-quality satellite data."
+                "description5": "Instant access to high-quality satellite data"
             },
             {
                 "title": "Massive, Fast & Affordable Data",
@@ -265,7 +261,7 @@
         }
     },
     "excellency": {
-        "title": "How EO Generates Value",
+        "title": "How Blue Planet Generates Value",
         "subtitle": "Satellite Earth Observation is an absolutely essential tool for generating information and monitoring our progress at all geographic scales as we explore new development pathways aimed at sustainable management of the planet, tackling disaster risk reduction, climate change, and sustainable development in an integrated way.",
         "services": [
             {
@@ -443,7 +439,7 @@
         ]
     },
     "about": {
-        "name": "About Us",
+        "name": "The Company",
         "title": "Blue Planet vision derives from concepts developed by CNES, INRIA and Orange Labs",
         "subtitle": "The company was founded in 2009 by Jean-Pierre Antikidis, former head of Space System Information at CNES and data management international expert, Jean Jacques Favier, former NASA STS78 Astronaut and Director of innovation at CNES, presently professor and Chair of Research Steering Committee at the International Space University. "
     },
