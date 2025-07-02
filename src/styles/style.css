@@ -21,7 +21,6 @@
 }
 
 .modal-overlay.flex {
-
   display: flex;
 }
 
@@ -58,5 +57,42 @@
 
 .custom-shape-divider-bottom-1751421812 .shape-fill {
   fill: #020617;
+}
 
+.gradient-shape-divider-bottom-1751494464 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.gradient-shape-divider-bottom-1751494464 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.gradient-shape-divider-bottom-1751494464 .shape-fill {
+  fill: #111827;
+}
+
+.footer-shape-divider-bottom-1751494464 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.footer-shape-divider-bottom-1751494464 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.footer-shape-divider-bottom-1751494464 .shape-fill {
+  fill: #111827;
 }
