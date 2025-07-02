@@ -2,11 +2,34 @@
 const { t } = Astro.props;
 const about = t.about;
 ---
-<section>
-  <div class="mx-auto mb-16 max-w-2xl text-center" data-aos="flip-down" data-aos-duration="1000">
-    <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">{about.name}</h2>
+
+<section class="pt-24">
+  <div
+    class="mx-auto mb-16 max-w-2xl text-center"
+    data-aos="flip-down"
+    data-aos-duration="1000"
+  >
+    <div
+      class="mx-auto mb-16 max-w-2xl text-center"
+      data-aos="flip-down"
+      data-aos-duration="1000"
+    >
+      <h2 class="text-5xl sm:text-7xl font-bold tracking-tight text-gray-900">
+        {about.name}
+      </h2>
+      <div class="flex mt-6 justify-center">
+        <div class="w-16 h-1 rounded-full bg-accent inline-flex"></div>
+      </div>
+    </div>
+    <!-- <h2 class="text-5xl sm:text-7xl font-bold tracking-tight text-gray-900">
+      {about.name}
+    </h2> -->
   </div>
-  <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8" data-aos="zoom-out-down" data-aos-duration="1000">
+  <div
+    class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8"
+    data-aos="zoom-out-down"
+    data-aos-duration="1000"
+  >
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
       <div>
         <div class="max-w-lg md:max-w-none">
@@ -21,11 +44,7 @@ const about = t.about;
       </div>
 
       <div>
-        <img
-          src="images/nasa-hubble.webp"
-          class="rounded"
-          alt=""
-        />
+        <img src="images/nasa-hubble.webp" class="rounded" alt="" />
       </div>
     </div>
   </div>
