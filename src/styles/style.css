@@ -23,3 +23,16 @@
 .modal-overlay.flex {
   display: flex;
 }
+
+/* Video */
+.parallax-wrapper {
+  height: 150vh; /* cubre más que el alto de la ventana */
+  top: -50vh; /* se adelanta para cubrir el inicio */
+  pointer-events: none; /* evita capturar interacciones */
+}
+
+.parallax-inner {
+  height: 100%;
+  transform: translateY(0);
+  will-change: transform;
+}
