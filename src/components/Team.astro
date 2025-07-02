@@ -5,23 +5,33 @@ const { t } = Astro.props;
 const team = t.team;
 ---
 
-<section class="bg-white py-24">
+<section class="py-24">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto mb-16 max-w-2xl text-center" data-aos="flip-down" data-aos-duration="1000">
-      <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">{team.title}</h2>
+    <div
+      class="mx-auto mb-16 max-w-2xl text-center"
+      data-aos="flip-down"
+      data-aos-duration="1000"
+    >
+      <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+        {team.title}
+      </h2>
       <div class="flex mt-6 justify-center">
         <div class="w-16 h-1 rounded-full bg-accent inline-flex"></div>
       </div>
-      <p class="mt-4 text-lg text-gray-600">{team.subtitle}</p>
+      <!-- <p class="mt-4 text-lg text-gray-600">{team.subtitle}</p> -->
     </div>
 
-    <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4" data-aos="zoom-out-down" data-aos-duration="1000">
+    <div
+      class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4"
+      data-aos="zoom-out-down"
+      data-aos-duration="1000"
+    >
       {
-        team.members.map((member : any, index: number) => {
+        team.members.map((member: any, index: number) => {
           const modalId = `modal-${index}`;
           return (
             <div class="group relative flex flex-col justify-between h-full overflow-hidden rounded-2xl bg-white p-6 shadow-md transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
-              <span class="absolute inset-0 rounded-2xl border-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+              <span class="absolute inset-0 rounded-2xl border-2 border-accent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <img
                 class="mx-auto h-24 w-24 rounded-full object-cover border-2 border-accent group-hover:border-accent/50 transition-all duration-500"
                 src={`images/${member.image}`}
@@ -52,6 +62,8 @@ const team = t.team;
   </div>
 </section>
 
-{team.members.map((member : any, index: number) => (
-  <Modal id={`modal-${index}`} member={member} team={team} />
-))}
+{
+  team.members.map((member: any, index: number) => (
+    <Modal id={`modal-${index}`} member={member} team={team} />
+  ))
+}
