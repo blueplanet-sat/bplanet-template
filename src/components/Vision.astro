@@ -5,6 +5,10 @@ const { t } = Astro.props;
 <div
   class="sm:pt-24 pt-12 relative isolate overflow-hidden bg-gray-900 min-h-screen flex items-center"
 >
+  <div
+    class="absolute top-0 left-0 w-full h-6 bg-gradient-to-t from-transparent to-gray-900 pointer-events-none z-10"
+  >
+  </div>
   <div class="parallax-wrapper absolute inset-0 -z-10 overflow-hidden">
     <div class="parallax-inner">
       <video
@@ -20,14 +24,19 @@ const { t } = Astro.props;
 
   <div
     class="mx-auto max-w-7xl px-6 lg:px-8 -translate-y-16 sm:translate-y-0 transition-all duration-300"
+    data-aos="fade-up"
+    data-aos-duration="1200"
   >
+
     <div class="mx-auto max-w-2xl px-6 text-center">
       <h1
         class="text-white text-5xl sm:text-7xl font-bold tracking-tight leading-tight drop-shadow-lg animate-slide-in-left"
+
       >
         {t.vision.title}
       </h1>
       <div class="flex mt-6 justify-center">
+
         <div class="w-16 h-1 rounded-full bg-accent inline-flex"></div>
       </div>
       <p
@@ -64,6 +73,7 @@ const { t } = Astro.props;
   </div>
 </div>
 
+
 <script type="module">
   window.addEventListener("DOMContentLoaded", () => {
     document
@@ -80,4 +90,5 @@ const { t } = Astro.props;
       parallax.style.transform = `translateY(${scrollTop * speed}px)`;
     }
   });
+
 </script>

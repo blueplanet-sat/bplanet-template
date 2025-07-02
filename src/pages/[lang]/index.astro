@@ -12,7 +12,9 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 
 import { getTranslations } from "../../lib/i18n";
 import Sponsors from "@/components/Sponsors.astro";
+
 import Vision from "@/components/Vision.astro";
+
 
 export async function getStaticPaths() {
   return [
@@ -51,20 +53,20 @@ const t = getTranslations(lang);
     <Carousel t={t}/>
   </div> -->
 
+    <!-- <div id="sponsors">
+      <Sponsors t={t} />
+    </div> -->
+
+    <div id="company">
+      <AboutUs t={t} />
+    </div>
+
     <div id="team">
       <Team t={t} />
     </div>
 
-    <div id="sponsors">
-      <Sponsors t={t} />
-    </div>
-
     <div id="testimonies">
       <Testimonials t={t} />
-    </div>
-
-    <div id="about">
-      <AboutUs t={t} />
     </div>
   </div>
 

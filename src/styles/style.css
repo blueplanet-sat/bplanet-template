@@ -21,6 +21,10 @@
 }
 
 .modal-overlay.flex {
+<<<<<<< HEAD
+=======
+
+>>>>>>> b25fb868735481f3f2e26a805835218195829ffd
   display: flex;
 }
 
@@ -57,4 +61,8 @@
 
 .custom-shape-divider-bottom-1751421812 .shape-fill {
   fill: #020617;
+<<<<<<< HEAD
+=======
+
+>>>>>>> b25fb868735481f3f2e26a805835218195829ffd
 }
