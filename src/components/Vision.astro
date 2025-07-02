@@ -5,13 +5,18 @@ const { t } = Astro.props;
 <div
   class="sm:pt-24 pt-12 relative isolate overflow-hidden bg-gray-900 min-h-screen flex items-center"
 >
-  <video width="640" preload="none" 
-    autoplay
-    muted 
-    src="videos/planet-in-your-hands.mp4"    
-    loop
-    class="absolute inset-0 -z-10 w-full h-full object-cover object-center opacity-40"
-  />
+  <div class="parallax-wrapper absolute inset-0 -z-10 overflow-hidden">
+    <div class="parallax-inner">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="none"
+        src="videos/planet-in-your-hands.mp4"
+        class="w-full h-full object-cover object-center opacity-20"></video>
+    </div>
+  </div>
 
   <div
     class="mx-auto max-w-7xl px-6 lg:px-8 -translate-y-16 sm:translate-y-0 transition-all duration-300"
@@ -23,32 +28,46 @@ const { t } = Astro.props;
         {t.vision.title}
       </h1>
       <div class="flex mt-6 justify-center">
-            <div class="w-16 h-1 rounded-full bg-accent inline-flex"></div>
-          </div>
-      <p class="animate-slide-in-right mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8"
+        <div class="w-16 h-1 rounded-full bg-accent inline-flex"></div>
+      </div>
+      <p
+        class="animate-slide-in-right mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8"
       >
         {t.vision.subtitle}
       </p>
-      <p class="animate-slide-in-right mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8"
+      <p
+        class="animate-slide-in-right mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8"
       >
         {t.vision.textTwo}
       </p>
-      <p class="animate-slide-in-right mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8"      
+      <p
+        class="animate-slide-in-right mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8"
       >
-        {t.vision.textThree} 
+        {t.vision.textThree}
       </p>
-      <p class="animate-slide-in-right mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8"      
+      <p
+        class="animate-slide-in-right mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8"
       >
-        {t.vision.textFour} 
+        {t.vision.textFour}
       </p>
-      
-    </div>    
+    </div>
   </div>
 </div>
+
 <script type="module">
   window.addEventListener("DOMContentLoaded", () => {
     document
       .querySelectorAll(".fade-on-load")
       .forEach((el) => el.classList.replace("opacity-0", "opacity-100"));
+  });
+
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const parallax = document.querySelector(".parallax-inner");
+    const speed = 0.4; // ajustá el factor para más/menos efecto
+
+    if (parallax) {
+      parallax.style.transform = `translateY(${scrollTop * speed}px)`;
+    }
   });
 </script>
