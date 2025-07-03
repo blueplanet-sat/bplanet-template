@@ -3,7 +3,7 @@ const { t } = Astro.props;
 const excellency = t.excellency || {};
 const services = excellency.services || [];
 const cta = excellency.cta || {};
-import PortfolioModal from './Modal-Carousel.astro';
+// import PortfolioModal from './Modal-Carousel.astro';
 
 ---
 <style is:global>
@@ -66,6 +66,7 @@ import PortfolioModal from './Modal-Carousel.astro';
                     src={service.image || "/placeholder.svg"}
                     alt={service.title}
                     class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
                   />
                   <div class="absolute top-4 left-4">
                     <span class="px-3 py-1 bg-white/90 backdrop-blur-sm text-blue-600 text-xs font-semibold rounded-full">
@@ -178,7 +179,7 @@ import PortfolioModal from './Modal-Carousel.astro';
   </div> -->
 </section>
 
-<PortfolioModal t={t}/>
+<!-- <PortfolioModal t={t}/> -->
 
 <script is:inline>
   document.addEventListener('DOMContentLoaded', function() {
