@@ -273,7 +273,8 @@
                     "Land use analysis",
                     "Terrain change monitoring"
                 ],
-                "category": "Cartography and Cadastre"
+                "category": "Cartography and Cadastre",
+                "text":"V-Globe products will allows to reate or update topographic maps, databases and cartographic representation at any scale 1:5000 and above; Optimise campaigns of field surveys. Create or update a Topographic background comprehensive and geographically continuous cadastral plans; Use a map or cadastral information system as Map Update tool or land management service; Orthoimagery for the production of topographic maps in raster or vector form; Creation of Fragmented databases: visible parcel boundaries, limits cadastral parcel, and descriptive databases associated (Land, tax, land register ...)"
             },
             {
                 "title": "Precision Agriculture",
