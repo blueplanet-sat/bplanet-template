@@ -1,7 +1,7 @@
 {
     "language": "en",
     "languageName": "English",
-    "title": "Blue Planet Sat",
+    "title": "Blue Planet",
     "navbar": [
         {
             "name": "Home",
@@ -14,6 +14,10 @@
         {
             "name": "Technology",
             "path": "/en#technology"
+        },
+        {
+            "name": "Data",
+            "path": "/en#data"
         },
         {
             "name": "Company",
@@ -29,8 +33,8 @@
         }
     ],
     "hero": {
-        "title": "Revolutionizing Earth Imagery Distribution Experience",
-        "subtitle": "Discover our product and learn more about us",
+        "title": "A new way to image the planet",
+        "subtitle": "Discover Blue Planet Revolution",
         "buttonText": "Start"
     },
     "vision": {

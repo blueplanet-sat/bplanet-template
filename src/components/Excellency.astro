@@ -32,6 +32,7 @@ import CardInformation from './Card-info.astro';
                     src={service.image || "/placeholder.svg"}
                     alt={service.title}
                     class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
                   />
                   <div class="absolute top-4 left-4">
                     <span class="px-3 py-1 bg-white/90 backdrop-blur-sm text-blue-600 text-xs font-semibold rounded-full">
@@ -100,11 +101,7 @@ import CardInformation from './Card-info.astro';
     </div>    
 </section>
 
-{
-  excellency.services.map((service: any, index: number) => (
-    <CardInformation id={`modal-excellency-${index}`} service={service} excellency={excellency} />
-  ))
-}
+<PortfolioModal t={t}/>
 
 <script is:inline>
   document.addEventListener('DOMContentLoaded', function() {

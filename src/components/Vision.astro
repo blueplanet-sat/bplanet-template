@@ -25,18 +25,15 @@ const { t } = Astro.props;
   <div
     class="mx-auto max-w-7xl px-6 lg:px-8 -translate-y-16 sm:translate-y-0 transition-all duration-300"
     data-aos="fade-up"
-    data-aos-duration="1200"
+    data-aos-duration="2000"
   >
-
     <div class="mx-auto max-w-2xl px-6 text-center">
       <h1
         class="text-white text-5xl sm:text-7xl font-bold tracking-tight leading-tight drop-shadow-lg animate-slide-in-left"
-
       >
         {t.vision.title}
       </h1>
       <div class="flex mt-6 justify-center">
-
         <div class="w-16 h-1 rounded-full bg-accent inline-flex"></div>
       </div>
       <p
@@ -73,7 +70,6 @@ const { t } = Astro.props;
   </div>
 </div>
 
-
 <script type="module">
   window.addEventListener("DOMContentLoaded", () => {
     document
@@ -84,11 +80,10 @@ const { t } = Astro.props;
   window.addEventListener("scroll", () => {
     const scrollTop = window.scrollY;
     const parallax = document.querySelector(".parallax-inner");
-    const speed = 0.4; // ajustá el factor para más/menos efecto
+    const speed = 0.4;
 
     if (parallax) {
       parallax.style.transform = `translateY(${scrollTop * speed}px)`;
     }
   });
-
 </script>
