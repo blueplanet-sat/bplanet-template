@@ -96,3 +96,24 @@
 .footer-shape-divider-bottom-1751494464 .shape-fill {
   fill: #111827;
 }
+
+/* Animaciones Data */
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
