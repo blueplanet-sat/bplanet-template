@@ -1,37 +1,72 @@
+---
+const { t } = Astro.props;
+const data = t.data || {};
+---
+
 <section>
   <div class="py-16">
+    <!-- Título y Animaciones -->
     <div
       class="mx-auto mb-16 max-w-2xl text-center"
       data-aos="flip-down"
       data-aos-duration="1000"
     >
       <h2 class="text-5xl sm:text-7xl font-bold tracking-tight text-gray-900">
-        Data
+        {data.title}
       </h2>
       <div class="flex mt-6 justify-center">
         <div class="w-16 h-1 rounded-full bg-accent inline-flex"></div>
       </div>
       <p class="mt-4 text-lg text-gray-600">
-        Blue Planet provides the fuel to modern digital economy
+        {data.subtitle}
       </p>
     </div>
 
-    <div class="flex flex-row items-center justify-center">
+    <!-- Iconos principales -->
+    <div class="flex flex-row items-center justify-center mb-12">
       <img
         src="images/big_data_globe.webp"
         alt="Big Data Globe"
-        class="w-32 h-32 mb-8 animate-[pulse_1.2s_ease-in-out_infinite]"
+        class="w-32 h-32 animate-[pulse_1.2s_ease-in-out_infinite]"
       />
       <img
         src="images/fuel.webp"
         alt="Fuel svg"
-        class="w-32 h-32 mb-8 animate-[wiggle_1.8s_ease-in-out_infinite]"
+        class="w-32 h-32 animate-[wiggle_1.8s_ease-in-out_infinite]"
       />
       <img
         src="images/satellite_to_screen.webp"
         alt="Satellite to Screen Image"
-        class="w-28 h-28 mb-8 animate-[pulse_1.2s_ease-in-out_infinite]"
+        class="w-28 h-28 animate-[pulse_1.2s_ease-in-out_infinite]"
       />
+    </div>
+
+    <!-- Grid -->
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto px-4"
+    >
+      {
+        data.cards?.map((card: any, index: any) => (
+          <div
+            class="bg-gradient-to-l from-blue-100 to-white rounded-xl shadow-lg p-6 hover:shadow-xl transition"
+            data-aos="fade-right"
+            data-aos-delay={100 * (index + 1)}
+            data-aos-duration="2000"
+          >
+            <h3 class="text-xl font-semibold flex items-center gap-1 mb-2 underline underline-offset-4 decoration-accent">
+              <img
+                src={`svg/${card.image}`}
+                alt={`${card.title} icon`}
+                class="w-4 h-4 self-start pt-[2px]"
+                loading="lazy"
+              />
+              <span set:html={card.title} />
+            </h3>
+
+            <p class="text-gray-600 text-sm">{card.description}</p>
+          </div>
+        ))
+      }
     </div>
   </div>
 </section>

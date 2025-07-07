@@ -264,6 +264,32 @@
             "description4": "Infrastructure ready for seamless machine-to-machine services."
         }
     },
+    "data": {
+        "title": "Data",
+        "subtitle": "Blue Planet provides the fuel to modern digital economy",
+        "cards": [
+            {
+                "title": "Near-Defense<br />Image Quality",
+                "description": "Sub-meter resolution (up to 75 cm), 4-channel colors, including near-infrared, with data freshness under 42 hours.",
+                "image": "star.svg"
+            },
+            {
+                "title": "Global Accessibility",
+                "description": "They are proceseed on-board satellites and stored in the cloud where you can simply access them.",
+                "image": "cloud.svg"
+            },
+            {
+                "title": "Pricing<br />Reduced ×4",
+                "description": "Cost ranges from a maximum of 2$/km² down to 0.1$/km² for large areas, or even as low as 0.01$km² for a full continent.",
+                "image": "check-read.svg"
+            },
+            {
+                "title": "Highly confortable access",
+                "description": "You just have to make your market in the Blue Planet data store, as simply as going to the internet.",
+                "image": "settings.svg"
+            }
+        ]
+    },
     "excellency": {
         "title": "How Blue Planet Generates Value",
         "subtitle": "Satellite Earth Observation is an absolutely essential tool for generating information and monitoring our progress at all geographic scales as we explore new development pathways aimed at sustainable management of the planet, tackling disaster risk reduction, climate change, and sustainable development in an integrated way.",

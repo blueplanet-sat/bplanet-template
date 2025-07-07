@@ -2,118 +2,128 @@
 @tailwind components;
 @tailwind utilities;
 @layer components {
-  .btn-info {
-    @apply bg-gradient-to-r from-gray-900 to-primary text-white font-medium py-2 px-4 rounded-full transition-all duration-300 transform;
-    /* @apply mt-auto w-full bg-gradient-to-r from-gray-900 to-primary text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform; */
-  }
-  .btn-info:hover {
-    /* @apply bg-primary; */
-    @apply from-primary to-gray-900;
-  }
-
-  .btn-info:focus {
-    @apply outline-none ring-2 ring-blue-500 ring-offset-2;
-  }
+    .btn-info {
+        @apply bg-gradient-to-r from-gray-900 to-primary text-white font-medium py-2 px-4 rounded-full transition-all duration-300 transform;
+        /* @apply mt-auto w-full bg-gradient-to-r from-gray-900 to-primary text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform; */
+    }
+    .btn-info:hover {
+        /* @apply bg-primary; */
+        @apply from-primary to-gray-900;
+    }
+    .btn-info:focus {
+        @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+    }
 }
 
 .modal-overlay.hidden {
-  display: none;
+    display: none;
 }
 
 .modal-overlay.flex {
-  display: flex;
+    display: flex;
 }
 
+
 /* Video */
+
 .parallax-wrapper {
-  height: 150vh; /* cubre más que el alto de la ventana */
-  top: -50vh; /* se adelanta para cubrir el inicio */
-  pointer-events: none; /* evita capturar interacciones */
+    height: 150vh;
+    /* cubre más que el alto de la ventana */
+    top: -50vh;
+    /* se adelanta para cubrir el inicio */
+    pointer-events: none;
+    /* evita capturar interacciones */
 }
 
 .parallax-inner {
-  height: 100%;
-  transform: translateY(0);
-  will-change: transform;
+    height: 100%;
+    transform: translateY(0);
+    will-change: transform;
 }
 
+
 /* Shape Divider */
+
 .custom-shape-divider-bottom-1751421812 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
 
 .custom-shape-divider-bottom-1751421812 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 150px;
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
 }
 
 .custom-shape-divider-bottom-1751421812 .shape-fill {
-  fill: #020617;
+    fill: #020617;
 }
 
 .gradient-shape-divider-bottom-1751494464 {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-bottom: -1px;
 }
 
 .gradient-shape-divider-bottom-1751494464 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 150px;
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotate(180deg);
 }
 
 .gradient-shape-divider-bottom-1751494464 .shape-fill {
-  fill: #020617;
+    fill: #020617;
 }
 
 .footer-shape-divider-bottom-1751494464 {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-bottom: -1px;
 }
 
 .footer-shape-divider-bottom-1751494464 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 150px;
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotate(180deg);
 }
 
 .footer-shape-divider-bottom-1751494464 .shape-fill {
-  fill: #111827;
+    fill: #111827;
 }
 
+
 /* Animaciones Data */
+
 @keyframes wiggle {
-  0%,
-  100% {
-    transform: rotate(-5deg);
-  }
-  50% {
-    transform: rotate(5deg);
-  }
+    0%,
+    100% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
 }
 
 @keyframes pulse {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
 }
