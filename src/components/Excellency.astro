@@ -17,7 +17,7 @@ import CardInformation from './Card-info.astro';
     </div>
 
     <!-- Carousel Container -->
-    <div class="relative mb-8" data-aos="zoom-out-down" data-aos-duration="1000">
+    <div class="relative mb-8 overflow-visible" data-aos="zoom-out-down" data-aos-duration="1000">
       <!-- Carousel Wrapper -->
       <div class="overflow-hidden rounded-2xl pb-6 w-full">
         <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out items-stretch w-full">
@@ -48,7 +48,7 @@ import CardInformation from './Card-info.astro';
                     {service.title}
                   </h3>
                   <p class="text-gray-600 mb-4 leading-relaxed flex-grow">
-                    {service.description}
+                    {service.text.slice(0,150) + '...'}
                   </p>
 
 
@@ -69,7 +69,10 @@ import CardInformation from './Card-info.astro';
       <!-- Navigation Buttons -->
       <button
         id="prev-btn"
-        class="hidden sm:flex absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm text-gray-800 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-10 opacity-50 disabled:cursor-not-allowed hover:scale-105 hover:bg-blue-600 hover:opacity-100"
+        class="hidden sm:flex absolute top-1/2 left-0 transform -translate-x-full -translate-y-1/2 
+              bg-white/90 backdrop-blur-sm text-gray-800 p-3 rounded-full shadow-lg 
+              hover:shadow-xl transition-all duration-300 z-10 
+              disabled:cursor-not-allowed hover:scale-105 hover:bg-blue-600 hover:opacity-100"
         aria-label="Previous slide"
       >
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -77,9 +80,12 @@ import CardInformation from './Card-info.astro';
         </svg>
       </button>
 
-      <button
+     <button
         id="next-btn"
-        class="hidden sm:flex absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm text-gray-800 p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-10 opacity-50 disabled:cursor-not-allowed hover:scale-105 hover:bg-blue-600 hover:opacity-100"
+        class="hidden sm:flex absolute top-1/2 right-0 transform translate-x-full -translate-y-1/2 
+              bg-white/90 backdrop-blur-sm text-gray-800 p-3 rounded-full shadow-lg 
+              hover:shadow-xl transition-all duration-300 z-10 
+              disabled:cursor-not-allowed hover:scale-105 hover:bg-blue-600 hover:opacity-100"
         aria-label="Next slide"
       >
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -101,7 +107,13 @@ import CardInformation from './Card-info.astro';
     </div>    
 </section>
 
-
+{services.map((service: any, index: number) => (
+  <CardInformation 
+    id={`modal-excellency-${index}`}
+    service={service}
+    excellency={excellency} 
+  ></CardInformation>
+))}
 
 <script is:inline>
   document.addEventListener('DOMContentLoaded', function() {
