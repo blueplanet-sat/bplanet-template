@@ -1,5 +1,7 @@
 ---
 const { t } = Astro.props;
+// Permitir <br> en el título para saltos de línea
+const heroTitle = t.hero.title;
 ---
 
 <div
@@ -16,9 +18,9 @@ const { t } = Astro.props;
   >
     <div class="mx-auto max-w-2xl lg:mx-0">
       <h1
-        class="animate-slide-in-left text-6xl font-sans font-semibold tracking-tight text-white sm:text-8xl"
+        class="typewriter-js text-6xl font-sans font-semibold tracking-tight text-white sm:text-8xl"
       >
-        {t.hero.title}
+        <span id="typewriter" data-title={heroTitle}></span><span class="caret">|</span>
       </h1>
       <p
         class="animate-slide-in-right mt-8 text-2xl font-medium text-pretty text-gray-300 sm:text-3xl"
@@ -40,8 +42,48 @@ const { t } = Astro.props;
   >
   </div>
 </div>
+
+<style>
+  .typewriter-js {
+    min-height: 1em;
+    display: inline-block;
+    white-space: pre-line;
+  }
+  .caret {
+    display: inline-block;
+    width: 1ch;
+    color: #fff;
+    animation: blink-caret 0.75s step-end infinite;
+    font-weight: 400;
+    font-size: inherit;
+  }
+  @keyframes blink-caret {
+    from, to { opacity: 0; }
+    50% { opacity: 1; }
+  }
+</style>
+
 <script type="module">
+  
   window.addEventListener("DOMContentLoaded", () => {
+    // Efecto máquina de escribir con saltos de línea
+    const el = document.getElementById("typewriter");
+    const caret = document.querySelector(".caret");
+    const heroTitle = el.dataset.title;
+    // El texto puede contener <br> para saltos de línea
+    const text = `${heroTitle}`.replace(/\\n/g, "<br>");
+    let i = 0;
+    function type() {
+      if (i <= text.length) {
+        el.innerHTML = text.slice(0, i);
+        i++;
+        setTimeout(type, 50);
+      } else {
+        caret.style.display = "none";
+      }
+    }
+    type();
+    // Fade on load para otros elementos
     document
       .querySelectorAll(".fade-on-load")
       .forEach((el) => el.classList.replace("opacity-0", "opacity-100"));
