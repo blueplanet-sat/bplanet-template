@@ -7,8 +7,8 @@ const { id, service, excellency } = Astro.props;
   class="modal-overlay fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-90 transition-opacity duration-300"
   onclick={`document.getElementById('${id}').classList.remove('flex'); document.getElementById('${id}').classList.add('hidden');`}
 >
-  <div class="relative max-w-[720px] w-full mx-auto px-4 mt-10">
-    <!-- Contenedor que no tiene el scroll ni overflow -->
+  <!-- <div class="relative max-w-[720px] w-full mx-auto px-4 mt-10">
+    
     <div
       class="relative bg-white rounded-[2rem] pt-20 pb-8 px-6 text-center shadow-2xl z-20 scale-100 transition-transform duration-300 max-h-[90vh] flex flex-col"
       onclick="event.stopPropagation()"
@@ -23,7 +23,7 @@ const { id, service, excellency } = Astro.props;
         />
       </div>
 
-      <!-- Contenido scrollable -->
+      
       <div
         id="modal-scroll-content"
         class="overflow-y-auto pr-2"
@@ -45,7 +45,7 @@ const { id, service, excellency } = Astro.props;
         </div>
 
         <ul class="space-y-2 text-sm text-gray-700 text-left">
-          <!-- Features -->
+          
           { <div class="space-y-2 mb-6">
             {service.features.map((feature:any) => (
               <div class="flex items-center text-sm text-gray-700">
@@ -62,5 +62,54 @@ const { id, service, excellency } = Astro.props;
         
       </div>
     </div>
+  </div>-->
+<!-- component -->
+<!-- component -->
+<div class="flex justify-center items-center min-h-screen">
+  <div class="max-w-[720px] mx-auto">
+            <!-- Centering wrapper -->
+      <div class="bg-gradient-to-r from-gray-900 to-primary text-white relative flex w-full max-w-[32rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+          <!--<div
+              class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+              <img
+                  src={`${service.image}`}
+                  alt={`${service.alt}`}
+                  class="w-[2rem] h-[2rem]" />
+              <div
+                  class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60">
+              </div>
+              <button
+                  class="!absolute top-4 right-4 h-8 max-h-[32px] w-8 max-w-[32px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-red-500 transition-all hover:bg-red-500/10 active:bg-red-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button">
+                  
+              </button>
+          </div> -->
+          <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                  <h5 class="text-white block font-sans text-2xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
+                      {service.title}
+                  </h5>
+              </div>
+              <p class="text-white block font-sans text-sm antialiased font-light leading-relaxed text-gray-700">
+                {service.text}
+              </p>
+              <br>
+              <ul class="space-y-2 text-sm text-left">
+              
+                { <div class="space-y-2 mb-6">
+                  {service.features.map((feature:any) => (
+                    <div class="flex items-center text-sm text-white font-sans font-light">
+                      <svg class="w-4 h-4 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                      </svg>
+                      {feature}
+                    </div>
+                  ))}
+                </div> }
+                
+              </ul>
+          </div>
+      </div>
   </div>
+</div>
 </div>
