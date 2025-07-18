@@ -11,6 +11,7 @@ module.exports = {
                 accent: '#5e83ba',
                 lightBlue: '#c2d2e9',
                 lightwhite: '#f1f1f0',
+                navyDark: '#0a1325',
             },
             fontFamily: {
                 sans: ['"Readex Pro"', 'Inter', 'sans-serif'],

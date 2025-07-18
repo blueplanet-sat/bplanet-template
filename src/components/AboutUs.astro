@@ -30,7 +30,10 @@ const about = t.about;
     data-aos="zoom-out-down"
     data-aos-duration="2000"
   >
-    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
+    <!-- Contenedor padre -->
+
+
+    <div class="div-about-us grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
       <div>
         <div class="max-w-lg md:max-w-none">
           <h2 class="text-2xl font-semibold text-gray-900 sm:text-3xl">
@@ -38,14 +41,14 @@ const about = t.about;
           </h2>
 
           <p class="mt-4 text-gray-700">
-            {about.subtitle}
+            <span set:html={about.subtitle} />
           </p>
         </div>
       </div>
 
-      <div>
-        <img src="images/nasa-hubble.webp" class="rounded" alt="" />
+      <div class="flex justify-center">
+        <img class="w-[400px] h-[400px] rounded-md shadow-[10px_8px_24px_rgba(10,37,64,0.85)]" src="images/aboutUs.webp" alt="about us" />
       </div>
-    </div>
+    </div> 
   </div>
 </section>
