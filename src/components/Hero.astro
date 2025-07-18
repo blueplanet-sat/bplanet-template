@@ -1,17 +1,27 @@
 ---
 const { t } = Astro.props;
-// Permitir <br> en el título para saltos de línea
 const heroTitle = t.hero.title;
 ---
 
 <div
   class="sm:pt-24 pt-12 relative isolate overflow-hidden bg-gray-900 min-h-screen flex items-center"
 >
-  <img
-    src="images/hero-image.webp"
-    alt="Hero image"
-    class="absolute inset-0 -z-10 w-full h-full object-cover object-center opacity-40"
-  />
+  <div
+    class="absolute top-0 left-0 w-full h-6 bg-gradient-to-t from-transparent to-gray-900 pointer-events-none z-10"
+  >
+  </div>
+  <div class="parallax-wrapper absolute inset-0 -z-10 overflow-hidden">
+    <div class="parallax-inner">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="none"
+        src="videos/planet-in-your-hands.mp4"
+        class="w-full h-full object-cover object-[center_30%] opacity-30"></video>
+    </div>
+  </div>
 
   <div
     class="mx-auto max-w-7xl px-6 lg:px-8 sm:translate-y-0 transition-all duration-300"
@@ -25,47 +35,37 @@ const heroTitle = t.hero.title;
       <p
         class="animate-slide-in-right mt-8 text-2xl font-medium text-pretty text-gray-300 sm:text-3xl"
       >
-        {t.hero.subtitle}
+        <span set:html={t.hero.subtitle}></span>
       </p>
     </div>
-    <a href="#vision"
+    <!-- <a href="#vision"
       ><button
         class="animate-slide-in-left mt-8 text-white uppercase py-3 sm:py-4 px-6 sm:px-8 md:px-10 text-sm md:text-base font-medium border border-white transition-all duration-300 bg-white/10 hover:bg-white hover:text-black"
       >
         {t.hero.buttonText}
         <span class="ml-2" aria-hidden="true">&rarr;</span>
       </button></a
-    >
+    > -->
   </div>
-  <div
-    class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-gray-900 pointer-events-none z-10"
+
+  <!-- <div
+    class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-navyDark to-gray-900 pointer-events-none z-10"
   >
-  </div>
+  </div> -->
+
+
+
+
+
+  
 </div>
 
-<style>
-  .typewriter-js {
-    min-height: 1em;
-    display: inline-block;
-    white-space: pre-line;
-  }
-  .caret {
-    display: inline-block;
-    width: 1ch;
-    color: #fff;
-    animation: blink-caret 0.75s step-end infinite;
-    font-weight: 400;
-    font-size: inherit;
-  }
-  @keyframes blink-caret {
-    from, to { opacity: 0; }
-    50% { opacity: 1; }
-  }
-</style>
-
-<script type="module">
+<script type="module">  
   
   window.addEventListener("DOMContentLoaded", () => {
+    document
+      .querySelectorAll(".fade-on-load")
+      .forEach((el) => el.classList.replace("opacity-0", "opacity-100"));
     // Efecto máquina de escribir con saltos de línea
     const el = document.getElementById("typewriter");
     const caret = document.querySelector(".caret");
@@ -87,5 +87,15 @@ const heroTitle = t.hero.title;
     document
       .querySelectorAll(".fade-on-load")
       .forEach((el) => el.classList.replace("opacity-0", "opacity-100"));
+  });
+
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const parallax = document.querySelector(".parallax-inner");
+    const speed = 0.4;
+
+    if (parallax) {
+      parallax.style.transform = `translateY(${scrollTop * speed}px)`;
+    }
   });
 </script>

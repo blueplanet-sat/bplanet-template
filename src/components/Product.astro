@@ -30,7 +30,7 @@ const product = t.product;
         <!-- Imagen -->
         <div class="order-2 md:order-1">
           <img
-            src="/images/supermarket.webp"
+            src="/images/striking-evolution.webp"
             alt="Earth image"
             loading="lazy"
             class="rounded-xl shadow-xl object-cover w-full h-full max-h-[500px] transition-transform duration-1000 hover:scale-105"
@@ -105,12 +105,8 @@ const product = t.product;
                 loading="lazy"
               />
               <div>
-                <h3 class="text-white font-semibold">
-                  {product.section2.subtitle1}
-                </h3>
-                <p class="text-gray-400 text-sm">
-                  {product.section2.description1}
-                </p>
+                <span class="text-lg"
+                set:html={product.section2.subtitle1}/>                
               </div>
             </div>
 
@@ -122,29 +118,8 @@ const product = t.product;
                 loading="lazy"
               />
               <div>
-                <h3 class="text-white font-semibold">
-                  {product.section2.subtitle2}
-                </h3>
-                <p class="text-gray-400 text-sm">
-                  {product.section2.description2}
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <img
-                src="/svg/check.svg"
-                alt="Planet"
-                class="w-5 h-5 mt-1"
-                loading="lazy"
-              />
-              <div>
-                <h3 class="text-white font-semibold">
-                  {product.section2.subtitle3}
-                </h3>
-                <p class="text-gray-400 text-sm">
-                  {product.section2.description3}
-                </p>
+                <span class="text-lg"
+                set:html={product.section2.subtitle2}/>
               </div>
             </div>
           </div>
@@ -152,10 +127,10 @@ const product = t.product;
 
         <div>
           <img
-            src="/images/earth.webp"
+            src="/images/garder-image.webp"
             alt="Earth from satellite"
             loading="lazy"
-            class="rounded-xl shadow-lg object-cover w-full h-full max-h-[500px] transition-transform duration-1000 hover:scale-105"
+            class="rounded-xl shadow-lg object-cover w-full h-[450px] max-h-[500px] transition-transform duration-1000 hover:scale-105"
           />
         </div>
       </section>
@@ -168,7 +143,7 @@ const product = t.product;
         <!-- Imagen -->
         <div class="order-2 md:order-1">
           <img
-            src="/images/image3.webp"
+            src="/images/earth.webp"
             alt="v-GLOBE overview"
             loading="lazy"
             class="rounded-xl shadow-xl object-cover w-full h-full max-h-[500px] transition-transform duration-1000 hover:scale-105"
@@ -187,10 +162,8 @@ const product = t.product;
                 class="w-5 h-5 flex-shrink-0"
                 alt="Icon svg"
               />
-              <span
-                ><strong>{product.section3.subtitle1}</strong>
-                {product.section3.description1}</span
-              >
+              <span class="text-lg"
+              set:html={product.section3.subtitle1}/>
             </li>
             <li class="flex gap-3 items-start">
               <img
@@ -198,10 +171,8 @@ const product = t.product;
                 class="w-5 h-5 flex-shrink-0"
                 alt="Icon svg"
               />
-              <span
-                ><strong>{product.section3.subtitle2}</strong>
-                {product.section3.description2}</span
-              >
+              <span class="text-lg"
+              set:html={product.section3.subtitle2}/>
             </li>
             <li class="flex gap-3 items-start">
               <img
@@ -209,22 +180,9 @@ const product = t.product;
                 class="w-5 h-5 flex-shrink-0"
                 alt="Icon svg"
               />
-              <span
-                ><strong>{product.section3.subtitle3}</strong>
-                {product.section3.description3}</span
-              >
-            </li>
-            <li class="flex gap-3 items-start">
-              <img
-                src="svg/check.svg"
-                class="w-5 h-5 flex-shrink-0"
-                alt="Icon svg"
-              />
-              <span
-                ><strong>{product.section3.subtitle4}</strong>
-                {product.section3.description4}</span
-              >
-            </li>
+              <span class="text-lg"
+              set:html={product.section3.subtitle3}/>
+            </li>            
           </ul>
         </div>
       </section>
