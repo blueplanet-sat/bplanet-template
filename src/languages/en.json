@@ -224,8 +224,8 @@
                 "description5": "Lowest cost/km² – unparalleled efficiency"
             },
             {
-                "title": "v-GLOBE: Global Coverage Reimagined",
-                "description1": "Virtual replica of Earth, refreshed weekly",
+                "title": "v-Globe: Global access reimagined",
+                "description1": "Virtual replica always fresh (42h average)",
                 "description2": "No need for custom tasking or requests",
                 "description3": "High-res access to any location – even oceans",
                 "description4": "Powered by proprietary space + ground tech",
@@ -266,7 +266,7 @@
     },
     "data": {
         "title": "Data",
-        "subtitle": "Blue Planet provides the fuel to modern digital economy",
+        "subtitle": "blue planet provide the fuel to digital economy",
         "cards": [
             {
                 "title": "Near-Defense<br />Image Quality",
@@ -280,7 +280,7 @@
             },
             {
                 "title": "Pricing<br />Reduced ×4",
-                "description": "Cost ranges from a maximum of 2$/km² down to 0.1$/km² for large areas, or even as low as 0.01$km² for a full continent.",
+                "description": "Ranging from 2$/sq km to 0.01$/sq km for large surfaces.",
                 "image": "check-read.svg"
             },
             {
@@ -320,7 +320,7 @@
                     "Terrain change monitoring"
                 ],
                 "category": "Cartography and Cadastre",
-                "text":"V-Globe products will allows to reate or update topographic maps, databases and cartographic representation at any scale 1:5000 and above; Optimise campaigns of field surveys. Create or update a Topographic background comprehensive and geographically continuous cadastral plans; Use a map or cadastral information system as Map Update tool or land management service; Orthoimagery for the production of topographic maps in raster or vector form; Creation of Fragmented databases: visible parcel boundaries, limits cadastral parcel, and descriptive databases associated (Land, tax, land register ...)"
+                "text": "V-Globe products will allows to reate or update topographic maps, databases and cartographic representation at any scale 1:5000 and above; Optimise campaigns of field surveys. Create or update a Topographic background comprehensive and geographically continuous cadastral plans; Use a map or cadastral information system as Map Update tool or land management service; Orthoimagery for the production of topographic maps in raster or vector form; Creation of Fragmented databases: visible parcel boundaries, limits cadastral parcel, and descriptive databases associated (Land, tax, land register ...)"
             },
             {
                 "title": "Precision Agriculture",
@@ -336,7 +336,7 @@
                     "control and monitor agri-environmental measures and public aids"
                 ],
                 "category": "Agriculture",
-                "text":"statisticsAgriculture is one of the first demonstration of sucesfull applications of Earth observation by space. Mapping the changing distribution of croplands, advancing the accuracy of measurements of biomass and improving forecasts of shortfalls in crop production is becoming a must. Space imagery will help implementing sustainable agricultural management practices while assuring the preservation of soil, land and water resources. Value Added Companies (VACs) making use of v-GLOBE imagery are mostly :"                
+                "text": "statisticsAgriculture is one of the first demonstration of sucesfull applications of Earth observation by space. Mapping the changing distribution of croplands, advancing the accuracy of measurements of biomass and improving forecasts of shortfalls in crop production is becoming a must. Space imagery will help implementing sustainable agricultural management practices while assuring the preservation of soil, land and water resources. Value Added Companies (VACs) making use of v-GLOBE imagery are mostly :"
             },
             {
                 "title": "Supply Chain Verification",
@@ -354,7 +354,7 @@
                     "aid in the identification and monitoring of forest fires systems of deforestation / reforestation"
                 ],
                 "category": "Forestry",
-                "text": "Forestry management is quite essential to the world climate evolution monitoring. This is also a strong indicator of the impact of human activities onto our natural environment. That require both massive and frequent cover of large surface while in the mean time a very high resolution to detect early enough the biotop first sign of aggressions. Major Forest application of space imagery data covers:"  
+                "text": "Forestry management is quite essential to the world climate evolution monitoring. This is also a strong indicator of the impact of human activities onto our natural environment. That require both massive and frequent cover of large surface while in the mean time a very high resolution to detect early enough the biotop first sign of aggressions. Major Forest application of space imagery data covers:"
             },
             {
                 "title": "Fisheries Resources",
@@ -368,7 +368,7 @@
                 ],
                 "category": "Maritime",
                 "text": "Remote sensing of ocean properties provides us with a window into the ocean ecosystem on synoptic scales. Various environmental properties influence fish distribution, abundance, and migration can be assessed thanks to remote sensing sensors. For example Chlorophyll concentrations provides an indication of phytoplankton concentrations in the surface layer of the ocean. Marine phytoplankton plays a key role in the marine food chain, and is also an indicator of changes in the ocean environment due to pollution or shifts in the global climate system. Can be obtained:"
-            },            
+            },
             {
                 "title": "Wildlife and Natural Landscape Preservation",
                 "description": "Information collected from space enables reliable, consistent monitoring by combining it with other digital data to create dynamic maps, images, and graphics for research or to guide wildlife management. Satellites with rapid revisit cycles, like V-Globe, are ideal for repetitive image generation and natural change monitoring.",
@@ -380,7 +380,7 @@
                     "Monitor changes occurring in habitats zones and project the impact on wildlife species at risk."
                 ],
                 "category": "Flora and Fauna",
-                "text":"Wildlife habitats are under increasing pressure and monitoring and law enforcement methods must adapt to these changes even in the most isolated places. Information collected from space supports reliable and consistent monitoring when combined with other digital data can be used to create dynamic maps, images and charts, which can be used in research, or to guide wildlife management. Can be mentionned the possibility to:"
+                "text": "Wildlife habitats are under increasing pressure and monitoring and law enforcement methods must adapt to these changes even in the most isolated places. Information collected from space supports reliable and consistent monitoring when combined with other digital data can be used to create dynamic maps, images and charts, which can be used in research, or to guide wildlife management. Can be mentionned the possibility to:"
             },
             {
                 "title": "Oil, Gas, Minerals, Groundwater, Hydraulic Energy",
@@ -396,7 +396,7 @@
                     "Evaluate snow cover and derive melted water potential"
                 ],
                 "category": "Natural Resources",
-                "text":"Worldwide offshore resource-based operations such as oil and gas exploration and production have intensified over the past few decades. In the offshore oil and gas sector, the cost of building production platforms capable of withstanding severe weather conditions is becoming a must."
+                "text": "Worldwide offshore resource-based operations such as oil and gas exploration and production have intensified over the past few decades. In the offshore oil and gas sector, the cost of building production platforms capable of withstanding severe weather conditions is becoming a must."
             },
             {
                 "title": "Civil Engineering and Urban Construction Management",
@@ -432,11 +432,11 @@
                 "features": [
                     "Damage assessment",
                     "Recovery planning",
-                    "Aid coordination"                    
+                    "Aid coordination"
                 ],
                 "category": "Post-Event Analysis",
                 "text": "Post-event analysis uses satellite imagery to assess the impact of natural events such as earthquakes, floods, and hurricanes. These images help authorities understand damage extent, plan recovery efforts, and coordinate relief operations. Provides near real-time updates on changes (or damage) to structures, land and vegetation, allowing for a more cost-effective response."
-            }            
+            }
         ],
         "cta": {
             "title": "Ready to See Earth from Above?",
