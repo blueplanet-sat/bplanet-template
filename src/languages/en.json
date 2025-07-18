@@ -34,13 +34,13 @@
     ],
     "hero": {
         "title": "A new way to image the planet",
-        "subtitle": "Discover Blue Planet Revolution",
+        "subtitle": "With Blue Planet</br>Metavers conceptual revolution</br>The planet images at your fingertip",
         "buttonText": "Start"
     },
     "vision": {
         "title": "Our Vision",
-        "subtitle": "A 'Living Planet' Virtual Earth 'SuperMarket'",
-        "text": "We 'Xerox' the Full Planet",
+        "subtitle": "Discover Blue Planet virtual globe Revolution",
+        "text": "A 'Living Planet' Virtual Earth 'SuperMarket'",
         "textTwo": "A never proposed concept by which fresh space images are treated as any other commercial 'fresh goods' able to be ordered and obtained in matter of a few clicks.",
         "textThree": "A game changer",
         "textFour": " V-GLOBE provides a lightning fast, cost-effective way to view the entire planet from above.",
@@ -243,25 +243,16 @@
         },
         "section2": {
             "title": "Global Coverage Reinvented",
-            "description": "v-GLOBE delivers a high-resolution, weekly-refreshed digital replica of Earth – instantly available without satellite scheduling or programming.",
-            "subtitle1": "Weekly Earth Replica",
-            "description1": "A complete, refreshed image of the entire planet, including oceans.",
-            "subtitle2": "Instant Access",
-            "description2": "No requests, no delays – imagery is available anytime, directly from the cloud.",
-            "subtitle3": "Sub-Meter Resolution",
-            "description3": "High detail, 4 spectral channels, and real-time usability."
+            "description": "Blue Planet, thanks its continuously fresh (42h) replica of the Earth makes any surface (whenever small or continents) nearly instantly available without satellite scheduling or programming.",
+            "subtitle1": "<b>Fresh planet imagery always available: </b>Thanks to a continuously vitual globe clone always acessible.",
+            "subtitle2": "<b>Instant Access: </b>Near defense high quality 50cm resolution."
         },
         "section3": {
-            "title": "v-GLOBE: Planet-Scale Imaging, Simplified",
+            "title": "Scale Imaging Simplified",
             "description": "Why wait for satellite tasking? v-GLOBE flips the script: the entire planet is scanned continuously by 12 low-cost satellites, processed onboard, and streamed directly to the Cloud.",
-            "subtitle1": "Planet-wide imagery:",
-            "description1": "Weekly refresh of the full Earth, oceans included.",
-            "subtitle2": "Cloud-native:",
-            "description2": "Images processed in space, streamed directly to internet-ready format.",
-            "subtitle3": "Ultra-efficient:",
-            "description3": "Cost per km² drops by a factor of 3–4 thanks to full automation.",
-            "subtitle4": "Cloud-to-Cloud paradigm:",
-            "description4": "Infrastructure ready for seamless machine-to-machine services."
+            "subtitle1": "<b>Planet-wide imagery: </b>Small scale or continent size image data always available and directly streamable by internet whenever Earth, cloud or sea surfaces.",
+            "subtitle2": "<b>Ultra-efficient: </b>Cost pers sq km drops by a factor of more than 4 and up to 100 for masive covers.",
+            "subtitle3": "<b>Big Data Provider: </b>Infrastructure ready for seamless machine-to-machine services."
         }
     },
     "data": {
@@ -298,6 +289,7 @@
                 "title": "Defence, Intelligence",
                 "description": "",
                 "image": "/images/defense-intelligence.webp?height=400&width=600",
+                "alt": "Defence and Intelligence",
                 "features": [
                     "Produce and quickly distribute geographic information (Maps, databases ...) and Intelligence, an area national or international interest",
                     "Prepare, simulate and evaluate projects in conditions of reality",
@@ -314,6 +306,7 @@
                 "title": "Cartography and Cadastre",
                 "description": "The use of satellite imagery for map creation is very common today. Clients opt for higher-resolution images while also requesting price reductions.",
                 "image": "/images/cartografia.webp",
+                "alt": "Cartography and Cadastre",
                 "features": [
                     "Topographic maps",
                     "Land use analysis",
@@ -326,53 +319,24 @@
                 "title": "Precision Agriculture",
                 "description": "Precision agriculture exemplifies the successful application of Earth observation from space. Data cost per square kilometer is a determining factor. Satellite imagery helps implement sustainable agricultural management practices while ensuring the preservation of soil, land, and water resources.",
                 "image": "/images/agricultura.webp?height=400&width=600",
+                "alt": "Precision Agriculture",
                 "features": [
                     "Producing vegetation and surface production estimators and inputs to production aid management",
-                    "monitoring the state of cultivated areas: Annual culture, vineyards, olive groves ...",
-                    "managing agricultural practices at the plot (precision farming)",
-                    "making inventories and crop forecasting (Annual crops, plantations, illegal crops)",
-                    "preparing the assessment of harvest needs",
-                    "monitoring water irrigation and assess the impact of bad weather",
-                    "control and monitor agri-environmental measures and public aids"
+                    "Monitoring the state of cultivated areas: Annual culture, vineyards, olive groves ...",
+                    "Managing agricultural practices at the plot (precision farming)",
+                    "Making inventories and crop forecasting (Annual crops, plantations, illegal crops)",
+                    "Preparing the assessment of harvest needs",
+                    "Monitoring water irrigation and assess the impact of bad weather",
+                    "Control and monitor agri-environmental measures and public aids"
                 ],
                 "category": "Agriculture",
                 "text": "statisticsAgriculture is one of the first demonstration of sucesfull applications of Earth observation by space. Mapping the changing distribution of croplands, advancing the accuracy of measurements of biomass and improving forecasts of shortfalls in crop production is becoming a must. Space imagery will help implementing sustainable agricultural management practices while assuring the preservation of soil, land and water resources. Value Added Companies (VACs) making use of v-GLOBE imagery are mostly :"
             },
             {
-                "title": "Supply Chain Verification",
-                "description": "Forest management is fundamental to monitoring global climate evolution. Moreover, it is a key indicator of the impact of human activities on our natural environment. V-Globe is an ideal provider for applications requiring rapid, large-scale coverage.",
-                "image": "/images/bosque-canada.webp?height=400&width=600",
-                "features": [
-                    "awareness of the forest areas and settlements",
-                    "planning of cuts, delimitation and monitoring plots",
-                    "biomass estimate",
-                    "monitoring plant health",
-                    "monitoring of plantations (illegal plants or cuts)",
-                    "estimate of weather damage: fires, storms, hurricanes ...",
-                    "protection of specific areas against wild human or disease aggressions (eg. natural parks protection or urban extensions control)",
-                    "creation and updating forest databases",
-                    "aid in the identification and monitoring of forest fires systems of deforestation / reforestation"
-                ],
-                "category": "Forestry",
-                "text": "Forestry management is quite essential to the world climate evolution monitoring. This is also a strong indicator of the impact of human activities onto our natural environment. That require both massive and frequent cover of large surface while in the mean time a very high resolution to detect early enough the biotop first sign of aggressions. Major Forest application of space imagery data covers:"
-            },
-            {
-                "title": "Fisheries Resources",
-                "description": "Remote sensing of ocean properties provides critical information for ecosystem governance at global and regional scales. Thanks to its total-Earth coverage and spectral observation capability, V-Globe can support fisheries management through ocean color monitoring.",
-                "image": "/images/fishing-resources.webp?height=400&width=600",
-                "features": [
-                    "identification of fishing areas and estimates of their attendance",
-                    "utilisation of pictures for detection of boats and characterisation of fishing practices",
-                    "fight against illegal fishing to ensure compliance with legislation",
-                    "Coastal zone pollution detection helping a sustainable management of fisheries"
-                ],
-                "category": "Maritime",
-                "text": "Remote sensing of ocean properties provides us with a window into the ocean ecosystem on synoptic scales. Various environmental properties influence fish distribution, abundance, and migration can be assessed thanks to remote sensing sensors. For example Chlorophyll concentrations provides an indication of phytoplankton concentrations in the surface layer of the ocean. Marine phytoplankton plays a key role in the marine food chain, and is also an indicator of changes in the ocean environment due to pollution or shifts in the global climate system. Can be obtained:"
-            },
-            {
                 "title": "Wildlife and Natural Landscape Preservation",
                 "description": "Information collected from space enables reliable, consistent monitoring by combining it with other digital data to create dynamic maps, images, and graphics for research or to guide wildlife management. Satellites with rapid revisit cycles, like V-Globe, are ideal for repetitive image generation and natural change monitoring.",
                 "image": "/images/wildlife.webp?height=400&width=600",
+                "alt": "Wildlife and Natural Landscape Preservation",
                 "features": [
                     "Track change detection to protecting and monitor natural landscapes aggressions",
                     "Make survey of human habitat expansion in protected areas",
@@ -383,25 +347,10 @@
                 "text": "Wildlife habitats are under increasing pressure and monitoring and law enforcement methods must adapt to these changes even in the most isolated places. Information collected from space supports reliable and consistent monitoring when combined with other digital data can be used to create dynamic maps, images and charts, which can be used in research, or to guide wildlife management. Can be mentionned the possibility to:"
             },
             {
-                "title": "Oil, Gas, Minerals, Groundwater, Hydraulic Energy",
-                "description": "In the offshore oil and gas sector, building production platforms capable of withstanding severe weather conditions is becoming essential.",
-                "image": "/images/oil.webp?height=400&width=600",
-                "features": [
-                    "Update the geological information of a prospecting area",
-                    "Explore oil resources and gas onshore and offshore",
-                    "Pipeline Corridor Monitoring",
-                    "Conduct infrastructure development (plots, pipeline ...)",
-                    "Ensure environmental impact monitoring and control of operating infrastructure",
-                    "Monitor of environmental impacts of onshore or offshore operations",
-                    "Evaluate snow cover and derive melted water potential"
-                ],
-                "category": "Natural Resources",
-                "text": "Worldwide offshore resource-based operations such as oil and gas exploration and production have intensified over the past few decades. In the offshore oil and gas sector, the cost of building production platforms capable of withstanding severe weather conditions is becoming a must."
-            },
-            {
                 "title": "Civil Engineering and Urban Construction Management",
                 "description": "Satellite remote sensing data has been successfully used for mapping, monitoring, planning, and developing urban expansion, land use, and the urban environment. It can also assess traffic, real-estate and tourism offerings, as well as the growth of informal settlements on vacant land and urban land-use zoning in many developing countries.",
                 "image": "/images/urban-construction-management.webp?height=400&width=600",
+                "alt": "Civil Engineering and Urban Construction Management",
                 "features": [
                     "The planning of new roads",
                     "The verification of buildings creation or extensions",
@@ -416,6 +365,7 @@
                 "title": "Early Warning",
                 "description": "Prediction of floods, wildfires, and disease outbreaks. Satellite remote sensing provides a comprehensive view of climate patterns, soil temperature, and other environmental factors that help forecast extreme events. This information is crucial for disaster planning and response.",
                 "image": "/images/early-warning.webp?height=400&width=600",
+                "alt": "Early Warning",
                 "features": [
                     "Global, continuous temporal coverage via satellite constellations",
                     "Automated data processing with anomaly detection",
@@ -424,25 +374,8 @@
                 ],
                 "category": "Early Warning",
                 "text": "Early warning through Earth Observation involves continuous monitoring of critical environmental variables—such as soil moisture, gas concentrations, vegetation cover and water levels—to detect early signals of potential natural disasters. This method not only improves the accuracy of forecasts for wildfires, droughts, floods and landslides, but also optimizes how resources are allocated for risk reduction. Integrating meteorological, geochemical and topographic data enables early warning systems to help local authorities and civil‐protection agencies anticipate extreme events, plan evacuations and reinforce critical infrastructure in advance."
-            },
-            {
-                "title": "Post-Event Analysis",
-                "description": "Post-event analysis uses satellite imagery to assess the impact of natural events such as earthquakes, floods, and hurricanes. These images help authorities understand damage extent, plan recovery efforts, and coordinate relief operations.",
-                "image": "/images/post-event-analisys.webp?height=400&width=600",
-                "features": [
-                    "Damage assessment",
-                    "Recovery planning",
-                    "Aid coordination"
-                ],
-                "category": "Post-Event Analysis",
-                "text": "Post-event analysis uses satellite imagery to assess the impact of natural events such as earthquakes, floods, and hurricanes. These images help authorities understand damage extent, plan recovery efforts, and coordinate relief operations. Provides near real-time updates on changes (or damage) to structures, land and vegetation, allowing for a more cost-effective response."
             }
-        ],
-        "cta": {
-            "title": "Ready to See Earth from Above?",
-            "description": "Get in touch with our satellite imagery experts to discuss your project requirements and discover how our advanced earth observation solutions can benefit your organization.",
-            "buttonText": "View Image Gallery"
-        }
+        ]
     },
     "partners": {
         "title": "Our Sponsors",
@@ -493,14 +426,14 @@
     "about": {
         "name": "The Company",
         "title": "Blue Planet vision derives from concepts developed by CNES, INRIA and Orange Labs",
-        "subtitle": "The company was founded in 2009 by Jean-Pierre Antikidis, former head of Space System Information at CNES and data management international expert, Jean Jacques Favier, former NASA STS78 Astronaut and Director of innovation at CNES, presently professor and Chair of Research Steering Committee at the International Space University. "
+        "subtitle": "The company was founded in 2009 by Jean-Pierre Antikidis, former head of Space System Information at CNES and data management international expert, Jean Jacques Favier, former NASA STS78 Astronaut and Director of innovation at CNES, presently professor and Chair of Research Steering Committee at the International Space University.</br></br> The v-GLOBE concept is a third generation evolution of Blue planet activities that took place in 2018 , with specific focus on Big Data geocoded information commercialisation as required urgently by IA and Inteligence/defense massive information needs."
     },
     "footer": {
         "description": "Blue Planet commercializes fresh and high value « near defence » submeter color imagery of our planet, any time, any place, and at bottom prices.",
         "contact": {
-            "email": "info@blueplanet.com",
+            "email": "contact@blueplanet-sat.com",
             "phone": "+33 (0) 684 204 977",
-            "address": "Blue Planet -3 avenue Didier Daurat 31400 Toulouse - France"
+            "address": "Blue Planet - 3 avenue Didier Daurat 31400 Toulouse - France"
         },
         "title1": "Contact",
         "title2": "Navigation",
