@@ -31,12 +31,12 @@
             "name": "Testimonies",
             "path": "/en#testimonies"
         }
-    ],   
+    ],
     "hero": {
         "title": "A new way to image the planet",
         "subtitle": "With Blue Planet</br>Metavers conceptual revolution</br>The planet images at your fingertip",
         "buttonText": "Start"
-    }, 
+    },
     "vision": {
         "title": "Our Vision",
         "subtitle": "Discover Blue Planet virtual globe Revolution",
@@ -46,7 +46,7 @@
         "textFour": " V-GLOBE provides a lightning fast, cost-effective way to view the entire planet from above.",
         "textFive": "We are committed to making Earth observation accessible, affordable, and easy to use for everyone, from governments and NGOs to businesses and individuals.",
         "textSix": "Our technology enables real-time access to high-quality satellite imagery, empowering users to make informed decisions and take action based on the most up-to-date information available."
-    },    
+    },
     "carousel": {
         "title": "Image Gallery",
         "subtitle": "High-resolution satellite images",
@@ -224,8 +224,8 @@
                 "description5": "Lowest cost/km² – unparalleled efficiency"
             },
             {
-                "title": "v-GLOBE: Global Coverage Reimagined",
-                "description1": "Virtual replica of Earth, refreshed weekly",
+                "title": "v-Globe: Global access reimagined",
+                "description1": "Virtual replica always fresh (42h average)",
                 "description2": "No need for custom tasking or requests",
                 "description3": "High-res access to any location – even oceans",
                 "description4": "Powered by proprietary space + ground tech",
@@ -245,7 +245,7 @@
             "title": "Global Coverage Reinvented",
             "description": "Blue Planet, thanks its continuously fresh (42h) replica of the Earth makes any surface (whenever small or continents) nearly instantly available without satellite scheduling or programming.",
             "subtitle1": "<b>Fresh planet imagery always available: </b>Thanks to a continuously vitual globe clone always acessible.",
-            "subtitle2": "<b>Instant Access: </b>Near defense high quality 50cm resolution."            
+            "subtitle2": "<b>Instant Access: </b>Near defense high quality 50cm resolution."
         },
         "section3": {
             "title": "Scale Imaging Simplified",
@@ -257,7 +257,7 @@
     },
     "data": {
         "title": "Data",
-        "subtitle": "Blue Planet provides the fuel to modern digital economy",
+        "subtitle": "blue planet provide the fuel to digital economy",
         "cards": [
             {
                 "title": "Near-Defense<br />Image Quality",
@@ -271,7 +271,7 @@
             },
             {
                 "title": "Pricing<br />Reduced ×4",
-                "description": "Cost ranges from a maximum of 2$/km² down to 0.1$/km² for large areas, or even as low as 0.01$km² for a full continent.",
+                "description": "Ranging from 2$/sq km to 0.01$/sq km for large surfaces.",
                 "image": "check-read.svg"
             },
             {
@@ -313,7 +313,7 @@
                     "Terrain change monitoring"
                 ],
                 "category": "Cartography and Cadastre",
-                "text":"V-Globe products will allows to reate or update topographic maps, databases and cartographic representation at any scale 1:5000 and above; Optimise campaigns of field surveys. Create or update a Topographic background comprehensive and geographically continuous cadastral plans; Use a map or cadastral information system as Map Update tool or land management service; Orthoimagery for the production of topographic maps in raster or vector form; Creation of Fragmented databases: visible parcel boundaries, limits cadastral parcel, and descriptive databases associated (Land, tax, land register ...)"
+                "text": "V-Globe products will allows to reate or update topographic maps, databases and cartographic representation at any scale 1:5000 and above; Optimise campaigns of field surveys. Create or update a Topographic background comprehensive and geographically continuous cadastral plans; Use a map or cadastral information system as Map Update tool or land management service; Orthoimagery for the production of topographic maps in raster or vector form; Creation of Fragmented databases: visible parcel boundaries, limits cadastral parcel, and descriptive databases associated (Land, tax, land register ...)"
             },
             {
                 "title": "Precision Agriculture",
@@ -330,12 +330,12 @@
                     "Control and monitor agri-environmental measures and public aids"
                 ],
                 "category": "Agriculture",
-                "text":"statisticsAgriculture is one of the first demonstration of sucesfull applications of Earth observation by space. Mapping the changing distribution of croplands, advancing the accuracy of measurements of biomass and improving forecasts of shortfalls in crop production is becoming a must. Space imagery will help implementing sustainable agricultural management practices while assuring the preservation of soil, land and water resources. Value Added Companies (VACs) making use of v-GLOBE imagery are mostly :"                
-            },       
+                "text": "statisticsAgriculture is one of the first demonstration of sucesfull applications of Earth observation by space. Mapping the changing distribution of croplands, advancing the accuracy of measurements of biomass and improving forecasts of shortfalls in crop production is becoming a must. Space imagery will help implementing sustainable agricultural management practices while assuring the preservation of soil, land and water resources. Value Added Companies (VACs) making use of v-GLOBE imagery are mostly :"
+            },
             {
                 "title": "Wildlife and Natural Landscape Preservation",
                 "description": "Information collected from space enables reliable, consistent monitoring by combining it with other digital data to create dynamic maps, images, and graphics for research or to guide wildlife management. Satellites with rapid revisit cycles, like V-Globe, are ideal for repetitive image generation and natural change monitoring.",
-                "image": "/images/wildlife.webp?height=400&width=600",  
+                "image": "/images/wildlife.webp?height=400&width=600",
                 "alt": "Wildlife and Natural Landscape Preservation",
                 "features": [
                     "Track change detection to protecting and monitor natural landscapes aggressions",
@@ -344,8 +344,8 @@
                     "Monitor changes occurring in habitats zones and project the impact on wildlife species at risk."
                 ],
                 "category": "Flora and Fauna",
-                "text":"Wildlife habitats are under increasing pressure and monitoring and law enforcement methods must adapt to these changes even in the most isolated places. Information collected from space supports reliable and consistent monitoring when combined with other digital data can be used to create dynamic maps, images and charts, which can be used in research, or to guide wildlife management. Can be mentionned the possibility to:"
-            },           
+                "text": "Wildlife habitats are under increasing pressure and monitoring and law enforcement methods must adapt to these changes even in the most isolated places. Information collected from space supports reliable and consistent monitoring when combined with other digital data can be used to create dynamic maps, images and charts, which can be used in research, or to guide wildlife management. Can be mentionned the possibility to:"
+            },
             {
                 "title": "Civil Engineering and Urban Construction Management",
                 "description": "Satellite remote sensing data has been successfully used for mapping, monitoring, planning, and developing urban expansion, land use, and the urban environment. It can also assess traffic, real-estate and tourism offerings, as well as the growth of informal settlements on vacant land and urban land-use zoning in many developing countries.",
@@ -374,7 +374,7 @@
                 ],
                 "category": "Early Warning",
                 "text": "Early warning through Earth Observation involves continuous monitoring of critical environmental variables—such as soil moisture, gas concentrations, vegetation cover and water levels—to detect early signals of potential natural disasters. This method not only improves the accuracy of forecasts for wildfires, droughts, floods and landslides, but also optimizes how resources are allocated for risk reduction. Integrating meteorological, geochemical and topographic data enables early warning systems to help local authorities and civil‐protection agencies anticipate extreme events, plan evacuations and reinforce critical infrastructure in advance."
-            }                       
+            }
         ]
     },
     "partners": {
