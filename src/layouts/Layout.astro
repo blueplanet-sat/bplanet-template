@@ -1,26 +1,49 @@
 ---
-import { getTranslations } from '../lib/i18n';
-import '../styles/style.css';
-const { lang = 'en', title } = Astro.props;
-const t = getTranslations("es");
+import { getTranslations } from "../lib/i18n";
+import "../styles/style.css";
+import "aos/dist/aos.css";
+const { lang = "en", title } = Astro.props;
+const t = getTranslations(lang);
 ---
 
 <!doctype html>
-<html lang={lang}>
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
-		<meta name="generator" content={Astro.generator} />
+<html lang={lang} class="overflow-y-scroll">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={t.footer.description} />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png" />
+    <link rel="apple-touch-icon" href="/images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css"
+    />
+  </head>
+  <body class="overflow-x-hidden">
+    <slot />
 
-		<title>{title}</title>
-	</head>
-	
-	<body>
-		<slot />		
-	</body>
-	
+    <!-- 2) CDN de AOS JS como módulo ESM -->
+    <script
+      is:inline
+      src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+
+    <!-- 3) Inicializas AOS -->
+    <script is:inline>
+      document.addEventListener("DOMContentLoaded", () => {
+        AOS.init({
+          offset: 120,
+          duration: 400,
+          once: false,
+        });
+      });
+    </script>
+  </body>
 </html>
