@@ -19,7 +19,8 @@ const heroTitle = t.hero.title;
         playsinline
         preload="none"
         src="videos/planet-in-your-hands.mp4"
-        class="w-full h-full object-cover object-[center_30%] opacity-30"></video>
+        class="w-full h-full pt-72 sm:pt-0 object-cover object-[center_30%] opacity-30"
+      ></video>
     </div>
   </div>
 
@@ -30,12 +31,14 @@ const heroTitle = t.hero.title;
       <h1
         class="typewriter-js text-6xl font-sans font-semibold tracking-tight text-white sm:text-8xl"
       >
-        <span id="typewriter" data-title={heroTitle}></span><span class="caret">|</span>
+        <span id="typewriter" data-title={heroTitle}></span><span class="caret"
+          >|</span
+        >
       </h1>
       <p
         class="animate-slide-in-right mt-8 text-2xl font-medium text-pretty text-gray-300 sm:text-3xl"
       >
-        <span set:html={t.hero.subtitle}></span>
+        <span set:html={t.hero.subtitle} />
       </p>
     </div>
     <!-- <a href="#vision"
@@ -52,16 +55,9 @@ const heroTitle = t.hero.title;
     class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-navyDark to-gray-900 pointer-events-none z-10"
   >
   </div> -->
-
-
-
-
-
-  
 </div>
 
-<script type="module">  
-  
+<script type="module">
   window.addEventListener("DOMContentLoaded", () => {
     document
       .querySelectorAll(".fade-on-load")

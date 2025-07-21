@@ -23,22 +23,44 @@ const data = t.data || {};
     </div>
 
     <!-- Iconos principales -->
-    <div class="flex flex-row items-center justify-center mb-12">
+    <div class="flex flex-row items-center justify-center">
       <img
         src="images/big_data_globe.webp"
         alt="Big Data Globe"
-        class="w-32 h-32 animate-[pulse_1.2s_ease-in-out_infinite]"
+        class="w-28 h-28 sm:w-48 sm:h-48 animate-[pulse_1.2s_ease-in-out_infinite]"
       />
       <img
         src="images/fuel.webp"
         alt="Fuel svg"
-        class="w-32 h-32 animate-[wiggle_1.8s_ease-in-out_infinite]"
+        class="w-24 h-24 sm:w-32 sm:h-32 animate-[wiggle_1.8s_ease-in-out_infinite]"
       />
-      <img
-        src="images/satellite_to_screen.webp"
-        alt="Satellite to Screen Image"
-        class="w-28 h-28 animate-[pulse_1.2s_ease-in-out_infinite]"
-      />
+      <div class="relative w-28 h-28 sm:w-40 sm:h-40">
+        <img
+          id="carouselImage"
+          src="images/defense-intelligence.webp"
+          alt="Rotating"
+          class="absolute inset-0 w-full h-full rounded-full object-cover transition-opacity duration-700 opacity-100"
+        />
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center justify-center mb-8">
+      <div class="flex flex-col items-end gap-2 mt-2 ml-40 sm:ml-80">
+        <span
+          class="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm font-semibold shadow"
+          data-aos="fade-down"
+          data-aos-duration="2000"
+        >
+          Artificial Intelligence
+        </span>
+        <span
+          class="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm font-semibold shadow"
+          data-aos="fade-down"
+          data-aos-duration="1800"
+        >
+          Applications
+        </span>
+      </div>
     </div>
 
     <!-- Grid -->
@@ -70,3 +92,27 @@ const data = t.data || {};
     </div>
   </div>
 </section>
+
+<script>
+  const images = [
+    "images/defense-intelligence.webp",
+    "images/fishing-resources.webp",
+    "images/wildlife.webp",
+    "images/oil.webp",
+    "images/urban-construction-management.webp",
+    "images/agriculture2.webp",
+  ];
+
+  const img = document.getElementById("carouselImage") as HTMLImageElement;
+  let index = 0;
+
+  setInterval(() => {
+    img?.classList.add("opacity-0");
+
+    setTimeout(() => {
+      index = (index + 1) % images.length;
+      img.src = images[index];
+      img?.classList.remove("opacity-0");
+    }, 700);
+  }, 1000);
+</script>
