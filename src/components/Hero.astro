@@ -1,90 +1,60 @@
 ---
 const { t } = Astro.props;
-const heroTitle = t.hero.title;
 ---
 
-<div class="relative isolate overflow-hidden bg-gray-900 min-h-screen flex items-center justify-center">
-  <!-- Fondo: stars.avif -->
-  <img
-    src="/public/images/galaxy.jpg"
-    class="absolute inset-0 w-full h-full object-fill -z-10"
-    alt="stars"
-  />
+<div class="relative min-h-screen bg-[#070707] overflow-hidden">
+  <!-- Contenedor donde se agregan las estrellas -->
+  <div id="stars" class="absolute inset-0 pointer-events-none opacity-80 z-0">
+  </div>
 
-  <!-- Contenido principal: metaverse + texto -->
-  <div class="flex flex-col items-center justify-center w-full">
+  <!-- Contenido principal -->
+  <div
+    class="relative z-10 flex flex-col items-center justify-center w-full min-h-screen text-white mb-24"
+  >
     <img
-      src="/public/images/world-hand.webp"
-      class="mt-8 mb-4 rounded-xl max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-64 sm:h-80 md:h-[400px] lg:h-[500px]"
-      alt="metaverse"
-      style="z-index: 10;"
+      src="images/handle.webp"
+      class="mb-4 rounded-xl max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-[400px] sm:h-[300px] lg:h-[500px]"
+      alt="metaverse handle"
     />
-    <div class="relative z-20 w-full flex flex-col items-center">
-      <div class="mx-auto max-w-2xl lg:mx-0">
-        <!-- <h1
-          class="typewriter-js text-6xl font-sans font-semibold tracking-tight text-white sm:text-8xl"
-        >
-          <span id="typewriter" data-title={heroTitle}></span><span class="caret">|</span>
-        </h1> -->
-        <!-- <p
-          class="animate-slide-in-right mt-8 text-2xl font-medium text-pretty text-gray-300 sm:text-3xl"
-        >
-          <span set:html={t.hero.subtitle} />
-        </p> -->
-        <div class="flex flex-col items-center text-center space-y-4" data-aos="fade-up" data-aos-duration="2000">
-          <!-- <h1 class="font-orbitron text-yellow-200 text-5xl">With Blue Planet</h1> -->
-          <h2
-  class="font-orbitron text-yellow-200 text-xl sm:text-3xl"
-  style="transform: perspective(400px) rotateX(-18deg);"
->
-  <span set:html={t.hero.subtitle}/>
-</h2>
-          <!-- <h2 class="font-orbitron text-yellow-200 text-3xl">
-            The planet images at your fingertip
-          </h2> -->
-        </div>
-      </div>
-      <!-- Botón (si lo usas) -->
-      <!-- ... -->
+    <div
+      class="flex flex-col items-center text-center space-y-4"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <h1
+        class="font-orbitron text-yellow-100 font-bold text-3xl md:text-6xl"
+        style="transform: perspective(400px) rotateX(-18deg);"
+      >
+        <span set:html={t.hero.title} />
+      </h1>
+      <h2
+        class="font-orbitron text-yellow-100 text-lg sm:text-3xl md:text-4xl"
+        style="transform: perspective(400px) rotateX(-18deg);"
+      >
+        <span set:html={t.hero.subtitle} />
+      </h2>
     </div>
   </div>
 </div>
-<!-- 
-<script type="module">
-  window.addEventListener("DOMContentLoaded", () => {
-    document
-      .querySelectorAll(".fade-on-load")
-      .forEach((el) => el.classList.replace("opacity-0", "opacity-100"));
-    // Efecto máquina de escribir con saltos de línea
-    const el = document.getElementById("typewriter");
-    const caret = document.querySelector(".caret");
-    // const heroTitle = el.dataset.title;
-    // El texto puede contener <br> para saltos de línea
-    const text = `${heroTitle}`.replace(/\\n/g, "<br>");
-    let i = 0;
-    function type() {
-      if (i <= text.length) {
-        el.innerHTML = text.slice(0, i);
-        i++;
-        setTimeout(type, 50);
-      } else {
-        caret.style.display = "none";
-      }
-    }
-    type();
-    // Fade on load para otros elementos
-    document
-      .querySelectorAll(".fade-on-load")
-      .forEach((el) => el.classList.replace("opacity-0", "opacity-100"));
-  });
 
-  window.addEventListener("scroll", () => {
-    const scrollTop = window.scrollY;
-    const parallax = document.querySelector(".parallax-inner");
-    const speed = 0.4;
+<script>
+  const starContainer = document.getElementById("stars");
+  const totalStars = 300;
 
-    if (parallax) {
-      parallax.style.transform = `translateY(${scrollTop * speed}px)`;
-    }
-  });
-</script> -->
+  for (let i = 0; i < totalStars; i++) {
+    const star = document.createElement("div");
+    const size = Math.random() * 1.5 + 0.5;
+    const top = Math.random() * 100;
+    const left = Math.random() * 100;
+    const opacity = `${Math.random() * 0.5 + 0.5}`;
+
+    star.className = "absolute bg-white rounded-full pointer-events-none";
+    star.style.width = `${size}px`;
+    star.style.height = `${size}px`;
+    star.style.top = `${top}%`;
+    star.style.left = `${left}%`;
+    star.style.opacity = opacity;
+
+    starContainer?.appendChild(star);
+  }
+</script>
