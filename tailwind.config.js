@@ -15,6 +15,7 @@ module.exports = {
             },
             fontFamily: {
                 sans: ['"Readex Pro"', 'Inter', 'sans-serif'],
+                orbitron: ['Orbitron', 'sans-serif']
             },
             keyframes: {
                slideInFromLeft: {

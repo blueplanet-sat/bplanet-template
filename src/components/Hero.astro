@@ -3,60 +3,53 @@ const { t } = Astro.props;
 const heroTitle = t.hero.title;
 ---
 
-<div
-  class="sm:pt-24 pt-12 relative isolate overflow-hidden bg-gray-900 min-h-screen flex items-center"
->
-  <div
-    class="absolute top-0 left-0 w-full h-6 bg-gradient-to-t from-transparent to-gray-900 pointer-events-none z-10"
-  >
-  </div>
-  <div class="parallax-wrapper absolute inset-0 -z-10 overflow-hidden">
-    <div class="parallax-inner">
-      <video
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="none"
-        src="videos/planet-in-your-hands.mp4"
-        class="w-full h-full pt-72 sm:pt-0 object-cover object-[center_30%] opacity-30"
-      ></video>
-    </div>
-  </div>
+<div class="relative isolate overflow-hidden bg-gray-900 min-h-screen flex items-center justify-center">
+  <!-- Fondo: stars.avif -->
+  <img
+    src="/public/images/galaxy.jpg"
+    class="absolute inset-0 w-full h-full object-fill -z-10"
+    alt="stars"
+  />
 
-  <div
-    class="mx-auto max-w-7xl px-6 lg:px-8 sm:translate-y-0 transition-all duration-300"
-  >
-    <div class="mx-auto max-w-2xl lg:mx-0">
-      <h1
-        class="typewriter-js text-6xl font-sans font-semibold tracking-tight text-white sm:text-8xl"
-      >
-        <span id="typewriter" data-title={heroTitle}></span><span class="caret"
-          >|</span
+  <!-- Contenido principal: metaverse + texto -->
+  <div class="flex flex-col items-center justify-center w-full">
+    <img
+      src="/public/images/world-hand.webp"
+      class="mt-8 mb-4 rounded-xl max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-64 sm:h-80 md:h-[400px] lg:h-[500px]"
+      alt="metaverse"
+      style="z-index: 10;"
+    />
+    <div class="relative z-20 w-full flex flex-col items-center">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <!-- <h1
+          class="typewriter-js text-6xl font-sans font-semibold tracking-tight text-white sm:text-8xl"
         >
-      </h1>
-      <p
-        class="animate-slide-in-right mt-8 text-2xl font-medium text-pretty text-gray-300 sm:text-3xl"
-      >
-        <span set:html={t.hero.subtitle} />
-      </p>
+          <span id="typewriter" data-title={heroTitle}></span><span class="caret">|</span>
+        </h1> -->
+        <!-- <p
+          class="animate-slide-in-right mt-8 text-2xl font-medium text-pretty text-gray-300 sm:text-3xl"
+        >
+          <span set:html={t.hero.subtitle} />
+        </p> -->
+        <div class="flex flex-col items-center text-center space-y-4" data-aos="fade-up" data-aos-duration="2000">
+          <!-- <h1 class="font-orbitron text-yellow-200 text-5xl">With Blue Planet</h1> -->
+          <h2
+  class="font-orbitron text-yellow-200 text-xl sm:text-3xl"
+  style="transform: perspective(400px) rotateX(-18deg);"
+>
+  <span set:html={t.hero.subtitle}/>
+</h2>
+          <!-- <h2 class="font-orbitron text-yellow-200 text-3xl">
+            The planet images at your fingertip
+          </h2> -->
+        </div>
+      </div>
+      <!-- Botón (si lo usas) -->
+      <!-- ... -->
     </div>
-    <!-- <a href="#vision"
-      ><button
-        class="animate-slide-in-left mt-8 text-white uppercase py-3 sm:py-4 px-6 sm:px-8 md:px-10 text-sm md:text-base font-medium border border-white transition-all duration-300 bg-white/10 hover:bg-white hover:text-black"
-      >
-        {t.hero.buttonText}
-        <span class="ml-2" aria-hidden="true">&rarr;</span>
-      </button></a
-    > -->
   </div>
-
-  <!-- <div
-    class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-navyDark to-gray-900 pointer-events-none z-10"
-  >
-  </div> -->
 </div>
-
+<!-- 
 <script type="module">
   window.addEventListener("DOMContentLoaded", () => {
     document
@@ -65,7 +58,7 @@ const heroTitle = t.hero.title;
     // Efecto máquina de escribir con saltos de línea
     const el = document.getElementById("typewriter");
     const caret = document.querySelector(".caret");
-    const heroTitle = el.dataset.title;
+    // const heroTitle = el.dataset.title;
     // El texto puede contener <br> para saltos de línea
     const text = `${heroTitle}`.replace(/\\n/g, "<br>");
     let i = 0;
@@ -94,4 +87,4 @@ const heroTitle = t.hero.title;
       parallax.style.transform = `translateY(${scrollTop * speed}px)`;
     }
   });
-</script>
+</script> -->
