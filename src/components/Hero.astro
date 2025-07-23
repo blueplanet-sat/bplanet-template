@@ -1,97 +1,60 @@
 ---
 const { t } = Astro.props;
-const heroTitle = t.hero.title;
 ---
 
-<div
-  class="sm:pt-24 pt-12 relative isolate overflow-hidden bg-gray-900 min-h-screen flex items-center"
->
-  <div
-    class="absolute top-0 left-0 w-full h-6 bg-gradient-to-t from-transparent to-gray-900 pointer-events-none z-10"
-  >
-  </div>
-  <div class="parallax-wrapper absolute inset-0 -z-10 overflow-hidden">
-    <div class="parallax-inner">
-      <video
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="none"
-        src="videos/planet-in-your-hands.mp4"
-        class="w-full h-full pt-72 sm:pt-0 object-cover object-[center_30%] opacity-30"
-      ></video>
-    </div>
+<div class="relative min-h-screen bg-[#070707] overflow-hidden">
+  <!-- Contenedor donde se agregan las estrellas -->
+  <div id="stars" class="absolute inset-0 pointer-events-none opacity-80 z-0">
   </div>
 
+  <!-- Contenido principal -->
   <div
-    class="mx-auto max-w-7xl px-6 lg:px-8 sm:translate-y-0 transition-all duration-300"
+    class="relative z-10 flex flex-col items-center justify-center w-full min-h-screen text-white mb-24"
   >
-    <div class="mx-auto max-w-2xl lg:mx-0">
+    <img
+      src="images/handle.webp"
+      class="mb-4 rounded-xl max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-[400px] sm:h-[300px] lg:h-[500px]"
+      alt="metaverse handle"
+    />
+    <div
+      class="flex flex-col items-center text-center space-y-4"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <h1
-        class="typewriter-js text-6xl font-sans font-semibold tracking-tight text-white sm:text-8xl"
+        class="font-orbitron text-yellow-100 font-bold text-3xl md:text-6xl"
+        style="transform: perspective(400px) rotateX(-18deg);"
       >
-        <span id="typewriter" data-title={heroTitle}></span><span class="caret"
-          >|</span
-        >
+        <span set:html={t.hero.title} />
       </h1>
-      <p
-        class="animate-slide-in-right mt-8 text-2xl font-medium text-pretty text-gray-300 sm:text-3xl"
+      <h2
+        class="font-orbitron text-yellow-100 text-lg sm:text-3xl md:text-4xl"
+        style="transform: perspective(400px) rotateX(-18deg);"
       >
         <span set:html={t.hero.subtitle} />
-      </p>
+      </h2>
     </div>
-    <!-- <a href="#vision"
-      ><button
-        class="animate-slide-in-left mt-8 text-white uppercase py-3 sm:py-4 px-6 sm:px-8 md:px-10 text-sm md:text-base font-medium border border-white transition-all duration-300 bg-white/10 hover:bg-white hover:text-black"
-      >
-        {t.hero.buttonText}
-        <span class="ml-2" aria-hidden="true">&rarr;</span>
-      </button></a
-    > -->
   </div>
-
-  <!-- <div
-    class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-navyDark to-gray-900 pointer-events-none z-10"
-  >
-  </div> -->
 </div>
 
-<script type="module">
-  window.addEventListener("DOMContentLoaded", () => {
-    document
-      .querySelectorAll(".fade-on-load")
-      .forEach((el) => el.classList.replace("opacity-0", "opacity-100"));
-    // Efecto máquina de escribir con saltos de línea
-    const el = document.getElementById("typewriter");
-    const caret = document.querySelector(".caret");
-    const heroTitle = el.dataset.title;
-    // El texto puede contener <br> para saltos de línea
-    const text = `${heroTitle}`.replace(/\\n/g, "<br>");
-    let i = 0;
-    function type() {
-      if (i <= text.length) {
-        el.innerHTML = text.slice(0, i);
-        i++;
-        setTimeout(type, 50);
-      } else {
-        caret.style.display = "none";
-      }
-    }
-    type();
-    // Fade on load para otros elementos
-    document
-      .querySelectorAll(".fade-on-load")
-      .forEach((el) => el.classList.replace("opacity-0", "opacity-100"));
-  });
+<script>
+  const starContainer = document.getElementById("stars");
+  const totalStars = 300;
 
-  window.addEventListener("scroll", () => {
-    const scrollTop = window.scrollY;
-    const parallax = document.querySelector(".parallax-inner");
-    const speed = 0.4;
+  for (let i = 0; i < totalStars; i++) {
+    const star = document.createElement("div");
+    const size = Math.random() * 1.5 + 0.5;
+    const top = Math.random() * 100;
+    const left = Math.random() * 100;
+    const opacity = `${Math.random() * 0.5 + 0.5}`;
 
-    if (parallax) {
-      parallax.style.transform = `translateY(${scrollTop * speed}px)`;
-    }
-  });
+    star.className = "absolute bg-white rounded-full pointer-events-none";
+    star.style.width = `${size}px`;
+    star.style.height = `${size}px`;
+    star.style.top = `${top}%`;
+    star.style.left = `${left}%`;
+    star.style.opacity = opacity;
+
+    starContainer?.appendChild(star);
+  }
 </script>
