@@ -1,6 +1,7 @@
 ---
 const { t } = Astro.props;
 const currentYear = new Date().getFullYear();
+const phoneHref = "tel:" + t.footer.contact.phone.replace(/[^+0-9]/g, "");
 ---
 
 <footer class="bg-[#020617] text-white px-6 py-12">
@@ -41,15 +42,15 @@ const currentYear = new Date().getFullYear();
       <ul class="text-sm space-y-2">
         <li class="flex items-center gap-2">
           <img src="svg/email.svg" alt="Email icon" class="w-6 h-6" />
-          <a href={`mailto:${t.footer.contact.email}`} class="hover:text-accent"
+          <a href={`mailto:${t.footer.contact.email}`} class="hover:underline"
             >{t.footer.contact.email}</a
           >
         </li>
         <li class="flex items-center gap-2">
           <img src="svg/phone.svg" alt="Phone icon" class="w-6 h-6" />
-          <a href="tel:+1234567890" class="hover:text-accent"
-            >{t.footer.contact.phone}</a
-          >
+          <a href={phoneHref} class="hover:underline">
+            {t.footer.contact.phone}
+          </a>
         </li>
         <li class="flex items-center gap-2">
           <img src="svg/address.svg" alt="Address icon" class="w-6 h-6" />
@@ -82,4 +83,5 @@ const currentYear = new Date().getFullYear();
   <div class="mt-12 text-center text-sm">
     © {currentYear} Blue Planet. {t.footer.note}
   </div>
+  <div class="mt-4 text-sm text-center" set:html={t.footer.developers}></div>
 </footer>
