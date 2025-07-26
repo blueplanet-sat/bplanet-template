@@ -257,7 +257,8 @@
     },
     "data": {
         "title": "Data",
-        "subtitle": "Blue planet provide the fuel to digital economy and the applications",
+        "subtitle": "Blue planet provide the fuel to digital economy applications",
+        "comment": "No Data = No Business",
         "cards": [
             {
                 "title": "Near-Defense<br />Image Quality",
