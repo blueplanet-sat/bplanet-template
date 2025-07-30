@@ -219,7 +219,7 @@
                 "title": "Massive, Fast & Affordable Data",
                 "description1": "Direct-to-cloud delivery – no ground delay",
                 "description2": "Ready-to-use imagery – no scheduling",
-                "description3": "Global refresh: every ~84h (avg. 42h)",
+                "description3": "Global full planet freshness is always less than 84h",
                 "description4": "Simplified access – no expertise needed",
                 "description5": "Lowest cost/km² – unparalleled efficiency"
             },
@@ -228,7 +228,7 @@
                 "description1": "Virtual replica always fresh (42h average)",
                 "description2": "No need for custom tasking or requests",
                 "description3": "High-res access to any location – even oceans",
-                "description4": "Powered by proprietary space + ground tech",
+                "description4": "Powered by propriatory patended space+ ground tech",
                 "description5": "Earth observation made radically simple"
             }
         ],
@@ -244,8 +244,8 @@
         "section2": {
             "title": "Global Coverage Reinvented",
             "description": "Blue Planet, thanks its continuously fresh (42h) replica of the Earth makes any surface (whenever small or continents) nearly instantly available without satellite scheduling or programming.",
-            "subtitle1": "<b>Fresh planet imagery always available: </b>Thanks to a continuously vitual globe clone always acessible.",
-            "subtitle2": "<b>Instant Access: </b>Near defense high quality 50cm resolution."
+            "subtitle1": "<b>Fresh planet imagery always available: </b>Thanks to a continuously virtual globe clone always acessible.",
+            "subtitle2": "<b>Instant Access: </b>Near defence high quality 50cm resolution in a « one click » time."
         },
         "section3": {
             "title": "Scale Imaging Simplified",
@@ -284,7 +284,7 @@
     },
     "excellency": {
         "title": "How Blue Planet Generates Value",
-        "subtitle": "Satellite Earth Observation illustrated by the v-GLOBE Big Data project is an absolutely essential tool for generating information and monitoring our progress at all geographic scales as we explore new development pathways aimed at sustainable management of the planet, tackling disaster risk reduction, climate change, and sustainable development in an integrated way.",
+        "subtitle": "Satellite Earth Observation illustrated by the v-GLOBE Big Data project is an absolutely essential tool for generating information and monitoring our progress at all geographic scales as we explore new development pathways aimed at sustainable management of the planet, tackling disaster risk reduction, climate change, and sustainable development in an integrated way. Among others:",
         "services": [
             {
                 "title": "Defence, Intelligence",
@@ -427,7 +427,7 @@
     "about": {
         "name": "The Company",
         "title": "Blue Planet vision derives from concepts developed by CNES, INRIA and Orange Labs",
-        "subtitle": "The company was founded in 2009 by Jean-Pierre Antikidis, former head of Space System Information at CNES and data management international expert, Jean Jacques Favier, former NASA STS78 Astronaut and Director of innovation at CNES, presently professor and Chair of Research Steering Committee at the International Space University.</br></br> The v-GLOBE concept is a third generation evolution of Blue planet activities that took place in 2018 , with specific focus on Big Data geocoded information commercialisation as required urgently by IA and Inteligence/defense massive information needs."
+        "subtitle": "The company was founded in 2009 by Jean-Pierre Antikidis, former head of Space System Information at CNES and data management international expert, Jean Jacques Favier, former NASA STS78 Astronaut and Director of innovation at CNES, presently professor and Chair of Research Steering Committee at the International Space University.</br></br> The v-GLOBE concept is a third generation evolution of Blue planet activities that took place in 2018 , with specific focus on Big Data geocoded information commercialisation as required urgently by Artificial Intelligence/Defense massive needs."
     },
     "footer": {
         "description": "Blue Planet commercializes fresh and high value « near defence » submeter color imagery of our planet, any time, any place, and at bottom prices.",
