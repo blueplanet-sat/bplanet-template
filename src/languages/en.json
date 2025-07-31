@@ -442,6 +442,6 @@
             "linkedin": "https://www.linkedin.com/company/blue-planet/"
         },
         "note": "All rights reserved.",
-        "developers": "Designed and developed by <a class='font-bold hover:underline' target='_blank' href=''>M. Candella</a> & <a class='font-bold hover:underline' target='_blank' href=''>M. Micchele</a>"
+        "developers": "Designed and developed by <br class='block md:hidden'> <a class='font-bold hover:underline' target='_blank' href='https://maticandella-portfolio.vercel.app/'>M. Candella</a> & <a class='font-bold hover:underline' target='_blank' href='https://matiasmicchele.vercel.app/'>M. Micchele</a>"
     }
 }
