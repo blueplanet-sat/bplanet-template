@@ -2,6 +2,7 @@
 import { getTranslations } from "../lib/i18n";
 import "../styles/style.css";
 import "aos/dist/aos.css";
+import Analytics from "@vercel/analytics/astro";
 const { lang = "en", title } = Astro.props;
 const t = getTranslations(lang);
 ---
@@ -17,13 +18,13 @@ const t = getTranslations(lang);
     <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png" />
     <link rel="apple-touch-icon" href="/images/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-	
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap"
       rel="stylesheet"
     />
-	<link
+    <link
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&display=swap"
       rel="stylesheet"
     />
@@ -34,7 +35,7 @@ const t = getTranslations(lang);
   </head>
   <body class="overflow-x-hidden">
     <slot />
-
+    <Analytics />
     <!-- 2) CDN de AOS JS como módulo ESM -->
     <script
       is:inline
